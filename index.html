@@ -5,33 +5,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 
 <body>
-    <header class="border b-1">
+    <!-- Header Section -->
+    <header class="border-b-[1px] border-gray-300 relative h-[70px]">
         <div class="max-w-6xl mx-auto">
-            <div class="flex justify-between">
-                <div class="logo ">
-                    <img src="./assets/Frame 21.png" alt="" class="w-40 h-16">
+            <div class="flex justify-between mt-[17px]">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="./assets/Frame 21.png" alt="Logo" class="w-[160px] h-[48px]">
                 </div>
-                <nav class="pt-4 g">
-                    <ul class="flex gap-2 leading-8">
-                        <li><a href="#" class="pr-px text-xl font-semibold text-center">Home</a></li>
-                        <li> <a href="#" class="pr-px text-xl font-semibold text-center">About</a></li>
-                        <li> <a href="#" class="pr-px text-xl font-semibold text-center">Content Hub</a></li>
-                        <li><a href="#" class="pr-px text-xl font-semibold text-center">Service</a></li>
-                        <li><a href="#" class="pr-px text-xl font-semibold text-center">Press Kit</a></li>
-                        <li><a href="#" class="pr-px text-xl font-semibold text-center">Newsletter</a></li>
-                        <li><a href="#" class="pr-px text-xl font-semibold text-center">Events</a></li>
+
+                <!-- Navigation Links -->
+                <nav class="pt-2">
+                    <ul class="flex gap-5 mr-[30px]">
+                        <li><a href="#" class="text-[17px] text-gray-700 font-normal text-center font-poppins leading-7"
+                                id="home-link">Home
+                                <img src="./assets/Vector.png" class="mt-[3px] w-[40px] opacity-0" id="home-image"></a>
+                        </li>
+                        <li><a href="#" class="text-[17px] text-gray-700 font-normal text-center font-poppins leading-7"
+                                id="about-link">About
+                                <img src="./assets/Vector.png" class="mt-[3px] w-[40px] opacity-0 mx-auto"
+                                    id="about-image"></a></li>
+                        <li><a href="#" class="text-[17px] text-gray-700 font-normal text-center font-poppins leading-7"
+                                id="content-hub-link">Content Hub
+                                <img src="./assets/Vector.png" class="mt-[3px] w-[40px] opacity-0 mx-auto"
+                                    id="content-hub-image"></a></li>
+                        <li><a href="#" class="text-[17px] text-gray-700 font-normal text-center leading-7 font-poppins"
+                                id="service-link">Service
+                                <img src="./assets/Vector.png" class="mt-[3px] w-[40px] opacity-0 mx-auto"
+                                    id="service-image"></a></li>
+                        <li><a href="#" class="text-[17px] text-gray-700 font-normal text-center leading-7 font-poppins"
+                                id="press-kit-link">Press Kit
+                                <img src="./assets/Vector.png" class="mt-[3px] w-[40px] opacity-0 mx-auto"
+                                    id="press-kit-image"></a></li>
+                        <li><a href="#" class="text-[17px] text-gray-700 font-normal text-center leading-7 font-poppins"
+                                id="newsletter-link">Newsletter
+                                <img src="./assets/Vector.png" class="mt-[3px] w-[40px] opacity-0 mx-auto"
+                                    id="newsletter-image"></a></li>
+                        <li><a href="#" class="text-[17px] text-gray-700 font-normal text-center leading-7 font-poppins"
+                                id="events-link">Events
+                                <img src="./assets/Vector.png" class="mt-[3px] w-[40px] opacity-0 mx-auto"
+                                    id="events-image"></a></li>
                     </ul>
                 </nav>
-                <button>
-                    <a href="">contact us >></a>
+
+                <!-- Contact Us Button -->
+                <button
+                    class="bg-[linear-gradient(180deg,#3798BA_17.99%,rgba(25,69,84,0.9)_100%)] rounded-[60px] p-[12px_25px] text-[#FFFFFF] font-semibold">
+                    <a href="#" class="font-poppins text-[17px] font-semibold leading-[30px] text-center">Contact Us
+                        &gt;&gt;</a>
                 </button>
             </div>
         </div>
     </header>
+
+    <!-- Hero Section with Background Image -->
+    <section class="bg-cover bg-center h-[700px] w-full" style="background-image: url('./assets/Rectangle 1.png');">
+        <div class="flex">
+            <img src="./assets/Group 12.png" alt="" class="left-[100px] top-[118px] w-[70px] absolute">
+            <img src="./assets/Group 511.png" alt="" class="left-[800px] top-[130px] w-[130px] absolute">
+            <img src="./assets/Group 5.png" alt="" class="left-[30px] top-[625px] w-[18px] absolute">
+
+            <div class="w-[818px] h-[453px] top-[270px] left-[239px] absolute">
+                <h2 class="uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)] font-black text-[20px] leading-[30px]"
+                    style="font-family: 'Urbanist'">
+                    Influexa Marketing
+                </h2>
+                <div class="w-[60%] text-[40px] font-semibold leading-[50px] mt-4">
+                    <h4 class="text-[#333333]">
+                        Connecting Your Brand
+                        <span class="text-[#F99417] font-urbanist">
+                            Influencer
+                            <img src="./assets/Vector (1).png" alt="Icon" class="w-[170px]">
+                        </span>
+                        With The Right Business
+                    </h4>
+                </div>
+                <p class="font-poppins font-normal text-[19px] leading-[34.2px] text-[#333333] mt-4">
+                    Connecting your brand with the right business content involves ensuring <br> your messaging aligns
+                    with your brand identity and resonates.
+                </p>
+                <button
+                    class="bg-[linear-gradient(180deg,#3798BA_17.99%,rgba(25,69,84,0.9)_100%)] rounded-[60px] p-[12px_25px] text-[#FFFFFF] font-semibold mt-4">
+                    <a href="#" class="font-poppins text-[17px] font-semibold leading-[30px] text-center">Get A Consult
+                        &gt;&gt;</a>
+                </button>
+            </div>
+
+            <div class="w-[316px] h-[550px] top-[230px] left-[976px] absolute">
+                <div class="relative">
+                    <img src="./assets//img1.jpeg" alt=""
+                        class="border-[5px] border-solid border-[#FFFFFF] w-[216px] h-[228px] rounded-[80px_20px_20px_20px] bg-cover bg-center object-cover absolute shadow-[0px_0px_40px_0px_rgba(0,0,0,0.08)]">
+
+                    <!-- <div class="border-[1px] rounded-lg flex w-[230px]  p-2 gap-4 items-center left-[500px] absolute"
+                        style="border-image: linear-gradient(92.17deg, #3798BA 1.25%, #FFFFFF 95.26%); border-image-slice: 1;">
+                        <div>
+                            <img src="./assets/Group 13.png" alt="" class="w-[40px] h-[40px] object-cover">
+                        </div>
+                        <div>
+                            <h4
+                                class="font-poppins text-[20px] font-semibold leading-[30px] text-[#3798BA] decoration-none">
+                                2514+</h4>
+                            <p class="font-poppins text-[16px] font-semibold leading-[30px] text-[#333333]">Popular
+                                Influencer</p>
+                        </div>
+                    </div> -->
+
+                    <img src="./assets//img3.jpeg" alt=""
+                        class="border-[5px] border-solid border-[#FFFFFF] w-[216px] h-[228px] top-[238px] absolute rounded-[20px_20px_20px_80px] object-cover bg-cover bg-center absolute shadow-[0px_0px_40px_0px_rgba(0,0,0,0.08)]">
+                </div>
+                <div class="relative">
+                    <img src="./assets/img12.png" alt="" class="top-[-57px] w-[130px] left-[370px] absolute">
+                </div>
+                <div class="relative left-[230px] bottom-[14px]">
+                    <img src="./assets//img2.jpeg" alt=""
+                        class="border-[5px] border-solid border-[#FFFFFF] w-[216px] h-[228px] rounded-[20px] bg-cover bg-center object-cover absolute shadow-[0px_0px_40px_0px_rgba(0,0,0,0.08)]">
+
+                    <img src="./assets//img4.jpeg" alt=""
+                        class="border-[5px] border-solid border-[#FFFFFF] w-[216px] h-[228px] top-[238px] absolute rounded-[20px_20px_80px_20px] object-cover bg-cover bg-center absolute shadow-[0px_0px_40px_0px_rgba(0,0,0,0.08)] z-20">
+                </div>
+                <div class="relative">
+                    <img src="./assets/Group 8.png" alt="" class="top-[431px] w-[140px] left-[331px] absolute">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- JavaScript for Link Active State -->
+    <script>
+        const links = document.querySelectorAll("a");
+        const images = document.querySelectorAll("img");
+
+        // Set the default active state for the "Home" link and show its image
+        const defaultActiveLink = document.getElementById('home-link');
+        const defaultActiveImage = document.getElementById('home-image');
+
+        defaultActiveLink.classList.add('active');
+        defaultActiveImage.classList.add('opacity-100');
+
+        links.forEach(link => {
+            link.addEventListener('click', (e) => {
+                links.forEach(link => link.classList.remove('active'));
+                images.forEach(img => img.classList.remove('opacity-100'));
+
+                e.currentTarget.classList.add('active');
+                const image = e.currentTarget.querySelector('img');
+                image.classList.add('opacity-100');
+            });
+        });
+    </script>
 </body>
 
 </html>
