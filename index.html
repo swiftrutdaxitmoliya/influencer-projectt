@@ -13,57 +13,85 @@
 
 <body>
     <!-- Header Section -->
-    <header class="border-b-[1px] border-gray-300 relative h-[70px]">
-        <div class="mx-auto max-w-[1440px] px-4 sm:px-8 lg:px-16">
-            <div class=" mx-auto max-w-[1440px] flex justify-between mt-[17px]">
-                <!-- Logo -->
-                <div class="logo">
-                    <img src="./assets/Frame 21.png" alt="Logo" class="w-[160px] h-[48px]">
+    <header class="border-b-[1px] border-gray-300 relative">
+        <div class="flex items-center justify-between max-w-[1440px] mx-auto px-4 py-5 sm:px-8">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="./assets/Frame 21.png" alt="Logo" class="w-[160px] h-[48px]">
+            </div>
+
+            <!-- Toggle Button (Mobile) -->
+            <button id="menu-toggle" class="lg:hidden p-2 text-gray-700">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+
+            <!-- Mobile Navigation Links (Hidden by default on Desktop) -->
+            <nav id="mobile-menu"
+                class="fixed top-0 left-0 h-full w-full bg-white shadow-lg transform transition-transform duration-300 lg:hidden -translate-x-full">
+                <div class="flex justify-between items-center p-4 border-b-[1px] border-gray-300">
+                    <!-- Logo inside the menu -->
+                    <div class="logo">
+                        <img src="./assets/Frame 21.png" alt="Logo" class="w-[120px] h-[36px]">
+                    </div>
+
+                    <!-- Close Button -->
+                    <button id="menu-close" class="p-2 text-gray-700">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
                 </div>
 
-                <!-- Navigation Links -->
-                <nav class="pt-2">
-                    <ul class="flex gap-5 mr-[30px]">
-                        <li><a href="#" class="text-[17px] text-gray-700 font-normal text-center font-poppins leading-7"
-                                id="home-link">Home
-                                <img src="./assets/Vector.png" class="mt-[3px] w-[40px] opacity-0" id="home-image"></a>
-                        </li>
-                        <li><a href="/about.html"
-                                class="text-[17px] text-gray-700 font-normal text-center font-poppins leading-7"
-                                id="about-link">About
-                                <img src="./assets/Vector.png" class="mt-[3px] w-[40px] opacity-0 mx-auto"
-                                    id="about-image"></a></li>
-                        <li><a href="./contact-hub.html"
-                                class="text-[17px] text-gray-700 font-normal text-center font-poppins leading-7"
-                                id="content-hub-link">Content Hub
-                                <img src="./assets/Vector.png" class="mt-[3px] w-[40px] opacity-0 mx-auto"
-                                    id="content-hub-image"></a></li>
-                        <li><a href="#" class="text-[17px] text-gray-700 font-normal text-center leading-7 font-poppins"
-                                id="service-link">Service
-                                <img src="./assets/Vector.png" class="mt-[3px] w-[40px] opacity-0 mx-auto"
-                                    id="service-image"></a></li>
-                        <li><a href="#" class="text-[17px] text-gray-700 font-normal text-center leading-7 font-poppins"
-                                id="press-kit-link">Press Kit
-                                <img src="./assets/Vector.png" class="mt-[3px] w-[40px] opacity-0 mx-auto"
-                                    id="press-kit-image"></a></li>
-                        <li><a href="#" class="text-[17px] text-gray-700 font-normal text-center leading-7 font-poppins"
-                                id="newsletter-link">Newsletter
-                                <img src="./assets/Vector.png" class="mt-[3px] w-[40px] opacity-0 mx-auto"
-                                    id="newsletter-image"></a></li>
-                        <li><a href="#" class="text-[17px] text-gray-700 font-normal text-center leading-7 font-poppins"
-                                id="events-link">Events
-                                <img src="./assets/Vector.png" class="mt-[3px] w-[40px] opacity-0 mx-auto"
-                                    id="events-image"></a></li>
-                    </ul>
-                </nav>
+                <!-- Mobile Menu Links -->
+                <ul class="flex flex-col gap-5 items-center items-start p-6">
+                    <li><a href="#" class="text-[20px] text-blue-500 font-semibold">Home</a></li>
+                    <li><a href="/about.html" class="text-[20px] text-gray-700 font-normal">About</a></li>
+                    <li><a href="./contact-hub.html" class="text-[20px] text-gray-700 font-normal">Content Hub</a></li>
+                    <li><a href="./service.html" class="text-[20px] text-gray-700 font-normal">Service</a></li>
+                    <li><a href="#" class="text-[20px] text-gray-700 font-normal">Press Kit</a></li>
+                    <li><a href="#" class="text-[20px] text-gray-700 font-normal">Newsletter</a></li>
+                    <li><a href="#" class="text-[20px] text-gray-700 font-normal">Events</a></li>
+                </ul>
+            </nav>
 
-                <!-- Contact Us Button -->
-                <button
-                    class="bg-[linear-gradient(180deg,#3798BA_17.99%,rgba(25,69,84,0.9)_100%)] rounded-[60px] p-[12px_25px] text-[#FFFFFF] font-semibold">
-                    <a href="#" class="font-poppins text-[17px] font-semibold leading-[30px] text-center">Contact Us
-                        &gt;&gt;</a>
-                </button>
-            </div>
+            <!-- Desktop Navigation (Visible only on desktop) -->
+            <nav class="hidden lg:flex flex-col lg:flex-row lg:items-center gap-5">
+                <ul class="flex gap-5 lg:mr-[30px]">
+                    <li><a href="#"
+                            class="text-[17px] text-gray-700 font-normal text-center font-poppins leading-7">Home</a>
+                    </li>
+                    <li><a href="/about.html"
+                            class="text-[17px] text-gray-700 font-normal text-center font-poppins leading-7">About</a>
+                    </li>
+                    <li><a href="./contact-hub.html"
+                            class="text-[17px] text-gray-700 font-normal text-center font-poppins leading-7">Content
+                            Hub</a></li>
+                    <li><a href="/service.html"
+                            class="text-[17px] text-gray-700 font-normal text-center font-poppins leading-7">Service</a>
+                    </li>
+                    <li><a href="./press-kit.html"
+                            class="text-[17px] text-gray-700 font-normal text-center font-poppins leading-7">Press
+                            Kit</a></li>
+                    <li><a href="#"
+                            class="text-[17px] text-gray-700 font-normal text-center font-poppins leading-7">Newsletter</a>
+                    </li>
+                    <li><a href="#"
+                            class="text-[17px] text-gray-700 font-normal text-center font-poppins leading-7">Events</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Contact Us Button -->
+            <button
+                class="bg-[linear-gradient(180deg,#3798BA_17.99%,rgba(25,69,84,0.9)_100%)] font-semibold hidden md:block p-[12px_25px] rounded-[60px] text-[#FFFFFF]">
+                <a href="#" class=" font-poppins font-semibold text-center">Contact Us
+                    &gt;&gt;</a>
+            </button>
         </div>
     </header>
 
@@ -77,77 +105,77 @@
                 <img src="./assets/Group 5.png" alt="" class="absolute bottom-[0px] left-[0px] w-[18px] z-[1]">
 
                 <!-- Text Section -->
-                <div class="cols-6/12">
+                <div class="col-span-1 lg:col-span-1">
                     <div class="w-full">
                         <h2
                             class="uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)] font-black text-lg lg:text-xl">
                             Influexa Marketing
                         </h2>
                         <div class="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-snug mt-4">
-                            <h4 class="text-[#333333]">
+                            <h4 class="text-[#333333] text-[57px] font-[Urbanist] leading-[77px]">
                                 Connecting Your Brand <br />
                                 <span class="text-[#F99417] relative inline-block">
                                     Influencer
                                     <img src="./assets/Vector (1).png" alt="Icon"
-                                        class="absolute bottom-[-10px] left-0 w-3/4 z-[1]">
+                                        class="absolute bottom-[-10px] left-0 w-4/4 z-[1]">
                                 </span>
                                 With The Right Business
                             </h4>
                         </div>
-                        <p class="text-base sm:text-lg leading-7 text-[#333333] mt-4">
+                        <p class="text-base font-[poppins] text-[20px] leading-7 text-[#333333] mt-4">
                             Connecting your brand with the right business content involves ensuring your messaging
-                            aligns with your
-                            brand identity and resonates.
+                            aligns with your brand identity and resonates.
                         </p>
                         <button
-                            class="bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)] rounded-full px-6 py-3 text-white font-semibold mt-4">
+                            class="bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)] rounded-full font-[poppins] px-6 py-3 text-white font-semibold mt-4">
                             <a href="#" class="text-base sm:text-lg">Get A Consult &gt;&gt;</a>
                         </button>
                     </div>
                 </div>
 
                 <!-- Image Grid Section -->
-                <div class="cols-6/12 relative flex md:gap-4 gap-1 justify-end">
+                <div class="col-span-1 lg:col-span-1 relative flex md:gap-4 gap-1 justify-end px-5">
                     <div class="flex flex-col md:gap-4 gap-1">
                         <div class="md:w-[236px] md:h-[248px] w-auto h-auto mt-10">
                             <img src="./assets/img1.jpeg" alt=""
-                                class="border-[5px] border-white w-full h-full rounded-[80px_20px_20px_20px] object-cover shadow-md z-[-1]">
+                                class="border-[5px] border-white md:w-full md:h-full w-[134px] h-[140px] rounded-[80px_20px_20px_20px] object-cover shadow-md z-[-1]">
                         </div>
                         <div class="md:w-[236px] md:h-[248px] w-auto h-auto">
                             <img src="./assets/img3.jpeg" alt=""
-                                class="mt-1 border-[5px] border-white w-full h-full rounded-[20px_20px_20px_80px] object-cover shadow-md z-[-1]">
+                                class="mt-1 border-[5px] border-white  md:w-full md:h-full w-[134px] h-[140px] rounded-[20px_20px_20px_80px] object-cover shadow-md z-[-1]">
                         </div>
                     </div>
                     <div class="flex flex-col md:gap-4 gap-1 relative z-0">
                         <img src="./assets/img12.png" alt=""
-                            class="absolute top-[-50px] w-[130px] right-[-40px] z-[-1]">
+                            class="absolute md:top-[-50px] md:w-[130px] md:right-[-40px] z-[-1] w-[75px] ">
                         <div class="md:w-[236px] md:h-[248px] w-auto h-auto">
                             <img src="./assets/img2.jpeg" alt=""
-                                class="border-[5px] border-white w-full h-full rounded-[20px] object-cover shadow-md z-[1]">
+                                class="border-[5px] border-white  md:w-full md:h-full w-[134px] h-[140px] rounded-[20px] object-cover shadow-md z-1">
                         </div>
                         <div class="md:w-[236px] md:h-[248px] w-auto h-auto">
                             <img src="./assets/img4.jpeg" alt=""
-                                class="mt-1 border-[5px] border-white w-full h-full rounded-[20px_20px_80px_20px] object-cover shadow-md z-[-1]">
+                                class="mt-1 border-[5px] border-white md:w-full md:h-full w-[134px] h-[140px] rounded-[20px_20px_80px_20px] object-cover shadow-md z-[-1]">
                         </div>
                     </div>
                     <img src="./assets/Group 8.png" alt=""
                         class="absolute bottom-[20px] right-[30px] w-[120px] hidden lg:block z-[1]">
                     <div class="flex justify-center items-center mt-8 absolute bottom-[10px] left-[0px]">
-                        <div class="p-[2px] bg-gradient-to-r from-[#3798BA] to-white rounded-full w-[230px]">
-                            <div class="bg-white rounded-full p-4 flex items-center gap-4">
-                                <img src="./assets/Group 13.png" alt="" class="w-[40px] h-auto">
+                        <div class="p-[2px] bg-gradient-to-r from-[#3798BA] to-white rounded-full md:w-[230px] ">
+                            <div class="bg-white rounded-full md:p-4 p-1 flex items-center gap-4 ">
+                                <img src="./assets/Group 13.png" alt="" class="md:w-[40px] ">
                                 <div>
-                                    <h4 class="text-lg font-semibold text-[#3798BA]">2514+</h4>
-                                    <p class="text-sm font-semibold text-[#333333]">Popular Influencer</p>
+                                    <h4 class="text-lg text-[14px] font-semibold text-[#3798BA]">2514+</h4>
+                                    <p class="text-sm text-[12px] font-semibold text-[#333333]">Popular Influencer
+                                    </p>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <div class="mx-auto max-w-[1440px] px-4 sm:px-8 lg:px-16 py-[10%] ">
         <div class="flex flex-col   lg:flex-row items-center lg:items-start gap-8 bg-white">
@@ -1062,16 +1090,15 @@
                         </button>
                     </div>
                 </div>
-                <div class="relative left-[180px] top-6">
+                <div class="relative left-[110px] top-6">
                     <img src="./assets//Ellipse 7.png" alt="Person"
                         class="w-[320px] rounded-full absolute left-[40px] bottom-[70px]" />
-                    <div class="left-[20px] ">
+                    <div class="left-[10px]">
                         <img src="./assets//Star 3.png" alt="" class="absolute left-[370px]">
                         <img src="./assets//Star 4.png" alt="" class="absolute top-[40%] left-[-40px]">
                         <img src="./assets//Star 5.png" alt="" class="absolute left-[440px] top-[80%]">
                         <img src="./assets/man.png" alt="" class="relative w-[350px] top-0">
                     </div>
-
                 </div>
             </div>
 
@@ -1313,25 +1340,21 @@
     </footer>
 
 
-
     <script>
-        const links = document.querySelectorAll("a");
-        const images = document.querySelectorAll("img");
+        // JavaScript for toggling the mobile menu
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.getElementById('menu-toggle');
+            const menuClose = document.getElementById('menu-close');
+            const mobileMenu = document.getElementById('mobile-menu');
 
-        const defaultActiveLink = document.getElementById('home-link');
-        const defaultActiveImage = document.getElementById('home-image');
+            // Open mobile menu
+            menuToggle.addEventListener('click', () => {
+                mobileMenu.classList.remove('-translate-x-full');
+            });
 
-        defaultActiveLink.classList.add('active');
-        defaultActiveImage.classList.add('opacity-100');
-
-        links.forEach(link => {
-            link.addEventListener('click', (e) => {
-                links.forEach(link => link.classList.remove('active'));
-                images.forEach(img => img.classList.remove('opacity-100'));
-
-                e.currentTarget.classList.add('active');
-                const image = e.currentTarget.querySelector('img');
-                image.classList.add('opacity-100');
+            // Close mobile menu
+            menuClose.addEventListener('click', () => {
+                mobileMenu.classList.add('-translate-x-full');
             });
         });
     </script>

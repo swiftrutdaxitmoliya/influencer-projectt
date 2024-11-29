@@ -1,40 +1,44 @@
 <section class="bg-center bg-cover h-[600px] w-full" style="background-image: url('./assets/Rectangle 1.png');">
-        <div class="flex h-full items-center lg:px-16 max-w-[1440px] mx-auto px-4 sm:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12 w-full">
-                <img src="./assets/Group 141.png" alt="" class="absolute left-0 -top-1">
-                <!-- Left Content Section -->
-                <div class="text-center md:text-left">
-                    <h2 class="font-[Urbanist] text-[35px] font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)] mb-4">
-                        About Us
-                    </h2>
-                    <div class="flex items-center justify-center md:justify-start gap-3">
-                        <h3 class="font-[Poppins] text-gray-600">Home</h3>
-                        <img src="./assets/Group 150.png" alt="Arrow Icon" class="w-[20px] h-[18px]">
-                        <h4 class="text-[#3798BA] font-[Poppins] font-semibold">About Us</h4>
-                    </div>
+    <div class="flex h-full items-center lg:px-16 max-w-[1440px] mx-auto px-4 sm:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12 w-full">
+            <img src="./assets/Group 141.png" alt="" class="absolute left-0 -top-1">
+            <!-- Left Content Section -->
+            <div class="text-center md:text-left">
+                <h2
+                    class="font-[Urbanist] text-[35px] font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)] mb-4">
+                    About Us
+                </h2>
+                <div class="flex items-center justify-center md:justify-start gap-3">
+                    <h3 class="font-[Poppins] text-gray-600">Home</h3>
+                    <img src="./assets/Group 150.png" alt="Arrow Icon" class="w-[20px] h-[18px]">
+                    <h4 class="text-[#3798BA] font-[Poppins] font-semibold">About Us</h4>
                 </div>
-    
-                <!-- Right Image Section -->
-                <div class="absolute bottom-0 right-40">
-<div class="bg-red h-100 relative w-[600px]">
+            </div>
+
+            <!-- Right Image Section -->
+            <div class="absolute bottom-0 right-40">
+                <div class="bg-red h-100 relative w-[600px]">
                     <!-- First Image -->
-                     <img src="./assets//ring.png" alt="" class="absolute border-4 bottom-[-80px] h-[308px] right-[90px] w-[308px]">
-                     
-                     
+                    <img src="./assets//ring.png" alt=""
+                        class="absolute border-4 bottom-[-80px] h-[308px] right-[90px] w-[308px]">
+
+
                     <div class="absolute bottom-0 right-[-20px]">
-                        <img src="./assets/img1.jpeg" alt="First Image" class="border-[5px] border-white h-[230px] object-cover rounded-xl shadow-lg w-[230px]">
+                        <img src="./assets/img1.jpeg" alt="First Image"
+                            class="border-[5px] border-white h-[230px] object-cover rounded-xl shadow-lg w-[230px]">
                     </div>
                     <!-- Second Image -->
                     <div class="absolute left-0 left-[150px] top-[-100px] top-[130px]">
-                        <img src="./assets/img3.jpeg" alt="Second Image" class="border-[5px] border-white h-[230px] object-cover rounded-xl shadow-lg w-[230px]">
+                        <img src="./assets/img3.jpeg" alt="Second Image"
+                            class="border-[5px] border-white h-[230px] object-cover rounded-xl shadow-lg w-[230px]">
                     </div>
-                </div>    
-</div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 
 
 
-    <img src="./assets/ring2.png" alt="" class=" absolute right-0">
+<img src="./assets/ring2.png" alt="" class=" absolute right-0">
