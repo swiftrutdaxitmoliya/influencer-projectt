@@ -544,8 +544,8 @@
 
     <section class="pt-[24%] pb-20">
         <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center px-4 lg:px-8  bg-opacity-70 py-4 rounded-lg">
-                <div>
+            <div class="flex flex-wrap justify-between items-center px-4 lg:px-8 bg-opacity-70 py-4 rounded-lg">
+                <div class="mb-4 md:mb-0">
                     <h4
                         class="font-[Urbanist] text-sm font-semibold text-gray-600 uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)]">
                         TESTIMONIALS
@@ -554,11 +554,7 @@
                         Why Our Customers Says?
                     </h3>
                 </div>
-                <!-- <button
-                    class="bg-[linear-gradient(180deg,#3798BA_17.99%,rgba(25,69,84,0.9)_100%)] rounded-[60px] px-6 py-3 text-[#FFFFFF] font-semibold font-[Poppins]">
-                    View More &raquo;
-                </button> -->
-                <div class="flex justify-end mt-6 gap-2">
+                <div class="flex justify-end gap-2">
                     <button
                         class="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center bg-[linear-gradient(180deg,#3798BA_17.99%,rgba(25,69,84,0.9)_100%)] text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
@@ -575,57 +571,66 @@
                     </button>
                 </div>
             </div>
+
+            <!-- Responsive Grid for Testimonials -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-                <div class="p-5 bg-[#FFFFFF] rounded-xl w-[605px]"
+                <!-- Testimonial Card -->
+                <div class="p-5 bg-white rounded-xl shadow-md"
                     style="box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);">
                     <div class="flex justify-between items-center">
-                        <div class="flex text-[#717171] font-[poppins] text-[14px] gap-2">
-                            <img src="./assets/img21.jpeg" alt="" class="w-12 h-12 rounded-full">
-                            <span>
-                                <h3>Madelyn Botosh</h3>
-                                <h4>Influencer</h4>
-                            </span>
+                        <div class="flex items-center gap-3">
+                            <img src="./assets/img21.jpeg" alt="Madelyn Botosh" class="w-12 h-12 rounded-full">
+                            <div>
+                                <h3 class="font-[Poppins] text-[14px] text-[#333333]">Madelyn Botosh</h3>
+                                <h4 class="font-[Poppins] text-[12px] text-[#717171]">Influencer</h4>
+                            </div>
                         </div>
-                        <span class="flex gap-2">
+                        <span>
                             <img src="./assets/Group 72.png" alt="">
                         </span>
                     </div>
 
-                    <p class="font-[Poppins] text-[18px] font-normal leading-[25px] mt-8 text-left text-[#717171]">
+                    <p
+                        class="font-[Poppins] text-[16px] md:text-[18px] font-normal leading-[25px] mt-8 text-left text-[#717171]">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec neque ut mauris suscipit
-                        porttitor nec in lectus. Donec purus erat, rutrum eu eros vel Integer nec neque ut mauris
-                        suscipit porttitor nec in lectus.
+                        porttitor nec in lectus.
+                        Donec purus erat, rutrum eu eros vel Integer nec neque ut mauris suscipit porttitor nec in
+                        lectus.
                     </p>
                 </div>
-                <div class="p-5 bg-[#FFFFFF] rounded-xl w-[605px]"
+
+                <!-- Duplicate Card with Different Content -->
+                <div class="p-5 bg-white rounded-xl shadow-md"
                     style="box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);">
                     <div class="flex justify-between items-center">
-                        <div class="flex text-[#717171] font-[poppins] text-[14px] gap-2">
-                            <img src="./assets/img21.jpeg" alt="" class="w-12 h-12 rounded-full">
-                            <span>
-                                <h3>Madelyn Botosh</h3>
-                                <h4>Influencer</h4>
-                            </span>
+                        <div class="flex items-center gap-3">
+                            <img src="./assets/img21.jpeg" alt="Madelyn Botosh" class="w-12 h-12 rounded-full">
+                            <div>
+                                <h3 class="font-[Poppins] text-[14px] text-[#333333]">Madelyn Botosh</h3>
+                                <h4 class="font-[Poppins] text-[12px] text-[#717171]">Influencer</h4>
+                            </div>
                         </div>
-                        <span class="flex gap-2">
+                        <span>
                             <img src="./assets/Group 72.png" alt="">
                         </span>
                     </div>
 
-                    <p class="font-[Poppins] text-[18px] font-normal leading-[25px] mt-8 text-left text-[#717171]">
+                    <p
+                        class="font-[Poppins] text-[16px] md:text-[18px] font-normal leading-[25px] mt-8 text-left text-[#717171]">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec neque ut mauris suscipit
-                        porttitor nec in lectus. Donec purus erat, rutrum eu eros vel Integer nec neque ut mauris
-                        suscipit porttitor nec in lectus.
+                        porttitor nec in lectus.
+                        Donec purus erat, rutrum eu eros vel Integer nec neque ut mauris suscipit porttitor nec in
+                        lectus.
                     </p>
                 </div>
             </div>
-
         </div>
     </section>
 
+
     <section class="py-20">
         <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
-            <div class="text-center ">
+            <div class="text-center">
                 <h3 class="font-extrabold text-[18px] leading-[22px] text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)]"
                     style="font-family: 'Urbanist', sans-serif;">
                     influencers
@@ -634,40 +639,126 @@
                     Our Top Influencers
                 </h4>
             </div>
-            <div class="flex gap-2 justify-between mt-14">
+
+            <!-- Responsive Buttons -->
+            <div class="flex flex-wrap gap-2 justify-center md:justify-between mt-14">
                 <button class="px-[50px] py-[10px] gap-[10px] bg-[#3798BA] rounded-full">
                     Beauty
                 </button>
-                <button class="px-[50px] py-[10px] gap-[10px] bg-[#71717112]  rounded-full">
+                <button class="px-[50px] py-[10px] gap-[10px] bg-[#71717112] rounded-full">
                     Travel
                 </button>
                 <button class="px-[50px] py-[10px] gap-[10px] bg-[#71717112] rounded-full">
                     Food
                 </button>
-                <button class="px-[50px] py-[10px] gap-[10px]  bg-[#71717112] rounded-full">
+                <button class="px-[50px] py-[10px] gap-[10px] bg-[#71717112] rounded-full">
                     Lifestyle
                 </button>
-                <button class="px-[50px] py-[10px] gap-[10px] bg-[#71717112]  rounded-full">
+                <button class="px-[50px] py-[10px] gap-[10px] bg-[#71717112] rounded-full">
                     Education
                 </button>
-                <button class="px-[50px] py-[10px] gap-[10px]  bg-[#71717112] rounded-full">
+                <button class="px-[50px] py-[10px] gap-[10px] bg-[#71717112] rounded-full">
                     Gaming
                 </button>
                 <button class="px-[50px] py-[10px] gap-[10px] bg-[#71717112] rounded-full">
                     Fitness
                 </button>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-8 mt-10">
+
+            <!-- Responsive Cards Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-8 mt-10">
                 <!-- Single Card -->
                 <div class="rounded-xl bg-white p-5 shadow-lg"
                     style="box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);">
-                    <div class="bg-[#F5FAFC] p-2 rounded-xl flex flex-col">
-                        <img src="./assets/img22.png" alt="Alfonso Korsgaard" class="rounded-lg w-[280px]">
-                        <h4 class="mt-3 text-lg font-semibold font-[Urbanist] text-[#3798BA]">Alfonso Korsgaard</h4>
+                    <div class="bg-[#F5FAFC] p-2 rounded-xl flex flex-col ">
+                        <img src="./assets/img22.png" alt="Alfonso Korsgaard" class="rounded-lg w-full max-w-[280px]">
+                        <h4 class="mt-3 text-lg font-semibold font-[Urbanist] text-[#3798BA] items-start">Alfonso
+                            Korsgaard</h4>
                     </div>
                     <div class="flex justify-between items-center mt-4 px-3">
                         <div class="text-center">
                             <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">1250K</h4>
+                            <h5 class="text-sm font-medium font-[poppins] text-[#717171]">Followers</h5>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">62K</h4>
+                            <h5 class="text-sm font-medium font-[poppins] text-[#717171]">Subscribers</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repeat Other Cards -->
+                <!-- The same structure is repeated for the rest of the cards. Ensure images, names, and data are updated accordingly. -->
+                <div class="rounded-xl bg-white p-5 shadow-lg"
+                    style="box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);">
+                    <div class="bg-[#F5FAFC] p-2 rounded-xl flex flex-col ">
+                        <img src="./assets/img23.png" alt="Anika Baptista" class="rounded-lg w-full max-w-[280px]">
+                        <h4 class="mt-3 text-lg font-semibold font-[Urbanist] text-[#3798BA] items-start">Marilyn Mango
+                        </h4>
+                    </div>
+                    <div class="flex justify-between items-center mt-4 px-3">
+                        <div class="text-center">
+                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">521K</h4>
+                            <h5 class="text-sm font-medium font-[poppins] text-[#717171]">Followers</h5>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">41K</h4>
+                            <h5 class="text-sm font-medium font-[poppins] text-[#717171]">Subscribers</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Continue for all remaining cards... -->
+                <div class="rounded-xl bg-white p-5 shadow-lg"
+                    style="box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);">
+                    <div class="bg-[#F5FAFC] p-2 rounded-xl flex flex-col ">
+                        <img src="./assets/img24.png" alt="Anika Baptista" class="rounded-lg w-full max-w-[280px]">
+                        <h4 class="mt-3 text-lg font-semibold font-[Urbanist] text-[#3798BA] items-start">Marilyn Mango
+                        </h4>
+                    </div>
+                    <div class="flex justify-between items-center mt-4 px-3">
+                        <div class="text-center">
+                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">6793K</h4>
+                            <h5 class="text-sm font-medium font-[poppins] text-[#717171]">Followers</h5>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">25K</h4>
+                            <h5 class="text-sm font-medium font-[poppins] text-[#717171]">Subscribers</h5>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+
+                <div class="rounded-xl bg-white p-5 shadow-lg"
+                    style="box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);">
+                    <div class="bg-[#F5FAFC] p-2 rounded-xl flex flex-col ">
+                        <img src="./assets/img25.png" alt="Anika Baptista" class="rounded-lg w-full max-w-[280px]">
+                        <h4 class="mt-3 text-lg font-semibold font-[Urbanist] text-[#3798BA] items-start">Martin Bator
+                        </h4>
+                    </div>
+                    <div class="flex justify-between items-center mt-4 px-3">
+                        <div class="text-center">
+                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">6574K</h4>
+                            <h5 class="text-sm font-medium font-[poppins] text-[#717171]">Followers</h5>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">21K</h4>
+                            <h5 class="text-sm font-medium font-[poppins] text-[#717171]">Subscribers</h5>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+
+                <div class="rounded-xl bg-white p-5 shadow-lg"
+                    style="box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);">
+                    <div class="bg-[#F5FAFC] p-2 rounded-xl flex flex-col ">
+                        <img src="./assets/img27.png" alt="Anika Baptista" class="rounded-lg w-full max-w-[280px]">
+                        <h4 class="mt-3 text-lg font-semibold font-[Urbanist] text-[#3798BA] items-start">Emery Kenter
+                        </h4>
+                    </div>
+                    <div class="flex justify-between items-center mt-4 px-3">
+                        <div class="text-center">
+                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">521K</h4>
                             <h5 class="text-sm font-medium font-[poppins] text-[#717171]">Followers</h5>
                         </div>
                         <div class="text-center">
@@ -678,133 +769,68 @@
                 </div>
 
                 <!--  -->
+
                 <div class="rounded-xl bg-white p-5 shadow-lg"
                     style="box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);">
-                    <div class="bg-[#F5FAFC] p-2 rounded-xl flex flex-col">
-                        <img src="./assets/img23.png" alt="Alfonso Korsgaard" class="rounded-lg w-[280px]">
-                        <h4 class="mt-3 text-lg font-semibold font-[Urbanist] text-[#3798BA]">Anika Baptista</h4>
+                    <div class="bg-[#F5FAFC] p-2 rounded-xl flex flex-col ">
+                        <img src="./assets/img28.jpeg" alt="Anika Baptista" class="rounded-lg w-full max-w-[280px]">
+                        <h4 class="mt-3 text-lg font-semibold font-[Urbanist] text-[#3798BA] items-start">Abram Herwitz
+                        </h4>
                     </div>
                     <div class="flex justify-between items-center mt-4 px-3">
                         <div class="text-center">
-                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">1250K</h4>
+                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">545K</h4>
                             <h5 class="text-sm font-medium font-[poppins] text-[#717171]">Followers</h5>
                         </div>
                         <div class="text-center">
-                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">62K</h4>
+                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">55K</h4>
                             <h5 class="text-sm font-medium font-[poppins] text-[#717171]">Subscribers</h5>
                         </div>
                     </div>
                 </div>
 
+                <!--  -->
+
                 <div class="rounded-xl bg-white p-5 shadow-lg"
                     style="box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);">
-                    <div class="bg-[#F5FAFC] p-2 rounded-xl flex flex-col">
-                        <img src="./assets/img24.png" alt="Alfonso Korsgaard" class="rounded-lg w-[280px]">
-                        <h4 class="mt-3 text-lg font-semibold font-[Urbanist] text-[#3798BA]">Marilyn Mango</h4>
+                    <div class="bg-[#F5FAFC] p-2 rounded-xl flex flex-col ">
+                        <img src="./assets/img29.png" alt="Anika Baptista" class="rounded-lg w-full max-w-[280px]">
+                        <h4 class="mt-3 text-lg font-semibold font-[Urbanist] text-[#3798BA] items-start">Erin Aminoff
+                        </h4>
                     </div>
                     <div class="flex justify-between items-center mt-4 px-3">
                         <div class="text-center">
-                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">1250K</h4>
+                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">6574K</h4>
                             <h5 class="text-sm font-medium font-[poppins] text-[#717171]">Followers</h5>
                         </div>
                         <div class="text-center">
-                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">62K</h4>
+                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">74K</h4>
                             <h5 class="text-sm font-medium font-[poppins] text-[#717171]">Subscribers</h5>
                         </div>
                     </div>
                 </div>
 
-                <div class="rounded-xl bg-white p-5 shadow-lg"
-                    style="box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);">
-                    <div class="bg-[#F5FAFC] p-2 rounded-xl flex flex-col">
-                        <img src="./assets/img25.png" alt="Alfonso Korsgaard" class="rounded-lg w-[280px]">
-                        <h4 class="mt-3 text-lg font-semibold font-[Urbanist] text-[#3798BA]">Martin Bator</h4>
-                    </div>
-                    <div class="flex justify-between items-center mt-4 px-3">
-                        <div class="text-center">
-                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">1250K</h4>
-                            <h5 class="text-sm font-medium font-[poppins] text-[#717171]">Followers</h5>
-                        </div>
-                        <div class="text-center">
-                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">62K</h4>
-                            <h5 class="text-sm font-medium font-[poppins] text-[#717171]">Subscribers</h5>
-                        </div>
-                    </div>
-                </div>
+                <!--  -->
 
                 <div class="rounded-xl bg-white p-5 shadow-lg"
                     style="box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);">
-                    <div class="bg-[#F5FAFC] p-2 rounded-xl flex flex-col">
-                        <img src="./assets/img27.png" alt="Alfonso Korsgaard" class="rounded-lg w-[280px]">
-                        <h4 class="mt-3 text-lg font-semibold font-[Urbanist] text-[#3798BA]">Emery Kenter</h4>
+                    <div class="bg-[#F5FAFC] p-2 rounded-xl flex flex-col ">
+                        <img src="./assets/img30.png" alt="Anika Baptista" class="rounded-lg w-full max-w-[280px]">
+                        <h4 class="mt-3 text-lg font-semibold font-[Urbanist] text-[#3798BA] items-start">Livia Lipshutz
+                        </h4>
                     </div>
                     <div class="flex justify-between items-center mt-4 px-3">
                         <div class="text-center">
-                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">1250K</h4>
+                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">6793K</h4>
                             <h5 class="text-sm font-medium font-[poppins] text-[#717171]">Followers</h5>
                         </div>
                         <div class="text-center">
-                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">62K</h4>
-                            <h5 class="text-sm font-medium font-[poppins] text-[#717171]">Subscribers</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="rounded-xl bg-white p-5 shadow-lg"
-                    style="box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);">
-                    <div class="bg-[#F5FAFC] p-2 rounded-xl flex flex-col">
-                        <img src="./assets/img28.jpeg" alt="Alfonso Korsgaard" class="rounded-lg w-[280px]">
-                        <h4 class="mt-3 text-lg font-semibold font-[Urbanist] text-[#3798BA]">Abram Herwitz</h4>
-                    </div>
-                    <div class="flex justify-between items-center mt-4 px-3">
-                        <div class="text-center">
-                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">1250K</h4>
-                            <h5 class="text-sm font-medium font-[poppins] text-[#717171]">Followers</h5>
-                        </div>
-                        <div class="text-center">
-                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">62K</h4>
-                            <h5 class="text-sm font-medium font-[poppins] text-[#717171]">Subscribers</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="rounded-xl bg-white p-5 shadow-lg"
-                    style="box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);">
-                    <div class="bg-[#F5FAFC] p-2 rounded-xl flex flex-col">
-                        <img src="./assets/img29.png" alt="Alfonso Korsgaard" class="rounded-lg w-[280px]">
-                        <h4 class="mt-3 text-lg font-semibold font-[Urbanist] text-[#3798BA]">Erin Aminoff</h4>
-                    </div>
-                    <div class="flex justify-between items-center mt-4 px-3">
-                        <div class="text-center">
-                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">1250K</h4>
-                            <h5 class="text-sm font-medium font-[poppins] text-[#717171]">Followers</h5>
-                        </div>
-                        <div class="text-center">
-                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">62K</h4>
-                            <h5 class="text-sm font-medium font-[poppins] text-[#717171]">Subscribers</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="rounded-xl bg-white p-5 shadow-lg"
-                    style="box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);">
-                    <div class="bg-[#F5FAFC] p-2 rounded-xl flex flex-col">
-                        <img src="./assets/img30.png" alt="Alfonso Korsgaard" class="rounded-lg w-[280px]">
-                        <h4 class="mt-3 text-lg font-semibold font-[Urbanist] text-[#3798BA]">Livia Lipshutz</h4>
-                    </div>
-                    <div class="flex justify-between items-center mt-4 px-3">
-                        <div class="text-center">
-                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">1250K</h4>
-                            <h5 class="text-sm font-medium font-[poppins] text-[#717171]">Followers</h5>
-                        </div>
-                        <div class="text-center">
-                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">62K</h4>
+                            <h4 class="text-lg font-bold font-[Urbanist] text-[#333333]">02K</h4>
                             <h5 class="text-sm font-medium font-[poppins] text-[#717171]">Subscribers</h5>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
