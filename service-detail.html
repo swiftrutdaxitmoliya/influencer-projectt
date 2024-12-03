@@ -31,7 +31,7 @@
 
             <!-- Mobile Navigation Links (Hidden by default on Desktop) -->
             <nav id="mobile-menu"
-                class="fixed top-0 left-0 h-full w-full bg-white shadow-lg transform transition-transform duration-300 lg:hidden -translate-x-full">
+                class="fixed top-0 left-0 h-full w-full bg-white z-10 shadow-lg transform transition-transform duration-300 lg:hidden -translate-x-full">
                 <div class="flex justify-between items-center p-4 border-b-[1px] border-gray-300">
                     <!-- Logo inside the menu -->
                     <div class="logo">
@@ -50,13 +50,13 @@
 
                 <!-- Mobile Menu Links -->
                 <ul class="flex flex-col gap-5 items-center items-start p-6">
-                    <li><a href="./index.html" class="text-[20px] text-blue-500 font-semibold">Home</a></li>
+                    <li><a href="/index.html" class="text-[20px] text-blue-500 font-semibold">Home</a></li>
                     <li><a href="/about.html" class="text-[20px] text-gray-700 font-normal">About</a></li>
-                    <li><a href="./contact-hub.html" class="text-[20px] text-gray-700 font-normal">Content Hub</a></li>
-                    <li><a href="./service.html" class="text-[20px] text-gray-700 font-normal">Service</a></li>
-                    <li><a href="./press-kit.html" class="text-[20px] text-gray-700 font-normal">Press Kit</a></li>
-                    <li><a href="./newsletter.html" class="text-[20px] text-gray-700 font-normal">Newsletter</a></li>
-                    <li><a href="./Events.html" class="text-[20px] text-gray-700 font-normal">Events</a></li>
+                    <li><a href="/contact-hub.html" class="text-[20px] text-gray-700 font-normal">Content Hub</a></li>
+                    <li><a href="/service.html" class="text-[20px] text-gray-700 font-normal">Service</a></li>
+                    <li><a href="/press-kit.html" class="text-[20px] text-gray-700 font-normal">Press Kit</a></li>
+                    <li><a href="/newsletter.html" class="text-[20px] text-gray-700 font-normal">Newsletter</a></li>
+                    <li><a href="/Events.html" class="text-[20px] text-gray-700 font-normal">Events</a></li>
                 </ul>
             </nav>
 
@@ -500,6 +500,41 @@
             </div>
         </div>
     </footer>
+
+
+    <script>
+        // JavaScript for toggling the mobile menu
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.getElementById('menu-toggle');
+            const menuClose = document.getElementById('menu-close');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            // Open mobile menu
+            menuToggle.addEventListener('click', () => {
+                mobileMenu.classList.remove('-translate-x-full');
+            });
+
+            // Close mobile menu
+            menuClose.addEventListener('click', () => {
+                mobileMenu.classList.add('-translate-x-full');
+            });
+        });
+    </script>
+
+    <script>
+        function toggleFAQ(index) {
+            const content = document.getElementById(`content-${index}`);
+            const icon = document.getElementById(`icon-${index}`);
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.textContent = '–';
+            } else {
+                content.classList.add('hidden');
+                icon.textContent = '+';
+            }
+        }
+
+    </script>
 
 </body>
 
