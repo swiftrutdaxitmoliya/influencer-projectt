@@ -152,3 +152,139 @@
         </div>
     </div>
 </section>
+
+
+
+
+<section class="pt-[24] pb-20 relative ">
+    <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-wrap justify-between items-center px-4 lg:px-8 bg-opacity-70 py-4 rounded-lg">
+            <div class="mb-4 md:mb-0">
+                <h4
+                    class="font-[Urbanist] text-sm font-semibold text-gray-600 uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)]">
+                    TESTIMONIALS
+                </h4>
+                <h3 class="font-[Urbanist] text-xl font-bold text-[#333333]">
+                    Why Our Customers Says?
+                </h3>
+            </div>
+            <div class="flex justify-end gap-2">
+                <button
+                    class="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center bg-[linear-gradient(180deg,#3798BA_17.99%,rgba(25,69,84,0.9)_100%)] text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                <button
+                    class="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center bg-[linear-gradient(180deg,#3798BA_17.99%,rgba(25,69,84,0.9)_100%)] text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Responsive Grid for Testimonials -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+            <!-- Testimonial Card -->
+            <div class="p-5 bg-white rounded-xl shadow-md"
+                style="box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <img src="./assets/img21.jpeg" alt="Madelyn Botosh" class="w-12 h-12 rounded-full">
+                        <div>
+                            <h3 class="font-[Poppins] text-[14px] text-[#333333]">Madelyn Botosh</h3>
+                            <h4 class="font-[Poppins] text-[12px] text-[#717171]">Influencer</h4>
+                        </div>
+                    </div>
+                    <span>
+                        <img src="./assets/Group 72.png" alt="">
+                    </span>
+                </div>
+
+                <p
+                    class="font-[Poppins] text-[16px] md:text-[18px] font-normal leading-[25px] mt-8 text-left text-[#717171]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec neque ut mauris suscipit
+                    porttitor nec in lectus.
+                    Donec purus erat, rutrum eu eros vel Integer nec neque ut mauris suscipit porttitor nec in
+                    lectus.
+                </p>
+            </div>
+
+            <!-- Duplicate Card with Different Content -->
+            <div class="p-5 bg-white rounded-xl shadow-md"
+                style="box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <img src="./assets/img21.jpeg" alt="Madelyn Botosh" class="w-12 h-12 rounded-full">
+                        <div>
+                            <h3 class="font-[Poppins] text-[14px] text-[#333333]">Madelyn Botosh</h3>
+                            <h4 class="font-[Poppins] text-[12px] text-[#717171]">Influencer</h4>
+                        </div>
+                    </div>
+                    <span>
+                        <img src="./assets/Group 72.png" alt="">
+                    </span>
+                </div>
+
+                <p
+                    class="font-[Poppins] text-[16px] md:text-[18px] font-normal leading-[25px] mt-8 text-left text-[#717171]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec neque ut mauris suscipit
+                    porttitor nec in lectus.
+                    Donec purus erat, rutrum eu eros vel Integer nec neque ut mauris suscipit porttitor nec in
+                    lectus.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="bg-cover bg-center h-auto w-full" style="background-image: url('./assets/Rectangle 1.png');">
+    <div class="mx-auto max-w-[1440px] px-4 sm:px-8 lg:px-16 pb-16 pt-32 relative">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <!-- Decorative Icons -->
+            <img src="./assets/Group 12.png" alt="Icon" class="absolute top-4 left-4 w-12 z-[1] hidden md:block">
+            <img src="./assets/Group 511.png" alt="Icon" class="absolute top-16 right-1/2 transform translate-x-1/2 w-24 z-[1] hidden md:block">
+            <img src="./assets/Group 5.png" alt="Icon" class="absolute bottom-4 left-4 w-4 z-[1] hidden md:block">
+
+            <!-- Text Section -->
+            <div class="col-span-1">
+                <h2 class="uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)] font-black text-lg sm:text-xl">
+                    Influexa Marketing
+                </h2>
+                <h4 class="text-[#333333] text-3xl sm:text-4xl lg:text-[57px] font-bold leading-snug sm:leading-tight mt-4">
+                    Connecting Your Brand <br>
+                    <span class="text-[#F99417] relative inline-block">
+                        Influencer
+                        <img src="./assets/Vector (1).png" alt="Icon" class="absolute bottom-[-10px] left-0 w-full">
+                    </span>
+                    With The Right Business
+                </h4>
+                <p class="text-base sm:text-lg lg:text-xl font-[poppins] text-[#333333] mt-4">
+                    Connecting your brand with the right business content involves ensuring your messaging aligns with your brand identity and resonates.
+                </p>
+                <button class="bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)] rounded-full font-[poppins] px-6 py-3 text-white font-semibold mt-6">
+                    <a href="#" class="text-base sm:text-lg">Get A Consult &gt;&gt;</a>
+                </button>
+            </div>
+
+            <!-- Image Grid Section -->
+            <div class="col-span-1 relative flex gap-4 justify-center lg:justify-end">
+                <div class="flex flex-col gap-4">
+                    <img src="./assets/img1.jpeg" alt="Image 1" class="border-[5px] border-white w-40 h-40 sm:w-48 sm:h-48 rounded-[80px_20px_20px_20px] object-cover shadow-md">
+                    <img src="./assets/img3.jpeg" alt="Image 3" class="border-[5px] border-white w-40 h-40 sm:w-48 sm:h-48 rounded-[20px_20px_20px_80px] object-cover shadow-md">
+                </div>
+                <div class="flex flex-col gap-4 relative">
+                    <img src="./assets/img12.png" alt="Icon" class="absolute top-[-30px] right-[-20px] w-16 hidden md:block">
+                    <img src="./assets/img2.jpeg" alt="Image 2" class="border-[5px] border-white w-40 h-40 sm:w-48 sm:h-48 rounded-[20px] object-cover shadow-md">
+                    <img src="./assets/img4.jpeg" alt="Image 4" class="border-[5px] border-white w-40 h-40 sm:w-48 sm:h-48 rounded-[20px_20px_80px_20px] object-cover shadow-md">
+                </div>
+                <img src="./assets/Group 8.png" alt="Icon" class="absolute bottom-4 right-8 w-24 hidden lg:block">
+            </div>
+        </div>
+    </div>
+</section>
