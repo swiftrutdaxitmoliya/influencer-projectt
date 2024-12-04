@@ -20,7 +20,7 @@
             </div>
 
             <!-- Toggle Button (Mobile) -->
-            <button id="menu-toggle" class="lg:hidden p-2 text-gray-700">
+            <button id="menu-toggle" class="lg:hidden p-2 text-[#333333]">
                 <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
@@ -30,7 +30,7 @@
 
             <!-- Mobile Navigation Links (Hidden by default on Desktop) -->
             <nav id="mobile-menu"
-                class="fixed top-0 left-0 h-full w-full bg-white z-10 shadow-lg transform transition-transform duration-300 lg:hidden -translate-x-full">
+                class="fixed top-0 left-0 h-full w-full bg-white z-10 shadow-lg transform transition-transform duration-300 lg:hidden  -translate-x-full">
                 <div class="flex justify-between items-center p-4 border-b-[1px] border-gray-300">
                     <!-- Logo inside the menu -->
                     <div class="logo">
@@ -49,47 +49,97 @@
 
                 <!-- Mobile Menu Links -->
                 <ul class="flex flex-col gap-5 items-center items-start p-6">
-                    <li><a href="/index.html" class="text-[20px] text-blue-500 font-semibold">Home</a></li>
-                    <li><a href="/about.html" class="text-[20px] text-gray-700 font-normal">About</a></li>
-                    <li><a href="/contact-hub.html" class="text-[20px] text-gray-700 font-normal">Content Hub</a></li>
-                    <li><a href="/service.html" class="text-[20px] text-gray-700 font-normal">Service</a></li>
-                    <li><a href="/press-kit.html" class="text-[20px] text-gray-700 font-normal">Press Kit</a></li>
-                    <li><a href="/newsletter.html" class="text-[20px] text-gray-700 font-normal">Newsletter</a></li>
-                    <li><a href="/Events.html" class="text-[20px] text-gray-700 font-normal">Events</a></li>
+                    <li><a href="/index.html" class="nav-link text-[20px] text-[#333333] font-normal font-[poppins] ">
+                            Home </a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    </li>
+                    <li><a href="/about.html"
+                            class=" nav-link text-[20px] text-[#333333] font-normal font-[poppins]">About </a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    </li>
+                    <li><a href="/contact-hub.html"
+                            class=" nav-link text-[20px] text-[#333333] font-normal font-[poppins]">Content Hub</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    </li>
+                    <li><a href="/service.html"
+                            class=" nav-link text-[20px] text-[#333333] font-normal font-[poppins]">Service</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    </li>
+                    <li><a href="/press-kit.html"
+                            class=" nav-link text-[20px] text-[#333333] font-normal font-[poppins]">Press
+                            Kit</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    </li>
+                    <li><a href="/newsletter.html"
+                            class=" nav-link text-[20px] text-[#333333] font-normal font-[poppins]">Newsletter</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    </li>
+                    <li><a href="/Events.html"
+                            class=" nav-link text-[20px] text-[#333333] font-normal font-[poppins]">Events</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    </li>
                 </ul>
             </nav>
 
             <!-- Desktop Navigation (Visible only on desktop) -->
             <nav class="hidden lg:flex flex-col lg:flex-row lg:items-center gap-5">
                 <ul class="flex gap-5 lg:mr-[30px]">
-                    <li><a href="./index.html"
-                            class="text-[17px] text-gray-700 font-normal text-center font-poppins leading-7">Home</a>
+                    <li>
+                        <a href="./index.html"
+                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
+                            Home
+                        </a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
                     </li>
-                    <li><a href="/about.html"
-                            class="text-[17px] text-gray-700 font-normal text-center font-poppins leading-7">About</a>
+                    <li>
+                        <a href="/about.html"
+                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
+                            About
+                        </a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
                     </li>
-                    <li><a href="./contact-hub.html"
-                            class="text-[17px] text-gray-700 font-normal text-center font-poppins leading-7">Content
-                            Hub</a></li>
-                    <li><a href="/service.html"
-                            class="text-[17px] text-gray-700 font-normal text-center font-poppins leading-7">Service</a>
+                    <li>
+                        <a href="./contact-hub.html"
+                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
+                            Content Hub
+                        </a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
                     </li>
-                    <li><a href="./press-kit.html"
-                            class="text-[17px] text-gray-700 font-normal text-center font-poppins leading-7">Press
-                            Kit</a></li>
-                    <li><a href="./newsletter.html"
-                            class="text-[17px] text-gray-700 font-normal text-center font-poppins leading-7">Newsletter</a>
+                    <li>
+                        <a href="/service.html"
+                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
+                            Service
+                        </a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
                     </li>
-                    <li><a href="./Events.html"
-                            class="text-[17px] text-gray-700 font-normal text-center font-poppins leading-7">Events</a>
+                    <li>
+                        <a href="./press-kit.html"
+                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
+                            Press Kit
+                        </a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    </li>
+                    <li>
+                        <a href="./newsletter.html"
+                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
+                            Newsletter
+                        </a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    </li>
+                    <li>
+                        <a href="./Events.html"
+                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
+                            Events
+                        </a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
                     </li>
                 </ul>
             </nav>
+
             <!-- Contact Us Button -->
             <button
                 class="bg-[linear-gradient(180deg,#3798BA_17.99%,rgba(25,69,84,0.9)_100%)] font-semibold hidden md:block p-[12px_25px] rounded-[60px] text-[#FFFFFF]">
-                <a href="./contact.html" class=" font-poppins font-semibold text-center">Contact Us
-                    &gt;&gt;</a>
+                <a href="./contact.html" class=" font-[poppins] font-semibold text-center">Contact Us >></a>
             </button>
         </div>
     </header>
@@ -819,7 +869,6 @@
     </footer>
 
     <script>
-        // JavaScript for toggling the mobile menu
         document.addEventListener('DOMContentLoaded', () => {
             const menuToggle = document.getElementById('menu-toggle');
             const menuClose = document.getElementById('menu-close');
@@ -835,9 +884,8 @@
                 mobileMenu.classList.add('-translate-x-full');
             });
         });
-    </script>
 
-    <script>
+
         function toggleFAQ(index) {
             const content = document.getElementById(`content-${index}`);
             const icon = document.getElementById(`icon-${index}`);
@@ -850,8 +898,27 @@
             }
         }
 
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll(".nav-link");
+            const currentUrl = window.location.pathname;
+
+            navLinks.forEach((link) => {
+                // Check if the link's href matches the current URL
+                if (link.getAttribute("href") === currentUrl || link.getAttribute("href") === `.${currentUrl}`) {
+                    const icon = link.nextElementSibling; // Select the img next to the link
+                    if (icon && icon.classList.contains("icon")) {
+                        icon.classList.remove("hidden"); // Show the image
+                    }
+                    link.style.color = '#3798BA'; // Set the active link color
+                    link.style.fontWeight = 'bold'; // Bold for the active link
+                }
+            });
+        });
+
+
+
     </script>
-    
+
 </body>
 
 </html>

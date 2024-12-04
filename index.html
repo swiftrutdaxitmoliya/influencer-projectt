@@ -21,7 +21,7 @@
             </div>
 
             <!-- Toggle Button (Mobile) -->
-            <button id="menu-toggle" class="lg:hidden p-2 text-gray-700">
+            <button id="menu-toggle" class="lg:hidden p-2 text-[#333333]">
                 <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
@@ -31,7 +31,7 @@
 
             <!-- Mobile Navigation Links (Hidden by default on Desktop) -->
             <nav id="mobile-menu"
-                class="fixed top-0 left-0 h-full w-full bg-white z-10 shadow-lg transform transition-transform duration-300 lg:hidden -translate-x-full">
+                class="fixed top-0 left-0 h-full w-full bg-white z-10 shadow-lg transform transition-transform duration-300 lg:hidden  -translate-x-full">
                 <div class="flex justify-between items-center p-4 border-b-[1px] border-gray-300">
                     <!-- Logo inside the menu -->
                     <div class="logo">
@@ -50,48 +50,97 @@
 
                 <!-- Mobile Menu Links -->
                 <ul class="flex flex-col gap-5 items-center items-start p-6">
-                    <li><a href="/index.html" class="text-[20px] text-[#3798BA] font-semibold">Home</a></li>
-                    <li><a href="/about.html" class="text-[20px] text-gray-700 font-normal">About</a></li>
-                    <li><a href="/contact-hub.html" class="text-[20px] text-gray-700 font-normal">Content Hub</a></li>
-                    <li><a href="/service.html" class="text-[20px] text-gray-700 font-normal">Service</a></li>
-                    <li><a href="/press-kit.html" class="text-[20px] text-gray-700 font-normal">Press Kit</a></li>
-                    <li><a href="/newsletter.html" class="text-[20px] text-gray-700 font-normal">Newsletter</a></li>
-                    <li><a href="/Events.html" class="text-[20px] text-gray-700 font-normal">Events</a></li>
+                    <li><a href="/index.html" class="nav-link text-[20px] text-[#333333] font-normal font-[poppins] ">
+                            Home </a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    </li>
+                    <li><a href="/about.html"
+                            class=" nav-link text-[20px] text-[#333333] font-normal font-[poppins]">About </a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    </li>
+                    <li><a href="/contact-hub.html"
+                            class=" nav-link text-[20px] text-[#333333] font-normal font-[poppins]">Content Hub</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    </li>
+                    <li><a href="/service.html"
+                            class=" nav-link text-[20px] text-[#333333] font-normal font-[poppins]">Service</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    </li>
+                    <li><a href="/press-kit.html"
+                            class=" nav-link text-[20px] text-[#333333] font-normal font-[poppins]">Press
+                            Kit</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    </li>
+                    <li><a href="/newsletter.html"
+                            class=" nav-link text-[20px] text-[#333333] font-normal font-[poppins]">Newsletter</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    </li>
+                    <li><a href="/Events.html"
+                            class=" nav-link text-[20px] text-[#333333] font-normal font-[poppins]">Events</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    </li>
                 </ul>
             </nav>
 
             <!-- Desktop Navigation (Visible only on desktop) -->
             <nav class="hidden lg:flex flex-col lg:flex-row lg:items-center gap-5">
                 <ul class="flex gap-5 lg:mr-[30px]">
-                    <li><a href="./index.html"
-                            class="text-[17px] text-gray-700 font-normal text-center font-poppins leading-7">Home <img
-                                src="./assets/Vector.png" alt="" class="w-[45px] active"></a>
+                    <li>
+                        <a href="./index.html"
+                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
+                            Home
+                        </a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
                     </li>
-                    <li><a href="/about.html"
-                            class="text-[17px] text-gray-700 font-normal text-center font-poppins leading-7">About</a>
+                    <li>
+                        <a href="/about.html"
+                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
+                            About
+                        </a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
                     </li>
-                    <li><a href="./contact-hub.html"
-                            class="text-[17px] text-gray-700 font-normal text-center font-poppins leading-7">Content
-                            Hub</a></li>
-                    <li><a href="/service.html"
-                            class="text-[17px] text-gray-700 font-normal text-center font-poppins leading-7">Service</a>
+                    <li>
+                        <a href="./contact-hub.html"
+                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
+                            Content Hub
+                        </a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
                     </li>
-                    <li><a href="./press-kit.html"
-                            class="text-[17px] text-gray-700 font-normal text-center font-poppins leading-7">Press
-                            Kit</a></li>
-                    <li><a href="./newsletter.html"
-                            class="text-[17px] text-gray-700 font-normal text-center font-poppins leading-7">Newsletter</a>
+                    <li>
+                        <a href="/service.html"
+                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
+                            Service
+                        </a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
                     </li>
-                    <li><a href="./Events.html"
-                            class="text-[17px] text-gray-700 font-normal text-center font-poppins leading-7">Events</a>
+                    <li>
+                        <a href="./press-kit.html"
+                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
+                            Press Kit
+                        </a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    </li>
+                    <li>
+                        <a href="./newsletter.html"
+                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
+                            Newsletter
+                        </a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    </li>
+                    <li>
+                        <a href="./Events.html"
+                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
+                            Events
+                        </a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
                     </li>
                 </ul>
             </nav>
+
             <!-- Contact Us Button -->
             <button
-                class="bg-[linear-gradient(180deg,#3798BA_17.99%,rgba(25,69,84,0.9)_100%)] font-semibold hidden md:block p-[12px_25px] rounded-[60px] text-[#FFFFFF]">
-                <a href="./contact.html" class=" font-poppins font-semibold text-center">Contact Us
-                    &gt;&gt;</a>
+                class="bg-[linear-gradient(180deg,#3798BA_17.99%,rgba(25,69,84,0.9)_100%)] font-semibold hidden lg:block p-[12px_25px] rounded-[60px] text-[#FFFFFF]">
+                <a href="./contact.html" class=" font-[poppins] font-semibold text-center">Contact Us >></a>
             </button>
         </div>
     </header>
@@ -162,11 +211,11 @@
                         class="absolute bottom-[20px] right-[30px] w-[120px] hidden lg:block z-[1]">
                     <div class="flex justify-center items-center mt-8 absolute bottom-[10px] left-[0px]">
                         <div class="p-[2px] bg-gradient-to-r from-[#3798BA] to-white rounded-full md:w-[230px] ">
-                            <div class="bg-white rounded-full md:p-4 p-1 flex items-center gap-4 ">
+                            <div class="bg-white rounded-full md:p-2 p-1 flex items-center gap-4 ">
                                 <img src="./assets/Group 13.png" alt="" class="md:w-[40px] ">
                                 <div>
                                     <h4 class="text-lg text-[14px] font-semibold text-[#3798BA]">2514+</h4>
-                                    <p class="text-sm text-[12px] font-semibold text-[#333333]">Popular Influencer
+                                    <p class="text-[16px] font-semibold text-[#333333]">Popular Influencer
                                     </p>
                                 </div>
                             </div>
@@ -412,7 +461,7 @@
                 </div>
                 <button
                     class="bg-[linear-gradient(180deg,#3798BA_17.99%,rgba(25,69,84,0.9)_100%)] rounded-[60px] px-6 py-3 text-[#FFFFFF] font-semibold font-[Poppins]">
-                    View More &raquo;
+                    View More >>
                 </button>
             </div>
 
@@ -438,14 +487,14 @@
     </section>
 
 
-    <section class=" py-[120px] relative">
+    <section class="py-[120px] relative">
         <div class="bg-[url('./assets/img566.png')] mb-[230px] py-10  h-[300px]">
-            <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8 ">
+            <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
                 <div class=" px-4 lg:px-8 bg-opacity-70 py-4 rounded-lg ">
                     <div class="flex justify-between items-center">
                         <div>
                             <h4
-                                class="font-[Urbanist] text-sm font-semibold text-gray-600 uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)]">
+                                class="font-[Urbanist] text-sm font-bold text-gray-600 uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)]">
                                 Blog & Post
                             </h4>
                             <h3 class="font-[Urbanist] text-xl font-bold text-[#333333]">
@@ -454,7 +503,7 @@
                         </div>
                         <button
                             class="bg-[linear-gradient(180deg,#3798BA_17.99%,rgba(25,69,84,0.9)_100%)] rounded-[60px] px-6 py-3 text-[#FFFFFF] font-semibold font-[Poppins]">
-                            View More &raquo;
+                            View More >>
                         </button>
                     </div>
                     <div class="mt-12">
@@ -486,9 +535,9 @@
                                     </p>
                                     <div class="border-t mt-2" style="border-color: #717171;">
                                         <button
-                                            class="text-[#717171] font-semibold text-[15px] leading-[30px] mt-2 mb-2"
+                                            class="text-[#717171] text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)] font-semibold text-[15px] leading-[30px] mt-2 mb-2"
                                             style="font-family: 'Poppins', sans-serif;">
-                                            Book Now &gt;&gt;
+                                            Read More &gt;&gt;
                                         </button>
                                     </div>
                                 </div>
@@ -524,7 +573,7 @@
                                         <button
                                             class="text-[#717171] font-semibold text-[15px] leading-[30px] mt-2 mb-2"
                                             style="font-family: 'Poppins', sans-serif;">
-                                            Book Now &gt;&gt;
+                                            Read More &gt;&gt;
                                         </button>
                                     </div>
                                 </div>
@@ -559,7 +608,7 @@
                                         <button
                                             class="text-[#717171] font-semibold text-[15px] leading-[30px] mt-2 mb-2"
                                             style="font-family: 'Poppins', sans-serif;">
-                                            Book Now &gt;&gt;
+                                            Read More &gt;&gt;
                                         </button>
                                     </div>
                                 </div>
@@ -605,7 +654,7 @@
             </div>
 
             <!-- Responsive Grid for Testimonials -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+            <div class="grid px-5 grid-cols-1 md:grid-cols-2 gap-8 mt-12">
                 <!-- Testimonial Card -->
                 <div class="p-5 bg-white rounded-xl shadow-md"
                     style="box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);">
@@ -613,8 +662,8 @@
                         <div class="flex items-center gap-3">
                             <img src="./assets/img21.jpeg" alt="Madelyn Botosh" class="w-12 h-12 rounded-full">
                             <div>
-                                <h3 class="font-[Poppins] text-[14px] text-[#333333]">Madelyn Botosh</h3>
-                                <h4 class="font-[Poppins] text-[12px] text-[#717171]">Influencer</h4>
+                                <h3 class="font-[Urbanist] font-bold text-[20px] text-[#333333]">Madelyn Botosh</h3>
+                                <h4 class="font-[Poppins] text-[12px] text-[#3798BA]">Influencer</h4>
                             </div>
                         </div>
                         <span>
@@ -636,10 +685,11 @@
                     style="box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);">
                     <div class="flex justify-between items-center">
                         <div class="flex items-center gap-3">
-                            <img src="./assets/img21.jpeg" alt="Madelyn Botosh" class="w-12 h-12 rounded-full">
+                            <img src="./assets/img33.png" alt="Madelyn Botosh"
+                                class="w-12 h-12 rounded-full object-cover">
                             <div>
-                                <h3 class="font-[Poppins] text-[14px] text-[#333333]">Madelyn Botosh</h3>
-                                <h4 class="font-[Poppins] text-[12px] text-[#717171]">Influencer</h4>
+                                <h3 class="font-[Urbanist] font-bold text-[20px] text-[#333333]">Talan Curtis</h3>
+                                <h4 class="font-[Poppins] text-[12px] text-[#3798BA]">Influencer</h4>
                             </div>
                         </div>
                         <span>
@@ -866,51 +916,53 @@
     </section>
 
 
-    <section class="bg-[#3497BA] py-8">
-        <div
-            class="container mx-auto max-w-[1440px]  px-4 sm:px-6 lg:px-8 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-y-6 md:gap-y-8 text-white">
-            <!-- YouTube -->
+    <section class=" py-10">
+        <div class="bg-[#3497BA] py-10">
             <div
-                class="flex items-center gap-4 border-r border-white md:pr-5 md:last:border-none sm:border-r sm:justify-center">
-                <img src="./assets/yt.png" alt="YouTube Icon" class="w-10 h-10">
-                <div>
-                    <h4 class="text-2xl font-semibold font-[Urbanist]">7M+</h4>
-                    <p class="text-sm font-medium font-[Poppins]">Subscribers</p>
+                class="container mx-auto max-w-[1440px]  px-4 sm:px-6 lg:px-8 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-y-6 md:gap-y-8 text-white">
+                <!-- YouTube -->
+                <div
+                    class="flex items-center gap-x-6 gap-4 border-r border-white md:pr-5 md:last:border-none sm:border-r sm:justify-center">
+                    <img src="./assets/yt.png" alt="YouTube Icon" class="w-14 h-10">
+                    <div>
+                        <h4 class="text-2xl font-semibold font-[Urbanist]">7M+</h4>
+                        <p class="text-sm font-medium font-[Poppins]">Subscribers</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Instagram -->
-            <div
-                class="flex items-center gap-4 md:border-r border-white md:pr-5 sm:last:border-r-none md:border-r sm:justify-center">
-                <img src="./assets/instagram.png" alt="Instagram Icon" class="w-10 h-10">
-                <div>
-                    <h4 class="text-2xl font-semibold font-[Urbanist]">6.32M+</h4>
-                    <p class="text-sm font-medium font-[Poppins]">Followers</p>
+                <!-- Instagram -->
+                <div
+                    class="flex items-center gap-x-6 gap-4 md:border-r border-white md:pr-5 sm:last:border-r-none md:border-r sm:justify-center">
+                    <img src="./assets/instagram.png" alt="Instagram Icon" class="w-10 h-10">
+                    <div class="">
+                        <h4 class="text-2xl font-semibold font-[Urbanist]">6.32M+</h4>
+                        <p class="text-sm font-medium font-[Poppins]">Followers</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- TikTok -->
-            <div
-                class="flex items-center gap-4 border-r border-white md:pr-5 md:last:border-none sm:border-r sm:justify-center">
-                <img src="./assets/tiktok.png" alt="TikTok Icon" class="w-10 h-10">
-                <div>
-                    <h4 class="text-2xl font-semibold font-[Urbanist]">5M+</h4>
-                    <p class="text-sm font-medium font-[Poppins]">Followers</p>
+                <!-- TikTok -->
+                <div
+                    class="flex items-center gap-x-6 gap-4 border-r border-white md:pr-5 md:last:border-none sm:border-r sm:justify-center">
+                    <img src="./assets/tiktok.png" alt="TikTok Icon" class="w-10 h-10">
+                    <div>
+                        <h4 class="text-2xl font-semibold font-[Urbanist]">5M+</h4>
+                        <p class="text-sm font-medium font-[Poppins]">Followers</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Twitter -->
-            <div class="flex items-center gap-4 md:pr-5 sm:justify-center">
-                <img src="./assets/twitter.png" alt="Twitter Icon" class="w-10 h-10">
-                <div>
-                    <h4 class="text-2xl font-semibold font-[Urbanist]">6.5M+</h4>
-                    <p class="text-sm font-medium font-[Poppins]">Followers</p>
+                <!-- Twitter -->
+                <div class="flex items-center gap-x-6 gap-4 md:pr-5 sm:justify-center">
+                    <img src="./assets/twitter.png" alt="Twitter Icon" class="w-10 h-10">
+                    <div>
+                        <h4 class="text-2xl font-semibold font-[Urbanist]">6.5M+</h4>
+                        <p class="text-sm font-medium font-[Poppins]">Followers</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-10">
+    <section class="py-14">
         <div class="mx-auto max-w-[1440px] px-6 sm:px-8 lg:px-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
                 <!-- Text and Image Section -->
@@ -958,7 +1010,7 @@
                                     Influencer Marketing?</span>
                                 <span id="icon-2" class="text-[#717171] text-[#717171]">+</span>
                             </button>
-                            <div id="content-2" class="hidden px-4 py-3 bg-white font-[poppins]">
+                            <div id="content-2" class="hidden px-4 py-3 bg-white text-[#333333] font-[poppins]">
                                 Influencer marketing can help increase brand awareness, build trust, and drive targeted
                                 engagement to boost your business.
                             </div>
@@ -972,7 +1024,7 @@
                                     Influencers For My Brand?</span>
                                 <span id="icon-3" class="text-[#717171]">+</span>
                             </button>
-                            <div id="content-3" class="hidden px-4 py-3 bg-white font-[poppins]">
+                            <div id="content-3" class="hidden px-4 py-3 text-[#333333] bg-white font-[poppins]">
                                 Evaluate potential influencers based on their niche, audience demographics, engagement
                                 rates, and alignment with your brand's goals.
                             </div>
@@ -986,7 +1038,7 @@
                                     Marketing Cost?</span>
                                 <span id="icon-4" class="text-[#717171]">+</span>
                             </button>
-                            <div id="content-4" class="hidden px-4 py-3 bg-white font-[poppins]">
+                            <div id="content-4" class="hidden px-4 py-3 text-[#333333] bg-white font-[poppins]">
                                 The cost varies based on the influencer's reach, niche, and the scope of the
                                 collaboration. It can range from free product exchange to thousands of dollars.
                             </div>
@@ -999,7 +1051,7 @@
                                     Marketing Cost?</span>
                                 <span id="icon-4" class="text-[#717171]">+</span>
                             </button>
-                            <div id="content-4" class="hidden px-4 py-3 bg-white font-[poppins]">
+                            <div id="content-4" class="hidden px-4 py-3 text-[#333333] bg-white font-[poppins]">
                                 The cost varies based on the influencer's reach, niche, and the scope of the
                                 collaboration. It can range from free product exchange to thousands of dollars.
                             </div>
@@ -1024,7 +1076,7 @@
                 </div>
                 <button
                     class="bg-[linear-gradient(180deg,#3798BA_17.99%,rgba(25,69,84,0.9)_100%)] rounded-[60px] px-6 py-3 text-[#FFFFFF] font-semibold font-[Poppins]">
-                    View More &raquo;
+                    View More >>
                 </button>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-8 mt-10">
@@ -1398,9 +1450,7 @@
         </div>
     </footer>
 
-
     <script>
-        // JavaScript for toggling the mobile menu
         document.addEventListener('DOMContentLoaded', () => {
             const menuToggle = document.getElementById('menu-toggle');
             const menuClose = document.getElementById('menu-close');
@@ -1416,9 +1466,8 @@
                 mobileMenu.classList.add('-translate-x-full');
             });
         });
-    </script>
 
-    <script>
+
         function toggleFAQ(index) {
             const content = document.getElementById(`content-${index}`);
             const icon = document.getElementById(`icon-${index}`);
@@ -1431,7 +1480,27 @@
             }
         }
 
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll(".nav-link");
+            const currentUrl = window.location.pathname;
+
+            navLinks.forEach((link) => {
+                // Check if the link's href matches the current URL
+                if (link.getAttribute("href") === currentUrl || link.getAttribute("href") === `.${currentUrl}`) {
+                    const icon = link.nextElementSibling; // Select the img next to the link
+                    if (icon && icon.classList.contains("icon")) {
+                        icon.classList.remove("hidden"); // Show the image
+                    }
+                    link.style.color = '#3798BA'; // Set the active link color
+                    link.style.fontWeight = 'bold'; // Bold for the active link
+                }
+            });
+        });
+
+
+
     </script>
+
 </body>
 
 </html>
