@@ -148,55 +148,63 @@
 
     <section class="bg-cover bg-center relative" style="background-image: url('./assets/Rectangle 1.png');">
         <div>
-            <img src="./assets/Group 141.png" alt="" class="top-9 absolute h-[220px] w-[140px]">
+            <img src="./assets/Group 141.png" alt="" class="top-9 absolute h-[220px] w-[140px] hidden md:block">
             <img src="./assets/ring2.png" alt="" class="right-0  bottom-0 absolute">
         </div>
         <div class="mx-auto max-w-[1440px] px-6  py-20 sm:px-8 lg:px-10 h-[500px] flex">
-            <div class="flex w-full space-x-4 items-center ">
-                <div class="w-6/12  text-white p-4 relative">
+            <div class="w-full flex flex-col lg:flex-row  space-y-16 items-center ">
+                <div class="md:w-6/12 w-full text-white p-4 relative ">
                     <h2
                         class="font-[Urbanist] text-[30px] font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)] mb-4">
                         about us
                     </h2>
-                    <div class="flex items-center justify-center md:justify-start gap-3">
+                    <div class="flex items-center justify-start md:justify-start gap-3">
                         <h3 class="font-[Poppins] text-gray-600">Home</h3>
                         <img src="./assets/Group 150.png" alt="Arrow Icon" class="w-[20px] h-[18px]">
                         <h4 class="text-[#3798BA] font-[Poppins] font-semibold">About Us</h4>
                     </div>
-                    <img src="./assets/img45.png" alt="" class="absolute right-[350px] -top-16">
+                    <img src="./assets/img45.png" alt="" class="absolute right-[350px] -top-16 hidden md:block ">
                 </div>
                 <div class="w-6/12 relative  text-white p-4 text-center ">
                     <img src="./assets/img46.png" alt="" class="absolute left-[-100px] bottom-1">
                     <div class="">
                         <img src="./assets/img1.jpeg" alt=""
-                            class="w-[230px] h-[250px] object-cover border-[5px] border-white absolute bg-white shadow-[0px_0px_40px_0px_#00000014] rounded-3xl bottom-[-20px] left-[100px] ">
+                            class="md:w-[230px] md:h-[250px] object-cover border-[5px] border-white absolute bg-white shadow-[0px_0px_40px_0px_#00000014] rounded-3xl md:bottom-[-20px] md:left-[100px] w-[137px] h-[150px] md:right-[unset] md:top-[unset] right-[70px] top-10">
                     </div>
-                    <div class="flex  justify-center">
-                        <img src="./assets/round1.png" alt="" class="w-[26px] h-[26px] absolute left-[34%] top-9">
-                        <img src="./assets/ring.png" alt="" class>
-                        <img src="./assets/round2.png" alt="" class="w-[26px] h-[26px] absolute bottom-9 right-[230px]">
+                    <div class="flex justify-center">
+                        <img src="./assets/round1.png" alt=""
+                            class="w-[26px] h-[26px] absolute left-[34%] top-9 hidden md:block">
+                        <img src="./assets/ring.png" alt="" class=" md:w-auto md:h-auto md:static">
+                        <img src="./assets/round2.png" alt=""
+                            class="w-[26px] h-[26px] absolute bottom-9 right-[230px] hidden md:block">
                     </div>
                     <div class="">
                         <img src="./assets/img3.jpeg" alt=""
-                            class="w-[230px] h-[250px] object-cover border-[5px] border-white absolute shadow-[0px_0px_40px_0px_#00000014] bg-white rounded-3xl top-[-20px] right-[100px]">
+                            class="md:w-[230px] md:h-[250px] object-cover border-[5px] border-white absolute shadow-[0px_0px_40px_0px_#00000014] bg-white rounded-3xl md:top-[-20px] md:right-[100px] w-[137px] h-[150px] bottom-7 md:left-[unset]  left-[70px]">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-20 ">
+    <section class="py-20">
         <div class="mx-auto max-w-[1440px] px-4 sm:px-8 lg:px-16 h-full flex items-center rounded-lg">
-            <div class="flex justify-between grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="">
-                    <img src="./assets/img10.jpeg" alt="" class="w-[600px] h-full rounded-[20px]">
+            <!-- Responsive Grid Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Left Section (Image) -->
+                <div class="flex justify-center md:justify-start">
+                    <img src="./assets/img10.jpeg" alt=""
+                        class="w-full md:w-[600px] h-full rounded-[20px] object-cover">
                 </div>
+
+                <!-- Right Section (Text) -->
                 <div class="py-4">
                     <h3
-                        class="font-semibold font-[Urbanist]  text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)]">
+                        class="font-semibold font-[Urbanist] text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)]">
                         ABOUT INFLUEXA
                     </h3>
-                    <h4 class="font-[Urbanist] font-bold text-[33px] text-[#333333]">
+                    <h4 class="font-[Urbanist] font-bold text-[33px] text-[#333333] mt-4">
                         We Are The Best Influencer Marketing Since 2020
                     </h4>
                     <p class="font-[poppins] text-[#717171] mt-3">
@@ -211,9 +219,11 @@
                         pharetra diam. Sed justo justo, fermentum nec metus ut, egestas pellentesque tellus
                     </p>
                 </div>
+
             </div>
         </div>
     </section>
+
 
     <section class="pt-10 pb-[150px]">
         <div class="mx-auto max-w-[1440px] h-[170px] flex items-center bg-[#EFF7F9]">
@@ -247,68 +257,74 @@
         </div>
     </section>
 
-    <section class="pt-10  pb-[110px]">
-        <div
-            class="mx-auto max-w-[1440px] px-6 bg-[#EFF7F9] py-20 sm:px-8 lg:px-10 h-auto flex items-center bg-[#EFF7F9]">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center relative">
-                <!-- Left Content Section -->
-                <div>
-                    <h3
-                        class="font-semibold font-[Urbanist] text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)] mb-2">
-                        VISION
-                    </h3>
-                    <h4 class="font-[Urbanist] font-bold text-[33px] text-[#333333] leading-tight mb-4">
-                        Our Vision To Make A Difference
-                    </h4>
-                    <p class="font-[Poppins] text-[#717171] text-[16px] leading-relaxed">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a quam sed tellus luctus lacinia
-                        vitae et magna. Morbi lobortis orci risus, dictum blandit est consectetur sit amet. Sed nec
-                        imperdiet nisl. Morbi commodo mi vel purus maximus, eget lobortis sem malesuada. Vivamus ut
-                        pharetra diam. Sed justo justo, fermentum nec metus ut, egestas pellentesque tellus.
-                    </p>
-                </div>
+    <section class="pt-10 pb-[110px]">
+        <div class="bg-[#EFF7F9]">
+            <div class="mx-auto max-w-[1440px] px-6 bg-[#EFF7F9] py-20 sm:px-8 lg:px-10 h-auto flex items-center ">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center relative">
+                    <!-- Left Content Section -->
+                    <div class="relative md:static top-16">
+                        <h3
+                            class="font-semibold font-[Urbanist] text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)] mb-2">
+                            VISION
+                        </h3>
+                        <h4
+                            class="font-[Urbanist] font-bold md:text-[33px] text-[28px] text-[#333333] leading-tight mb-4 ">
+                            Our Vision To Make A Difference
+                        </h4>
+                        <p class="font-[Poppins] text-[#717171] md:text-[16px] leading-relaxed">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a quam sed tellus luctus
+                            lacinia
+                            vitae et magna. Morbi lobortis orci risus, dictum blandit est consectetur sit amet. Sed nec
+                            imperdiet nisl. Morbi commodo mi vel purus maximus, eget lobortis sem malesuada. Vivamus ut
+                            pharetra diam. Sed justo justo, fermentum nec metus ut, egestas pellentesque tellus.
+                        </p>
+                    </div>
 
-                <!-- Right Image Section -->
-                <div class=" flex justify-end m-0">
-                    <img src="./assets/img101.jpeg" alt="Vision Image"
-                        class="w-[500px] h-[340px] rounded-lg shadow-lg absolute object-cover bottom-0">
+                    <!-- Right Image Section -->
+                    <div class=" flex justify-end m-0">
+                        <img src="./assets/img101.jpeg" alt="Vision Image"
+                            class="md:w-[500px] md:h-[340px] rounded-lg shadow-lg absolute object-cover bottom-[300px] md:static bottom-[450px] left-4">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="pt-10px  pb-[110px]">
-        <div class="mx-auto max-w-[1440px] px-6 sm:px-8 py-20 lg:px-10 h-auto flex items-center bg-[#EFF7F9]">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center relative">
+    <section class="md:pt-10 md:pb-[110px] mt-12">
+        <div class="bg-[#EFF7F9]">
+            <div class="mx-auto max-w-[1440px] px-6 sm:px-8 py-20 lg:px-10 h-auto flex items-center bg-[#EFF7F9]">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center relative">
 
+                    <!-- Right Image Section -->
+                    <div class="flex justify-start md:bottom-[140px] bottom-[150px] relative">
+                        <img src="./assets/img123.jpeg" alt="Vision Image"
+                            class="md:w-[500px] md:h-[340px] rounded-lg shadow-lg absolute object-cover md:top-[200px] md:static md:bottom-[200px]  right-4">
+                    </div>
 
-                <!-- Right Image Section -->
-                <div class=" flex justify-start m-0">
-                    <img src="./assets/img123.jpeg" alt="Vision Image"
-                        class="w-[500px] h-[340px] rounded-lg shadow-lg absolute object-cover bottom-0">
+                    <!-- Left Content Section -->
+                    <div class="justify-start md:static relative ">
+                        <h3
+                            class="font-semibold font-[Urbanist] uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)] mb-2">
+                            mission
+                        </h3>
+                        <h4
+                            class="font-[Urbanist] font-bold md:text-[33px] text-[25px] text-[#333333] leading-tight mb-4">
+                            Our Mission To Make A Difference
+                        </h4>
+                        <p class="font-[Poppins] text-[#717171] text-[16px] leading-relaxed">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a quam sed tellus luctus
+                            lacinia vitae et magna. Morbi lobortis orci risus, dictum blandit est consectetur sit amet.
+                            Sed nec
+                            imperdiet nisl. Morbi commodo mi vel purus maximus, eget lobortis sem malesuada. Vivamus ut
+                            pharetra diam. Sed justo justo, fermentum nec metus ut, egestas pellentesque tellus.
+                        </p>
+                    </div>
+
                 </div>
-
-                <!-- Left Content Section -->
-                <div class="justify-start">
-                    <h3
-                        class="font-semibold font-[Urbanist] text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)] mb-2">
-                        mission
-                    </h3>
-                    <h4 class="font-[Urbanist] font-bold text-[33px] text-[#333333] leading-tight mb-4">
-                        Our Mission To Make A Difference
-                    </h4>
-                    <p class="font-[Poppins] text-[#717171] text-[16px] leading-relaxed">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a quam sed tellus luctus lacinia
-                        vitae et magna. Morbi lobortis orci risus, dictum blandit est consectetur sit amet. Sed nec
-                        imperdiet nisl. Morbi commodo mi vel purus maximus, eget lobortis sem malesuada. Vivamus ut
-                        pharetra diam. Sed justo justo, fermentum nec metus ut, egestas pellentesque tellus.
-                    </p>
-                </div>
-
-
             </div>
         </div>
     </section>
+
 
     <section class="py-10">
         <div class="mx-auto max-w-[1440px] px-6 sm:px-8 lg:px-10">

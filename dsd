@@ -288,3 +288,37 @@
         </div>
     </div>
 </section>
+
+
+
+
+<div class="w-full flex flex-col lg:flex-row  space-y-10 md:items-center justify-center relative">
+    <div class="md:w-6/12  text-white p-4 relative  md:static bottom-[0] items-start absolute">
+        <h2
+            class="font-[Urbanist] text-[30px] font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)] mb-4">
+            about us
+        </h2>
+        <div class="flex items-center justify-start md:justify-start gap-3 md:static">
+            <h3 class="font-[Poppins] text-gray-600">Home</h3>
+            <img src="./assets/Group 150.png" alt="Arrow Icon" class="w-[20px] h-[18px]">
+            <h4 class="text-[#3798BA] font-[Poppins] font-semibold">About Us</h4>
+        </div>
+        <img src="./assets/img45.png" alt="" class="absolute right-[350px] -top-16 hidden md:block">
+    </div>
+    <div class="w-6/12 relative  text-white p-4 text-center ">
+        <img src="./assets/img46.png" alt="" class="absolute left-[-100px] bottom-1">
+        <div class="">
+            <img src="./assets/img1.jpeg" alt=""
+                class="md:w-[230px] md:h-[250px] object-cover border-[5px] border-white absolute bg-white shadow-[0px_0px_40px_0px_#00000014] rounded-3xl md:bottom-[-20px] md:left-[100px] w-[137px] h-[150px] md:right-[unset] right-[70px]">
+        </div>
+        <div class="flex  justify-center">
+            <img src="./assets/round1.png" alt="" class="w-[26px] h-[26px] absolute left-[34%] top-9">
+            <img src="./assets/ring.png" alt="" class="md:w-[unset] md:h-[unset] w-[200px] bg-red-100">
+            <img src="./assets/round2.png" alt="" class="w-[26px] h-[26px] absolute bottom-9 right-[230px]">
+        </div>
+        <div class="">
+            <img src="./assets/img3.jpeg" alt=""
+                class="md:w-[230px] md:h-[250px] object-cover border-[5px] border-white absolute shadow-[0px_0px_40px_0px_#00000014] bg-white rounded-3xl md:top-[-20px] md:right-[100px] w-[137px] h-[150px] bottom-7 md:left-[unset]  left-[70px]">
+        </div>
+    </div>
+</div>
