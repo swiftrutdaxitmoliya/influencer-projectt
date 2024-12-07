@@ -144,7 +144,7 @@
         </div>
     </header>
 
-    <!-- <section class="bg-cover bg-center relative" style="background-image: url('./assets/Rectangle 1.png');">
+    <section class="bg-cover bg-center relative" style="background-image: url('./assets/Rectangle 1.png');">
         <div>
             <img src="./assets/Group 141.png" alt="" class="top-9 absolute h-[220px] w-[140px]">
             <img src="./assets/ring2.png" alt="" class="right-0  bottom-0 absolute">
@@ -184,7 +184,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
 
     <section class="py-10">
@@ -199,21 +199,24 @@
                 </h4>
             </div>
             <div class="flex gap-4 md:justify-center justify-start mt-14 overflow-x-auto overflow-y-hidden px-4">
-                <button class="px-6 py-3 bg-[#3798BA] text-[#FFFFFF] font-[poppins] rounded-full whitespace-nowrap flex-shrink-0">
+                <button
+                    class="px-6 py-3 bg-[#3798BA] text-[#FFFFFF] font-[poppins] rounded-full whitespace-nowrap flex-shrink-0">
                     Upcoming Engagements
                 </button>
-                <button class="px-6 py-3 bg-[#71717112] text-[#717171] font-[poppins] rounded-full whitespace-nowrap flex-shrink-0">
+                <button
+                    class="px-6 py-3 bg-[#71717112] text-[#717171] font-[poppins] rounded-full whitespace-nowrap flex-shrink-0">
                     Workshops
                 </button>
-                <button class="px-6 py-3 bg-[#71717112] text-[#717171] font-[poppins] rounded-full whitespace-nowrap flex-shrink-0">
+                <button
+                    class="px-6 py-3 bg-[#71717112] text-[#717171] font-[poppins] rounded-full whitespace-nowrap flex-shrink-0">
                     Events
                 </button>
-            </div>            
-            
-            
-            
-            
-            
+            </div>
+
+
+
+
+
             <div class="flex justify-between items-center px-4 lg:px-8  bg-opacity-70 py-4 rounded-lg">
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10 mt-10">
@@ -413,7 +416,6 @@
         </div>
     </section>
 
-
     <section class="my-10">
         <div class="text-center mb-10">
             <h3 class="font-extrabold text-[18px] leading-[22px] text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)]"
@@ -525,7 +527,8 @@
                                     <div class="flex gap-2 items-center">
                                         <p class="font-bold text-[#333333] md:text-[16px] text-[16px] font-[Urbanist]">
                                             Arun Krishnan</p>
-                                        <p class="md:text-sm text-[13px]  text-[#3798BA] font-[poppins]">5 Minutes Ago</p>
+                                        <p class="md:text-sm text-[13px]  text-[#3798BA] font-[poppins]">5 Minutes Ago
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -870,56 +873,7 @@
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const menuToggle = document.getElementById('menu-toggle');
-            const menuClose = document.getElementById('menu-close');
-            const mobileMenu = document.getElementById('mobile-menu');
-
-            // Open mobile menu
-            menuToggle.addEventListener('click', () => {
-                mobileMenu.classList.remove('-translate-x-full');
-            });
-
-            // Close mobile menu
-            menuClose.addEventListener('click', () => {
-                mobileMenu.classList.add('-translate-x-full');
-            });
-        });
-
-
-        function toggleFAQ(index) {
-            const content = document.getElementById(`content-${index}`);
-            const icon = document.getElementById(`icon-${index}`);
-            if (content.classList.contains('hidden')) {
-                content.classList.remove('hidden');
-                icon.textContent = '–';
-            } else {
-                content.classList.add('hidden');
-                icon.textContent = '+';
-            }
-        }
-
-        document.addEventListener("DOMContentLoaded", function () {
-            const navLinks = document.querySelectorAll(".nav-link");
-            const currentUrl = window.location.pathname;
-
-            navLinks.forEach((link) => {
-                // Check if the link's href matches the current URL
-                if (link.getAttribute("href") === currentUrl || link.getAttribute("href") === `.${currentUrl}`) {
-                    const icon = link.nextElementSibling; // Select the img next to the link
-                    if (icon && icon.classList.contains("icon")) {
-                        icon.classList.remove("hidden"); // Show the image
-                    }
-                    link.style.color = '#3798BA'; // Set the active link color
-                    link.style.fontWeight = 'bold'; // Bold for the active link
-                }
-            });
-        });
-
-
-
-    </script>
+    <script src="./all.js"></script>
 
 </body>
 

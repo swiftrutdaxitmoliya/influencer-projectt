@@ -468,56 +468,7 @@
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const menuToggle = document.getElementById('menu-toggle');
-            const menuClose = document.getElementById('menu-close');
-            const mobileMenu = document.getElementById('mobile-menu');
-
-            // Open mobile menu
-            menuToggle.addEventListener('click', () => {
-                mobileMenu.classList.remove('-translate-x-full');
-            });
-
-            // Close mobile menu
-            menuClose.addEventListener('click', () => {
-                mobileMenu.classList.add('-translate-x-full');
-            });
-        });
-
-
-        function toggleFAQ(index) {
-            const content = document.getElementById(`content-${index}`);
-            const icon = document.getElementById(`icon-${index}`);
-            if (content.classList.contains('hidden')) {
-                content.classList.remove('hidden');
-                icon.textContent = '–';
-            } else {
-                content.classList.add('hidden');
-                icon.textContent = '+';
-            }
-        }
-
-        document.addEventListener("DOMContentLoaded", function () {
-            const navLinks = document.querySelectorAll(".nav-link");
-            const currentUrl = window.location.pathname;
-
-            navLinks.forEach((link) => {
-                // Check if the link's href matches the current URL
-                if (link.getAttribute("href") === currentUrl || link.getAttribute("href") === `.${currentUrl}`) {
-                    const icon = link.nextElementSibling; // Select the img next to the link
-                    if (icon && icon.classList.contains("icon")) {
-                        icon.classList.remove("hidden"); // Show the image
-                    }
-                    link.style.color = '#3798BA'; // Set the active link color
-                    link.style.fontWeight = 'bold'; // Bold for the active link
-                }
-            });
-        });
-
-
-
-    </script>
+    <script src="./all.js"></script>
 
 </body>
 

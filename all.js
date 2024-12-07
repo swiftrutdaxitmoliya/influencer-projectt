@@ -1,30 +1,14 @@
-module.exports = {
-    theme: {
-        extend: {
-            fontFamily: {
-                poppins: ['Poppins', 'sans-serif'],
-            },
-            backgroundImage: {
-                'hero-pattern': "url('/img/hero-pattern.svg')",
-            }
-        }
-    },
-};
-
-
-
 
 document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.getElementById('menu-toggle');
     const menuClose = document.getElementById('menu-close');
     const mobileMenu = document.getElementById('mobile-menu');
 
-    // Open mobile menu
+
     menuToggle.addEventListener('click', () => {
         mobileMenu.classList.remove('-translate-x-full');
     });
 
-    // Close mobile menu
     menuClose.addEventListener('click', () => {
         mobileMenu.classList.add('-translate-x-full');
     });
@@ -42,3 +26,20 @@ function toggleFAQ(index) {
         icon.textContent = '+';
     }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll(".nav-link");
+    const currentUrl = window.location.pathname;
+
+    navLinks.forEach((link) => {
+
+        if (link.getAttribute("href") === currentUrl || link.getAttribute("href") === `.${currentUrl}`) {
+            const icon = link.nextElementSibling;
+            if (icon && icon.classList.contains("icon")) {
+                icon.classList.remove("hidden");
+            }
+            link.style.color = '#3798BA';
+            link.style.fontWeight = 'bold';
+        }
+    });
+});
