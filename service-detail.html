@@ -223,49 +223,215 @@
 
                     <!-- Tabs -->
                     <div class="flex space-x-4 mb-6 mt-7">
-                        <button
-                            class="bg-[#3798BA] text-white font-[poppins] text-[18px] px-8 py-3 rounded-full">Description</button>
-                        <button
+                        <button id="description-tab"
+                            class=" text-white font-[poppins] text-[18px] px-8 py-3 rounded-full">Description</button>
+                        <button id="schedule-tab"
                             class="bg-[#71717112] text-[#717171] font-[poppins] text-[18px] px-8 py-2 rounded-full">Time
                             Schedule</button>
-                        <button
+                        <button id="reviews-tab"
                             class="bg-[#71717112] text-[#717171] font-[poppins]  text-[18px] px-8 py-2 rounded-full">Reviews</button>
                     </div>
 
-                    <!-- Features -->
-                    <h3 class="text-[25px] font-bold pb-3 border-b font-[Urbanist]">Features</h3>
-                    <div class="grid grid-cols-2 gap-4 pt-3 mt-5">
-                        <div class="flex items-center space-x-4">
-                            <img src="./assets/Group 145.png" alt="">
-                            <p class="text-gray-700 text-[#333333] font-[Poppins]">24/7 Customer Support</p>
+
+                    <div id="description-content" class="tab-content">
+                        <h3 class="text-[25px] font-bold pb-3 border-b font-[Urbanist]">Features</h3>
+                        <div class="grid grid-cols-2 gap-4 pt-3 mt-5">
+                            <div class="flex items-center space-x-4">
+                                <img src="./assets/Group 145.png" alt="">
+                                <p class="text-gray-700 text-[#333333] font-[Poppins]">24/7 Customer Support</p>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <img src="./assets/Group 145.png" alt="">
+                                <p class="text-gray-700 text-[#333333] font-[Poppins]">Identifying The Right Influencers
+                                </p>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <img src="./assets/Group 145.png" alt="">
+                                <p class="text-gray-700 text-[#333333] font-[Poppins]">Promote Your Product</p>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <img src="./assets/Group 145.png" alt="">
+                                <p class="text-gray-700 text-[#333333] font-[Poppins]">Staying Current With Trends</p>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <img src="./assets/Group 145.png" alt="">
+                                <p class="text-gray-700 text-[#333333] font-[Poppins]">Growing Businesses</p>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <img src="./assets/Group 145.png" alt="">
+                                <p class="text-gray-700 text-[#333333] font-[Poppins]">Learning From Success Stories</p>
+                            </div>
                         </div>
-                        <div class="flex items-center space-x-4">
-                            <img src="./assets/Group 145.png" alt="">
-                            <p class="text-gray-700 text-[#333333] font-[Poppins]">Identifying The Right Influencers</p>
-                        </div>
-                        <div class="flex items-center space-x-4">
-                            <img src="./assets/Group 145.png" alt="">
-                            <p class="text-gray-700 text-[#333333] font-[Poppins]">Promote Your Product</p>
-                        </div>
-                        <div class="flex items-center space-x-4">
-                            <img src="./assets/Group 145.png" alt="">
-                            <p class="text-gray-700 text-[#333333] font-[Poppins]">Staying Current With Trends</p>
-                        </div>
-                        <div class="flex items-center space-x-4">
-                            <img src="./assets/Group 145.png" alt="">
-                            <p class="text-gray-700 text-[#333333] font-[Poppins]">Growing Businesses</p>
-                        </div>
-                        <div class="flex items-center space-x-4">
-                            <img src="./assets/Group 145.png" alt="">
-                            <p class="text-gray-700 text-[#333333] font-[Poppins]">Learning From Success Stories</p>
+
+                        <p class="text-[#717171] font-[Poppins] mt-9 text-[18px] leading-[27px]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum ex eget arcu maximus
+                            pellentesque. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Sed
+                            fermentum ex eget arcu maximus pellentesque. Suspendisse potenti. Lorem ipsum dolor sit
+                            amet,
+                        </p>
+                    </div>
+
+                    <div id="schedule-content" class="tab-content hidden">
+                        <h3 class="text-[25px] font-bold pb-3 border-b font-[Urbanist]">Time Schedule</h3>
+                        <div class="grid grid-cols-2 gap-6 mt-5">
+                            <div class="flex justify-between px-3">
+                                <span class="text-gray-700 font-[Poppins] text-[18px] flex gap-2 items-center"><img
+                                        src="./assets/Group 145.png" alt=""
+                                        class="md:w-[23px] md:h-[20px]">Monday</span>
+                                <span class="text-[#333333] font-[Poppins] text-[18px] font-semibold">9:30 AM - 7:00
+                                    PM</span>
+                            </div>
+                            <div class="flex justify-between px-3">
+                                <span class="text-gray-700 font-[Poppins] text-[18px] flex gap-2 items-center"><img
+                                        src="./assets/Group 145.png" alt=""
+                                        class="md:w-[23px] md:h-[20px]">Tuesday</span>
+                                <span class="text-[#333333] font-[Poppins] text-[18px] font-semibold">9:30 AM - 7:00
+                                    PM</span>
+                            </div>
+                            <div class="flex justify-between px-3">
+                                <span class="text-gray-700 font-[Poppins] text-[18px] flex gap-2 items-center"><img
+                                        src="./assets/Group 145.png" alt=""
+                                        class="md:w-[23px] md:h-[20px]">Wednesday</span>
+                                <span class="text-[#333333] font-[Poppins] text-[18px] font-semibold">9:30 AM - 7:00
+                                    PM</span>
+                            </div>
+                            <div class="flex justify-between px-3">
+                                <span class="text-gray-700 font-[Poppins] text-[18px] flex gap-2 items-center"><img
+                                        src="./assets/Group 145.png" alt=""
+                                        class="md:w-[23px] md:h-[20px]">Thursday</span>
+                                <span class="text-[#333333] font-[Poppins] text-[18px] font-semibold">9:30 AM - 7:00
+                                    PM</span>
+                            </div>
+                            <div class="flex justify-between px-3">
+                                <span class="text-gray-700 font-[Poppins] text-[18px] flex gap-2 items-center"><img
+                                        src="./assets/Group 145.png" alt=""
+                                        class="md:w-[23px] md:h-[20px]">Friday</span>
+                                <span class="text-[#333333] font-[Poppins] text-[18px] font-semibold">9:30 AM - 7:00
+                                    PM</span>
+                            </div>
+                            <div class="flex justify-between px-3">
+                                <span class="text-gray-700 font-[Poppins] text-[18px] flex gap-2 items-center"><img
+                                        src="./assets/Group 145.png" alt=""
+                                        class="md:w-[23px] md:h-[20px]">Saturday</span>
+                                <span class="text-[#3798BA] font-[Poppins] text-[18px] font-semibold">Weekend</span>
+                            </div>
+                            <div class="flex justify-between px-3">
+                                <span class="text-gray-700 font-[Poppins] text-[18px] flex gap-2 items-center"><img
+                                        src="./assets/Group 145.png" alt=""
+                                        class="md:w-[23px] md:h-[20px]">Sunday</span>
+                                <span class="text-[#333333] font-[Poppins] text-[18px] font-semibold">9:30 AM - 7:00
+                                    PM</span>
+                            </div>
                         </div>
                     </div>
 
-                    <p class="text-[#717171] font-[Poppins] mt-9 text-[18px] leading-[27px]">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum ex eget arcu maximus
-                        pellentesque. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                        fermentum ex eget arcu maximus pellentesque. Suspendisse potenti. Lorem ipsum dolor sit amet,
-                    </p>
+                    <div id="reviews-content" class="tab-content hidden">
+                        <h3 class="text-[25px] font-bold pb-3 border-b font-[Urbanist]">Reviews</h3>
+                        <div class="space-y-6 mt-5 border p-4 rounded-2xl">
+                            <!-- Review 1 -->
+                            <div class="bg-[#F9F9F9] p-6 rounded-2xl  flex flex-col space-y-4">
+                                <!-- Name and Star Rating Section -->
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-4">
+                                        <img src="./assets/img21.jpeg" alt="User"
+                                            class="w-12 h-12 rounded-full object-cover">
+                                        <div>
+                                            <h4 class="font-[Poppins] text-[18px] font-bold text-[#333333]">Madelyn
+                                                Botosh</h4>
+                                            <p class="text-[14px] font-[Poppins] text-[#3798BA]">21 June, 2022</p>
+                                        </div>
+                                    </div>
+                                    <!-- Star Rating -->
+                                    <div class="flex space-x-1 text-yellow-500">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                                            class="w-5 h-5">
+                                            <path
+                                                d="M12 .587l3.668 7.568L24 9.423l-6 5.839 1.419 8.264L12 18.896l-7.419 4.63L6 15.262 0 9.423l8.332-1.268z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                                            class="w-5 h-5">
+                                            <path
+                                                d="M12 .587l3.668 7.568L24 9.423l-6 5.839 1.419 8.264L12 18.896l-7.419 4.63L6 15.262 0 9.423l8.332-1.268z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                                            class="w-5 h-5">
+                                            <path
+                                                d="M12 .587l3.668 7.568L24 9.423l-6 5.839 1.419 8.264L12 18.896l-7.419 4.63L6 15.262 0 9.423l8.332-1.268z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                                            class="w-5 h-5">
+                                            <path
+                                                d="M12 .587l3.668 7.568L24 9.423l-6 5.839 1.419 8.264L12 18.896l-7.419 4.63L6 15.262 0 9.423l8.332-1.268z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                                            class="w-5 h-5">
+                                            <path
+                                                d="M12 .587l3.668 7.568L24 9.423l-6 5.839 1.419 8.264L12 18.896l-7.419 4.63L6 15.262 0 9.423l8.332-1.268z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <!-- Review Text -->
+                                <p class="text-[#717171] font-[Poppins] text-[16px]">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec neque ut mauris
+                                    suscipit porttitor nec in lectus. Donec purus erat, rutrum eu eros vel Integer nec
+                                    neque ut mauris suscipit porttitor nec in lectus.
+                                </p>
+                            </div>
+
+                            <!-- Duplicate Review for Example -->
+                            <div class="bg-[#F9F9F9] p-6 rounded-2xl  flex flex-col space-y-4">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-4">
+                                        <img src="./assets/img21.jpeg" alt="User"
+                                            class="w-12 h-12 rounded-full object-cover">
+                                        <div>
+                                            <h4 class="font-[Poppins] text-[18px] font-bold text-[#333333]">Madelyn
+                                                Botosh</h4>
+                                            <p class="text-[14px] font-[Poppins] text-[#3798BA]">21 June, 2022</p>
+                                        </div>
+                                    </div>
+                                    <!-- Star Rating -->
+                                    <div class="flex space-x-1 text-yellow-500">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                                            class="w-5 h-5">
+                                            <path
+                                                d="M12 .587l3.668 7.568L24 9.423l-6 5.839 1.419 8.264L12 18.896l-7.419 4.63L6 15.262 0 9.423l8.332-1.268z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                                            class="w-5 h-5">
+                                            <path
+                                                d="M12 .587l3.668 7.568L24 9.423l-6 5.839 1.419 8.264L12 18.896l-7.419 4.63L6 15.262 0 9.423l8.332-1.268z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                                            class="w-5 h-5">
+                                            <path
+                                                d="M12 .587l3.668 7.568L24 9.423l-6 5.839 1.419 8.264L12 18.896l-7.419 4.63L6 15.262 0 9.423l8.332-1.268z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                                            class="w-5 h-5">
+                                            <path
+                                                d="M12 .587l3.668 7.568L24 9.423l-6 5.839 1.419 8.264L12 18.896l-7.419 4.63L6 15.262 0 9.423l8.332-1.268z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                                            class="w-5 h-5">
+                                            <path
+                                                d="M12 .587l3.668 7.568L24 9.423l-6 5.839 1.419 8.264L12 18.896l-7.419 4.63L6 15.262 0 9.423l8.332-1.268z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <!-- Review Text -->
+                                <p class="text-[#717171] font-[Poppins] text-[16px]">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec neque ut mauris
+                                    suscipit porttitor nec in lectus. Donec purus erat, rutrum eu eros vel Integer nec
+                                    neque ut mauris suscipit porttitor nec in lectus.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </div>
 
                 <!-- Right Section -->

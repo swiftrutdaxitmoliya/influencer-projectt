@@ -1,4 +1,4 @@
-
+// toggle Button
 document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.getElementById('menu-toggle');
     const menuClose = document.getElementById('menu-close');
@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// toggle pop-up
 function toggleFAQ(index) {
     const content = document.getElementById(`content-${index}`);
     const icon = document.getElementById(`icon-${index}`);
@@ -27,6 +28,8 @@ function toggleFAQ(index) {
     }
 }
 
+
+// header color and bold
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll(".nav-link");
     const currentUrl = window.location.pathname;
@@ -43,3 +46,39 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+// Select all the tabs and contents
+const descriptionTab = document.getElementById('description-tab');
+const scheduleTab = document.getElementById('schedule-tab');
+const reviewsTab = document.getElementById('reviews-tab');
+
+const descriptionContent = document.getElementById('description-content');
+const scheduleContent = document.getElementById('schedule-content');
+const reviewsContent = document.getElementById('reviews-content');
+
+function showTabContent(activeTab, activeContent) {
+
+    const tabs = [descriptionTab, scheduleTab, reviewsTab];
+    const contents = [descriptionContent, scheduleContent, reviewsContent];
+
+
+    tabs.forEach(tab => {
+        tab.classList.remove('bg-[#3798BA]', 'text-white');
+        tab.classList.add('bg-[#71717112]', 'text-[#717171]');
+    });
+    contents.forEach(content => content.classList.add('hidden'));
+
+
+    activeTab.classList.add('bg-[#3798BA]', 'text-white');
+    activeTab.classList.remove('bg-[#71717112]', 'text-[#717171]');
+    activeContent.classList.remove('hidden');
+}
+
+
+descriptionTab.addEventListener('click', () => showTabContent(descriptionTab, descriptionContent));
+scheduleTab.addEventListener('click', () => showTabContent(scheduleTab, scheduleContent));
+reviewsTab.addEventListener('click', () => showTabContent(reviewsTab, reviewsContent));
+
+
+showTabContent(descriptionTab, descriptionContent);
