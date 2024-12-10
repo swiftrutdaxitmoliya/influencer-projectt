@@ -85,17 +85,4 @@ showTabContent(descriptionTab, descriptionContent);
 
 
 
-// Select the scrollable div
-const scrollableDiv = document.querySelector('.scrollable-container');
-
-// Apply styles to hide the scrollbar
-scrollableDiv.style.overflowX = 'auto'; // Ensure horizontal scrolling
-scrollableDiv.style.msOverflowStyle = 'none'; // Hide scrollbar in IE and Edge
-scrollableDiv.style.scrollbarWidth = 'none'; // Hide scrollbar in Firefox
-
-// Hide scrollbar for WebKit browsers (Chrome, Safari, etc.)
-scrollableDiv.style.cssText += '::-webkit-scrollbar { display: none; }';
-
-
-
 
