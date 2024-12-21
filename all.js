@@ -82,7 +82,3 @@ reviewsTab.addEventListener('click', () => showTabContent(reviewsTab, reviewsCon
 
 
 showTabContent(descriptionTab, descriptionContent);
-
-
-
-
