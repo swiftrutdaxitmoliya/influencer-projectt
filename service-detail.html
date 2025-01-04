@@ -7,7 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&display=swap" rel="stylesheet">
-
+    <link href="style.css" rel="stylesheet">
+    
     <title>Influencer</title>
 </head>
 
@@ -17,232 +18,208 @@
         <div class="flex items-center justify-between max-w-[1440px] mx-auto px-4 py-5 sm:px-8">
             <!-- Logo -->
             <div class="logo">
-                <img src="./assets/Frame 21.png" alt="Logo" class="w-[160px] h-[48px]">
+                <img src="./assets/Frame 21.png" alt="Logo" class="w-[120px] h-[36px] lg:w-[140px] lg:h-[42px]">
             </div>
-
+    
             <!-- Toggle Button (Mobile) -->
             <button id="menu-toggle" class="lg:hidden p-2 text-[#333333]">
-                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
-                    </path>
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
             </button>
-
+    
             <!-- Mobile Navigation Links (Hidden by default on Desktop) -->
-            <nav id="mobile-menu"
-                class="fixed top-0 left-0 h-full w-full bg-white z-10 shadow-lg transform transition-transform duration-300 lg:hidden  -translate-x-full">
+            <nav id="mobile-menu" class="fixed top-0 left-0 h-full w-full bg-white z-10 shadow-lg transform transition-transform duration-300 lg:hidden -translate-x-full">
                 <div class="flex justify-between items-center p-4 border-b-[1px] border-gray-300">
                     <!-- Logo inside the menu -->
                     <div class="logo">
                         <img src="./assets/Frame 21.png" alt="Logo" class="w-[120px] h-[36px]">
                     </div>
-
+    
                     <!-- Close Button -->
                     <button id="menu-close" class="p-2 text-gray-700">
-                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12"></path>
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
                     </button>
                 </div>
-
-                <!-- Mobile Menu Links -->
-                <ul class="flex flex-col gap-5 items-center items-start p-6">
-                    <li><a href="/index.html" class="nav-link text-[20px] text-[#333333] font-normal font-[poppins] ">
-                            Home </a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+    
+                <!-- Mobile Menu Links (Centered) -->
+                <ul class="flex flex-col gap-6 items-center justify-center h-[calc(100vh-80px)]">
+                    <li class="group">
+                        <a href="./index.html" class="nav-link text-[18px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA]">Home</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
                     </li>
-                    <li><a href="/about.html"
-                            class=" nav-link text-[20px] text-[#333333] font-normal font-[poppins]">About </a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    <li class="group">
+                        <a href="./about.html" class="nav-link text-[18px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA]">About</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
                     </li>
-                    <li><a href="/contact-hub.html"
-                            class=" nav-link text-[20px] text-[#333333] font-normal font-[poppins]">Content Hub</a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    <li class="group">
+                        <a href="./contact-hub.html" class="nav-link text-[18px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA]">Content Hub</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
                     </li>
-                    <li><a href="/service.html"
-                            class=" nav-link text-[20px] text-[#333333] font-normal font-[poppins]">Service</a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    <li class="group">
+                        <a href="./service.html" class="nav-link text-[18px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA]">Service</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
                     </li>
-                    <li><a href="/press-kit.html"
-                            class=" nav-link text-[20px] text-[#333333] font-normal font-[poppins]">Press
-                            Kit</a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    <li class="group">
+                        <a href="./press-kit.html" class="nav-link text-[18px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA]">Press Kit</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
                     </li>
-                    <li><a href="/newsletter.html"
-                            class=" nav-link text-[20px] text-[#333333] font-normal font-[poppins]">Newsletter</a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    <li class="group">
+                        <a href="./newsletter.html" class="nav-link text-[18px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA]">Newsletter</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
                     </li>
-                    <li><a href="/Events.html"
-                            class=" nav-link text-[20px] text-[#333333] font-normal font-[poppins]">Events</a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
-                    </li>
-                </ul>
-            </nav>
-
-            <!-- Desktop Navigation (Visible only on desktop) -->
-            <nav class="hidden lg:flex flex-col lg:flex-row lg:items-center gap-5">
-                <ul class="flex gap-5 lg:mr-[30px]">
-                    <li>
-                        <a href="./index.html"
-                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
-                            Home
-                        </a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
-                    </li>
-                    <li>
-                        <a href="/about.html"
-                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
-                            About
-                        </a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
-                    </li>
-                    <li>
-                        <a href="./contact-hub.html"
-                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
-                            Content Hub
-                        </a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
-                    </li>
-                    <li>
-                        <a href="/service.html"
-                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
-                            Service
-                        </a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
-                    </li>
-                    <li>
-                        <a href="./press-kit.html"
-                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
-                            Press Kit
-                        </a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
-                    </li>
-                    <li>
-                        <a href="./newsletter.html"
-                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
-                            Newsletter
-                        </a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
-                    </li>
-                    <li>
-                        <a href="./Events.html"
-                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
-                            Events
-                        </a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    <li class="group">
+                        <a href="./Events.html" class="nav-link text-[18px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA]">Events</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
                     </li>
                 </ul>
             </nav>
-
-            <!-- Contact Us Button -->
-            <button
-                class="bg-[linear-gradient(180deg,#3798BA_17.99%,rgba(25,69,84,0.9)_100%)] font-semibold hidden md:block p-[12px_25px] rounded-[60px] text-[#FFFFFF]">
-                <a href="./contact.html" class=" font-[poppins] font-semibold text-center">Contact Us >></a>
+    
+            <!-- Desktop Navigation (Centered) -->
+            <nav class="hidden lg:flex items-center absolute left-1/2 transform -translate-x-1/2">
+                <ul class="flex gap-4">
+                    <li class="group">
+                        <a href="./index.html" class="nav-link text-[14px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA] transition-colors duration-300">Home</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
+                    </li>
+                    <li class="group">
+                        <a href="./about.html" class="nav-link text-[14px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA] transition-colors duration-300">About</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
+                    </li>
+                    <li class="group">
+                        <a href="./contact-hub.html" class="nav-link text-[14px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA] transition-colors duration-300">Content Hub</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
+                    </li>
+                    <li class="group">
+                        <a href="./service.html" class="nav-link text-[14px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA] transition-colors duration-300">Service</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
+                    </li>
+                    <li class="group">
+                        <a href="./press-kit.html" class="nav-link text-[14px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA] transition-colors duration-300">Press Kit</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
+                    </li>
+                    <li class="group">
+                        <a href="./newsletter.html" class="nav-link text-[14px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA] transition-colors duration-300">Newsletter</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
+                    </li>
+                    <li class="group">
+                        <a href="./Events.html" class="nav-link text-[14px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA] transition-colors duration-300">Events</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
+                    </li>
+                </ul>
+            </nav>
+    
+            <!-- Contact Us Button (Right Aligned) -->
+            <button class="bg-[linear-gradient(180deg,#3798BA_17.99%,rgba(25,69,84,0.9)_100%)] font-semibold hidden lg:block p-[10px_20px] rounded-[60px] text-[#FFFFFF] hover:bg-[linear-gradient(180deg,#2c7a9a_17.99%,rgba(20,55,67,0.9)_100%)] transition-colors duration-300">
+                <a href="./contact.html" class="font-[poppins] font-semibold text-center">Contact Us >></a>
             </button>
         </div>
     </header>
 
     <section class="bg-cover bg-center relative" style="background-image: url('./assets/Rectangle 1.png');">
         <div>
-            <img src="./assets/Group 141.png" alt="" class="top-9 absolute h-[220px] w-[140px]">
-            <img src="./assets/ring2.png" alt="" class="right-0  bottom-0 absolute">
+            <!-- Decorative Images -->
+            <img src="./assets/Group 141.png" alt="" class="top-9 absolute h-[220px] w-[140px] hidden md:block">
+            <img src="./assets/ring2.png" alt="" class="right-0 bottom-0 absolute hidden md:block">
         </div>
-        <div class="mx-auto max-w-[1440px] px-6  py-20 sm:px-8 lg:px-10 h-[500px] flex">
-            <div class="flex w-full space-x-4 items-center ">
-                <div class="w-6/12  text-white p-4 relative">
-                    <h2
-                        class="font-[Urbanist] text-[30px] font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)] mb-4">
-                        service
-                    </h2>
-                    <div class="flex items-center justify-center md:justify-start gap-3">
-                        <h3 class="font-[Poppins] text-gray-600">Home</h3>
-                        <img src="./assets/Group 150.png" alt="Arrow Icon" class="w-[20px] h-[18px]">
-                        <h4 class="text-[#3798BA] font-[Poppins] font-semibold"><a href="/service.html">Service</a></h4>
-                        <img src="./assets/Group 150.png" alt="Arrow Icon" class="w-[20px] h-[18px]">
-                        <h4 class="text-[#3798BA] font-[Poppins] font-semibold">Service Details</h4>
-
-
-                    </div>
-                    <img src="./assets/img45.png" alt="" class="absolute right-[350px] -top-16">
+        <div class="mx-auto max-w-[1440px] px-6 py-20 sm:px-8 lg:px-10 h-[500px] flex flex-wrap md:flex-nowrap">
+            <!-- Content Section -->
+            <div class="w-full md:w-6/12 text-white p-4 relative contentt">
+                <h2 class="font-[Urbanist] md:text-[40px] text-[22px] font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)] mb-4">
+                    service-detail
+                </h2>
+                <div class="flex items-center justify-center md:justify-start gap-3">
+                    <h3 class="font-[Poppins] md:text-[20px] text-[14px] text-gray-600">Home</h3>
+                    <img src="./assets/Group 150.png" alt="Arrow Icon" class="w-[20px] h-[18px]">
+                    <h4 class="text-[#3798BA] font-[Poppins] md:text-[20px] text-[14px] font-semibold">service</h4>
+                    <img src="./assets/Group 150.png" alt="Arrow Icon" class="w-[20px] h-[18px]">
+                    <h4 class="text-[#3798BA] font-[Poppins] md:text-[20px] text-[14px] font-semibold">service detail</h4>
                 </div>
-                <div class="w-6/12 relative  text-white p-4 text-center ">
-                    <img src="./assets/img46.png" alt="" class="absolute left-[-100px] bottom-1">
-                    <div class="">
-                        <img src="./assets/img89.jpeg" alt=""
-                            class="w-[230px] h-[250px] object-cover border-[5px] border-white absolute bg-white shadow-[0px_0px_40px_0px_#00000014] rounded-3xl bottom-[-20px] left-[100px] ">
-                    </div>
-                    <div class="flex  justify-center">
-                        <img src="./assets/round1.png" alt="" class="w-[26px] h-[26px] absolute left-[34%] top-9">
-                        <img src="./assets/ring.png" alt="" class>
-                        <img src="./assets/round2.png" alt="" class="w-[26px] h-[26px] absolute bottom-9 right-[230px]">
-                    </div>
-                    <div class="">
-                        <img src="./assets/img16.jpeg" alt=""
-                            class="w-[230px] h-[250px] object-cover border-[5px] border-white absolute shadow-[0px_0px_40px_0px_#00000014] bg-white rounded-3xl top-[-20px] right-[100px]">
-                    </div>
+                <img src="./assets/img45.png" alt="" class="absolute right-[350px] -top-16 md:right-[350px] md:top-[-16%] hidden md:block">
+            </div>
+    
+            <!-- Images Section -->
+            <div class="w-full md:w-6/12 relative text-white p-4 text-center">
+                <!-- Image 1 -->
+                <img src="./assets/img46.png" alt="" class="img1 absolute left-[-100px] bottom-1 md:left-[-100px] md:bottom-1 hidden md:block">
+    
+                <!-- Image 2 -->
+                <div class="immagee2">
+                    <img src="./assets/img18.jpeg" alt=""
+                        class="img2 w-[230px] h-[250px] object-cover border-[5px] border-white absolute bg-white shadow-[0px_0px_40px_0px_#00000014] rounded-3xl bottom-[-20px] md:bottom-[-20px] hidden md:block">
+                </div>
+    
+                <!-- Decorative Dots and Rings -->
+                <div class="flex justify-center">
+                    <img src="./assets/round1.png" alt="" class="dot1 w-[26px] h-[26px] absolute left-[34%] top-9 md:left-[34%] md:top-9 hidden md:block">
+                    <img src="./assets/Ellipse 9.png" alt="" class="ring1 w-[30px] h-[30px] block hidden md:block">
+                    <img src="./assets/round2.png" alt="" class="dot2 w-[26px] h-[26px] absolute bottom-9 right-[230px] md:bottom-9 md:right-[230px] hidden md:block">
+                </div>
+    
+                <!-- Image 3 -->
+                <div class="immagee3">
+                    <img src="./assets/img89.jpeg" alt=""
+                        class="img3 w-[230px] h-[250px] object-cover border-[5px] border-white absolute shadow-[0px_0px_40px_0px_#00000014] bg-white rounded-3xl hidden md:block">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-[120px]">
-        <div class="container mx-auto max-w-[1440px] py-8 px-4">
+    <section class="py-12 md:py-[120px]">
+        <div class="container mx-auto max-w-[1440px] px-4 sm:px-8 lg:px-16">
             <!-- Title -->
-            <div class="text-center mb-10">
-                <h3 class="font-extrabold uppercase text-[18px] leading-[22px] text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)]"
+            <div class="text-center mb-8 md:mb-10">
+                <h3 class="font-extrabold uppercase text-[16px] md:text-[18px] leading-[20px] md:leading-[22px] text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)]"
                     style="font-family: 'Urbanist', sans-serif;">
                     SERVICE
                 </h3>
-                <h4 class="font-bold text-[24px]  mt-3 sm:text-[33px] leading-[40px] sm:leading-[48px]"
+                <h4 class="font-bold text-[22px] md:text-[24px] lg:text-[33px] mt-2 md:mt-3 leading-[28px] md:leading-[32px] lg:leading-[48px]"
                     style="font-family: 'Urbanist', sans-serif;">
                     Influencer Latest Service
                 </h4>
             </div>
-
+    
             <!-- Main Content Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
                 <!-- Left Section -->
-                <div class="md:col-span-2 bg-white shadow-md rounded-lg p-6">
+                <div class="lg:col-span-2 bg-white shadow-md rounded-lg p-4 sm:p-6">
                     <img src="./assets/img15.jpeg" alt="Happy Lady"
-                        class="rounded-lg mb-4 w-full h-[350PX] object-cover" />
-                    <h2 class="text-xl font-bold font-[Urbanist] mb-2">Happy Lady In As Stylish Skirt Boater</h2>
+                        class="rounded-lg mb-4 w-full h-[200px] sm:h-[300px] md:h-[350px] object-cover" />
+                    <h2 class="text-xl font-bold font-[Urbanist] mb-2">Happy Lady In A Stylish Skirt Boater</h2>
                     <p class="text-[#717171] font-[Poppins] mb-4 leading-[27px]">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum ex eget arcu maximus
-                        pellentesque. Suspendisse potenti. Nunc accumsan viverra metus, id bibendum mauris ullamcorper
-                        ut.
+                        pellentesque. Suspendisse potenti. Nunc accumsan viverra metus, id bibendum mauris ullamcorper ut.
                         Nam interdum elit quis urna pellentesque lobortis. Nullam vitae elit et ante aliquam egestas nec
-                        quis lectus. Nulla faucibus sed elit id vehicula. Morbi eget sollicitudin leo, tincidunt
-                        dignissim
+                        quis lectus. Nulla faucibus sed elit id vehicula. Morbi eget sollicitudin leo, tincidunt dignissim
                         dui. Cras blandit porta consectetur. Morbi eget sollicitudin leo, tincidunt dignissim dui. Cras
                         blandit porta consectetur.
                     </p>
-
+    
                     <!-- Tabs -->
-                    <div class="flex space-x-4 mb-6 mt-7">
+                    <div class="flex flex-wrap gap-4 mb-6 mt-7">
                         <button id="description-tab"
-                            class=" text-white font-[poppins] text-[18px] px-8 py-3 rounded-full">Description</button>
+                            class="text-white font-[Poppins] text-[16px] sm:text-[18px] px-6 py-2 sm:px-8 sm:py-3 rounded-full bg-[#3798BA]">Description</button>
                         <button id="schedule-tab"
-                            class="bg-[#71717112] text-[#717171] font-[poppins] text-[18px] px-8 py-2 rounded-full">Time
+                            class="bg-[#71717112] text-[#717171] font-[Poppins] text-[16px] sm:text-[18px] px-6 py-2 sm:px-8 sm:py-2 rounded-full">Time
                             Schedule</button>
                         <button id="reviews-tab"
-                            class="bg-[#71717112] text-[#717171] font-[poppins]  text-[18px] px-8 py-2 rounded-full">Reviews</button>
+                            class="bg-[#71717112] text-[#717171] font-[Poppins] text-[16px] sm:text-[18px] px-6 py-2 sm:px-8 sm:py-2 rounded-full">Reviews</button>
                     </div>
-
-
+    
+                    <!-- Tab Content -->
                     <div id="description-content" class="tab-content">
-                        <h3 class="text-[25px] font-bold pb-3 border-b font-[Urbanist]">Features</h3>
-                        <div class="grid grid-cols-2 gap-4 pt-3 mt-5">
+                        <h3 class="text-[20px] sm:text-[25px] font-bold pb-3 border-b font-[Urbanist]">Features</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-3 mt-5">
+                            <!-- Feature Items -->
                             <div class="flex items-center space-x-4">
                                 <img src="./assets/Group 145.png" alt="">
                                 <p class="text-gray-700 text-[#333333] font-[Poppins]">24/7 Customer Support</p>
                             </div>
                             <div class="flex items-center space-x-4">
                                 <img src="./assets/Group 145.png" alt="">
-                                <p class="text-gray-700 text-[#333333] font-[Poppins]">Identifying The Right Influencers
-                                </p>
+                                <p class="text-gray-700 text-[#333333] font-[Poppins]">Identifying The Right Influencers</p>
                             </div>
                             <div class="flex items-center space-x-4">
                                 <img src="./assets/Group 145.png" alt="">
@@ -261,88 +238,79 @@
                                 <p class="text-gray-700 text-[#333333] font-[Poppins]">Learning From Success Stories</p>
                             </div>
                         </div>
-
-                        <p class="text-[#717171] font-[Poppins] mt-9 text-[18px] leading-[27px]">
+    
+                        <p class="text-[#717171] font-[Poppins] mt-9 text-[16px] sm:text-[18px] leading-[27px]">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum ex eget arcu maximus
-                            pellentesque. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Sed
-                            fermentum ex eget arcu maximus pellentesque. Suspendisse potenti. Lorem ipsum dolor sit
-                            amet,
+                            pellentesque. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                            fermentum ex eget arcu maximus pellentesque. Suspendisse potenti. Lorem ipsum dolor sit amet,
                         </p>
                     </div>
-
+    
                     <div id="schedule-content" class="tab-content hidden">
-                        <h3 class="text-[25px] font-bold pb-3 border-b font-[Urbanist]">Time Schedule</h3>
-                        <div class="grid grid-cols-2 gap-6 mt-5">
-                            <div class="flex justify-between px-3">
-                                <span class="text-gray-700 font-[Poppins] text-[18px] flex gap-2 items-center"><img
-                                        src="./assets/Group 145.png" alt=""
-                                        class="md:w-[23px] md:h-[20px]">Monday</span>
-                                <span class="text-[#333333] font-[Poppins] text-[18px] font-semibold">9:30 AM - 7:00
-                                    PM</span>
+                        <h3 class="text-[20px] sm:text-[25px] font-bold pb-3 border-b font-[Urbanist]">Time Schedule</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mt-5">
+                            <!-- Schedule Items -->
+                            <div class="flex justify-between items-center px-4 py-3 bg-[#F9F9F9] rounded-lg whitespace-nowrap overflow-hidden mb-4 sm:mb-0">
+                                <span class="text-gray-700 font-[Poppins] text-[14px] flex gap-2 items-center">
+                                    <img src="./assets/Group 145.png" alt="" class="w-4 h-4 sm:w-5 sm:h-5">Monday
+                                </span>
+                                <span class="text-[#333333] font-[Poppins] text-[14px] font-semibold">9:30 AM - 7:00 PM</span>
                             </div>
-                            <div class="flex justify-between px-3">
-                                <span class="text-gray-700 font-[Poppins] text-[18px] flex gap-2 items-center"><img
-                                        src="./assets/Group 145.png" alt=""
-                                        class="md:w-[23px] md:h-[20px]">Tuesday</span>
-                                <span class="text-[#333333] font-[Poppins] text-[18px] font-semibold">9:30 AM - 7:00
-                                    PM</span>
+                            <div class="flex justify-between items-center px-4 py-3 bg-[#F9F9F9] rounded-lg whitespace-nowrap overflow-hidden mb-4 sm:mb-0">
+                                <span class="text-gray-700 font-[Poppins] text-[14px] flex gap-2 items-center">
+                                    <img src="./assets/Group 145.png" alt="" class="w-4 h-4 sm:w-5 sm:h-5">Tuesday
+                                </span>
+                                <span class="text-[#333333] font-[Poppins] text-[14px] font-semibold">9:30 AM - 7:00 PM</span>
                             </div>
-                            <div class="flex justify-between px-3">
-                                <span class="text-gray-700 font-[Poppins] text-[18px] flex gap-2 items-center"><img
-                                        src="./assets/Group 145.png" alt=""
-                                        class="md:w-[23px] md:h-[20px]">Wednesday</span>
-                                <span class="text-[#333333] font-[Poppins] text-[18px] font-semibold">9:30 AM - 7:00
-                                    PM</span>
+                            <div class="flex justify-between items-center px-4 py-3 bg-[#F9F9F9] rounded-lg whitespace-nowrap overflow-hidden mb-4 sm:mb-0">
+                                <span class="text-gray-700 font-[Poppins] text-[14px] flex gap-2 items-center">
+                                    <img src="./assets/Group 145.png" alt="" class="w-4 h-4 sm:w-5 sm:h-5">Wednesday
+                                </span>
+                                <span class="text-[#333333] font-[Poppins] text-[14px] font-semibold">9:30 AM - 7:00 PM</span>
                             </div>
-                            <div class="flex justify-between px-3">
-                                <span class="text-gray-700 font-[Poppins] text-[18px] flex gap-2 items-center"><img
-                                        src="./assets/Group 145.png" alt=""
-                                        class="md:w-[23px] md:h-[20px]">Thursday</span>
-                                <span class="text-[#333333] font-[Poppins] text-[18px] font-semibold">9:30 AM - 7:00
-                                    PM</span>
+                            <div class="flex justify-between items-center px-4 py-3 bg-[#F9F9F9] rounded-lg whitespace-nowrap overflow-hidden mb-4 sm:mb-0">
+                                <span class="text-gray-700 font-[Poppins] text-[14px] flex gap-2 items-center">
+                                    <img src="./assets/Group 145.png" alt="" class="w-4 h-4 sm:w-5 sm:h-5">Thursday
+                                </span>
+                                <span class="text-[#333333] font-[Poppins] text-[14px] font-semibold">9:30 AM - 7:00 PM</span>
                             </div>
-                            <div class="flex justify-between px-3">
-                                <span class="text-gray-700 font-[Poppins] text-[18px] flex gap-2 items-center"><img
-                                        src="./assets/Group 145.png" alt=""
-                                        class="md:w-[23px] md:h-[20px]">Friday</span>
-                                <span class="text-[#333333] font-[Poppins] text-[18px] font-semibold">9:30 AM - 7:00
-                                    PM</span>
+                            <div class="flex justify-between items-center px-4 py-3 bg-[#F9F9F9] rounded-lg whitespace-nowrap overflow-hidden mb-4 sm:mb-0">
+                                <span class="text-gray-700 font-[Poppins] text-[14px] flex gap-2 items-center">
+                                    <img src="./assets/Group 145.png" alt="" class="w-4 h-4 sm:w-5 sm:h-5">Friday
+                                </span>
+                                <span class="text-[#333333] font-[Poppins] text-[14px] font-semibold">9:30 AM - 7:00 PM</span>
                             </div>
-                            <div class="flex justify-between px-3">
-                                <span class="text-gray-700 font-[Poppins] text-[18px] flex gap-2 items-center"><img
-                                        src="./assets/Group 145.png" alt=""
-                                        class="md:w-[23px] md:h-[20px]">Saturday</span>
-                                <span class="text-[#3798BA] font-[Poppins] text-[18px] font-semibold">Weekend</span>
+                            <div class="flex justify-between items-center px-4 py-3 bg-[#F9F9F9] rounded-lg whitespace-nowrap overflow-hidden mb-4 sm:mb-0">
+                                <span class="text-gray-700 font-[Poppins] text-[14px] flex gap-2 items-center">
+                                    <img src="./assets/Group 145.png" alt="" class="w-4 h-4 sm:w-5 sm:h-5">Saturday
+                                </span>
+                                <span class="text-[#3798BA] font-[Poppins] text-[14px] font-semibold">Weekend</span>
                             </div>
-                            <div class="flex justify-between px-3">
-                                <span class="text-gray-700 font-[Poppins] text-[18px] flex gap-2 items-center"><img
-                                        src="./assets/Group 145.png" alt=""
-                                        class="md:w-[23px] md:h-[20px]">Sunday</span>
-                                <span class="text-[#333333] font-[Poppins] text-[18px] font-semibold">9:30 AM - 7:00
-                                    PM</span>
+                            <div class="flex justify-between items-center px-4 py-3 bg-[#F9F9F9] rounded-lg whitespace-nowrap overflow-hidden mb-4 sm:mb-0">
+                                <span class="text-gray-700 font-[Poppins] text-[14px] flex gap-2 items-center">
+                                    <img src="./assets/Group 145.png" alt="" class="w-4 h-4 sm:w-5 sm:h-5">Sunday
+                                </span>
+                                <span class="text-[#333333] font-[Poppins] text-[14px] font-semibold">9:30 AM - 7:00 PM</span>
                             </div>
                         </div>
                     </div>
-
+    
                     <div id="reviews-content" class="tab-content hidden">
-                        <h3 class="text-[25px] font-bold pb-3 border-b font-[Urbanist]">Reviews</h3>
+                        <h3 class="text-[20px] sm:text-[25px] font-bold pb-3 border-b font-[Urbanist]">Reviews</h3>
                         <div class="space-y-6 mt-5 border p-4 rounded-2xl">
-                            <!-- Review 1 -->
-                            <div class="bg-[#F9F9F9] p-6 rounded-2xl  flex flex-col space-y-4">
-                                <!-- Name and Star Rating Section -->
+                            <!-- Review Items -->
+                            <div class="bg-[#F9F9F9] p-6 rounded-2xl flex flex-col space-y-4">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center space-x-4">
-                                        <img src="./assets/img21.jpeg" alt="User"
-                                            class="w-12 h-12 rounded-full object-cover">
+                                        <img src="./assets/img21.jpeg" alt="User" class="w-12 h-12 rounded-full object-cover">
                                         <div>
-                                            <h4 class="font-[Poppins] text-[18px] font-bold text-[#333333]">Madelyn
-                                                Botosh</h4>
+                                            <h4 class="font-[Poppins] text-[16px] sm:text-[18px] font-bold text-[#333333]">Madelyn Botosh</h4>
                                             <p class="text-[14px] font-[Poppins] text-[#3798BA]">21 June, 2022</p>
                                         </div>
                                     </div>
                                     <!-- Star Rating -->
                                     <div class="flex space-x-1 text-yellow-500">
+                                        <!-- Star SVG Icons -->
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
                                             class="w-5 h-5">
                                             <path
@@ -370,79 +338,25 @@
                                         </svg>
                                     </div>
                                 </div>
-                                <!-- Review Text -->
-                                <p class="text-[#717171] font-[Poppins] text-[16px]">
+                                <p class="text-[#717171] font-[Poppins] text-[14px] sm:text-[16px]">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec neque ut mauris
                                     suscipit porttitor nec in lectus. Donec purus erat, rutrum eu eros vel Integer nec
                                     neque ut mauris suscipit porttitor nec in lectus.
                                 </p>
                             </div>
-
-                            <!-- Duplicate Review for Example -->
-                            <div class="bg-[#F9F9F9] p-6 rounded-2xl  flex flex-col space-y-4">
-                                <div class="flex items-center justify-between">
-                                    <div class="flex items-center space-x-4">
-                                        <img src="./assets/img21.jpeg" alt="User"
-                                            class="w-12 h-12 rounded-full object-cover">
-                                        <div>
-                                            <h4 class="font-[Poppins] text-[18px] font-bold text-[#333333]">Madelyn
-                                                Botosh</h4>
-                                            <p class="text-[14px] font-[Poppins] text-[#3798BA]">21 June, 2022</p>
-                                        </div>
-                                    </div>
-                                    <!-- Star Rating -->
-                                    <div class="flex space-x-1 text-yellow-500">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
-                                            class="w-5 h-5">
-                                            <path
-                                                d="M12 .587l3.668 7.568L24 9.423l-6 5.839 1.419 8.264L12 18.896l-7.419 4.63L6 15.262 0 9.423l8.332-1.268z" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
-                                            class="w-5 h-5">
-                                            <path
-                                                d="M12 .587l3.668 7.568L24 9.423l-6 5.839 1.419 8.264L12 18.896l-7.419 4.63L6 15.262 0 9.423l8.332-1.268z" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
-                                            class="w-5 h-5">
-                                            <path
-                                                d="M12 .587l3.668 7.568L24 9.423l-6 5.839 1.419 8.264L12 18.896l-7.419 4.63L6 15.262 0 9.423l8.332-1.268z" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
-                                            class="w-5 h-5">
-                                            <path
-                                                d="M12 .587l3.668 7.568L24 9.423l-6 5.839 1.419 8.264L12 18.896l-7.419 4.63L6 15.262 0 9.423l8.332-1.268z" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
-                                            class="w-5 h-5">
-                                            <path
-                                                d="M12 .587l3.668 7.568L24 9.423l-6 5.839 1.419 8.264L12 18.896l-7.419 4.63L6 15.262 0 9.423l8.332-1.268z" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <!-- Review Text -->
-                                <p class="text-[#717171] font-[Poppins] text-[16px]">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec neque ut mauris
-                                    suscipit porttitor nec in lectus. Donec purus erat, rutrum eu eros vel Integer nec
-                                    neque ut mauris suscipit porttitor nec in lectus.
-                                </p>
-                            </div>
+                            <!-- Repeat for other reviews -->
                         </div>
                     </div>
-
-
-
                 </div>
-
+    
                 <!-- Right Section -->
                 <div class="space-y-6">
-                    <!-- Influencer Card -->
-                    <div class="rounded-xl bg-white p-5 shadow-lg md:h-[320px]"
-                        style="box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);">
+                    <!-- Influencer Card 1 -->
+                    <div class="rounded-xl bg-white p-5 shadow-lg" style="box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);">
                         <div class="bg-[#F5FAFC] p-2 rounded-xl">
                             <img src="./assets/img22.png" alt="Alfonso Korsgaard"
-                                class="rounded-lg w-full h-[170px] object-cover">
-                            <h4 class="mt-3 text-lg font-semibold font-[Urbanist] text-[#3798BA] justify-start">Alfonso
-                                Korsgaard</h4>
+                                class="rounded-lg w-full h-[150px] sm:h-[170px] object-cover">
+                            <h4 class="mt-3 text-lg font-semibold font-[Urbanist] text-[#3798BA]">Alfonso Korsgaard</h4>
                         </div>
                         <div class="flex justify-between items-center mt-4 px-3">
                             <div class="text-center">
@@ -455,13 +369,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="rounded-xl bg-white p-5 shadow-lg md:h-[320px]"
-                        style="box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);">
+    
+                    <!-- Influencer Card 2 -->
+                    <div class="rounded-xl bg-white p-5 shadow-lg" style="box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);">
                         <div class="bg-[#F5FAFC] p-2 rounded-xl">
                             <img src="./assets/img56.png" alt="Alfonso Korsgaard"
-                                class="rounded-lg w-full h-[170px] object-cover">
-                            <h4 class="mt-3 text-lg font-semibold font-[Urbanist] text-[#3798BA] justify-start">Alfonso
-                                Korsgaard</h4>
+                                class="rounded-lg w-full h-[150px] sm:h-[170px] object-cover">
+                            <h4 class="mt-3 text-lg font-semibold font-[Urbanist] text-[#3798BA]">Alfonso Korsgaard</h4>
                         </div>
                         <div class="flex justify-between items-center mt-4 px-3">
                             <div class="text-center">
@@ -474,13 +388,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="rounded-xl bg-white p-5 shadow-lg md:h-[320px]"
-                        style="box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);">
+    
+                    <!-- Influencer Card 3 -->
+                    <div class="rounded-xl bg-white p-5 shadow-lg" style="box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);">
                         <div class="bg-[#F5FAFC] p-2 rounded-xl">
                             <img src="./assets/img57.png" alt="Alfonso Korsgaard"
-                                class="rounded-lg w-full h-[170px] object-cover">
-                            <h4 class="mt-3 text-lg font-semibold font-[Urbanist] text-[#3798BA] justify-start">Alfonso
-                                Korsgaard</h4>
+                                class="rounded-lg w-full h-[150px] sm:h-[170px] object-cover">
+                            <h4 class="mt-3 text-lg font-semibold font-[Urbanist] text-[#3798BA]">Alfonso Korsgaard</h4>
                         </div>
                         <div class="flex justify-between items-center mt-4 px-3">
                             <div class="text-center">
@@ -493,7 +407,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Additional cards use the same structure -->
                 </div>
             </div>
         </div>
@@ -580,37 +493,46 @@
         </div>
     </section>
 
-
-    <footer class="bg-[#3798BA] text-white pt-10">
+    <footer class="bg-[#3798BA] text-white pt-40 pb-8 relative ">
         <!-- Newsletter Section -->
-        <div class="bg-white shadow-lg rounded-lg mx-auto max-w-[1440px] px-8 py-6 relative -top-16">
-            <div class="flex flex-col lg:flex-row items-center lg:justify-between gap-4">
-                <!-- Text Content -->
-                <div>
-                    <h3 class="text-xl font-semibold text-[#333] font-[Urbanist]">Subscribe Newsletter</h3>
-                    <p class="text-sm text-[#666] leading-6 font-[poppins]">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec neque ut mauris <br>
-                        suscipit
-                        porttitor nec in lectus.
-                        Donec purus erat, rutrum eu eros vel Integer.
-                    </p>
+        <div class="absolute left-1/2 transform -translate-x-1/2 -top-20 w-[90%] max-w-[300px] sm:max-w-[500px] md:max-w-[800px] lg:max-w-[1400px] ">
+            <div class="bg-white rounded-[20px] rounded-lg px-4 sm:px-8 py-6"
+                 style="box-shadow: 0px -3px 40px 0px #0000000F;">
+                <div class="flex flex-col lg:flex-row items-center lg:justify-between gap-6">
+                    <!-- Text Content -->
+                    <div class="text-center lg:text-left">
+                        <h3 class="text-[18px] sm:text-[22px] md:text-[25px] font-semibold text-[#333] font-[Urbanist]">Subscribe to Our Newsletter</h3>
+                        <p class="text-[14px] sm:text-[16px] md:text-[18px] text-[#666] leading-6 font-[poppins] mt-2">
+                            <span class="hidden md:inline text-[18px]">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec neque ut mauris suscipit porttitor nec in lectus. Donec purus erat, rutrum eu eros vel Integer.
+                            </span>
+                            <span class="md:hidden">
+                                Stay updated with the latest news and offers.
+                            </span>
+                        </p>
+                    </div>
 
-                </div>
-                <!-- Input Section -->
-                <div class="flex items-center w-full lg:w-auto relative">
-                    <input type="email" placeholder="Enter Your Email Address"
-                        class="rounded-full py-4 px-4 w-full lg:w-[300px] bg-[#F7F7F7] text-sm outline-none font-[poppins] focus:ring-2 focus:ring-[#3798BA]" />
-                    <button
-                        class="bg-[#F99417] text-white rounded-full px-3 py-3 ml-2 hover:bg-opacity-90 transition absolute right-3">
-                        <img src="./assets/Group 125.png" alt="">
-                    </button>
+                    <!-- Input Section -->
+                    <div class="w-full lg:w-auto flex items-center justify-center lg:justify-start">
+                        <div class="relative w-full max-w-[300px] lg:w-[400px]">
+                            <input type="email" placeholder="Enter Your Email Address"
+                                   class="rounded-full py-3 px-6 w-full bg-[#F7F7F7] text-sm outline-none font-[poppins] focus:ring-2 focus:ring-[#3798BA] placeholder-[#999]"
+                                   style="box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);" />
+                            <button
+                                class="bg-[#F99417] text-white rounded-full px-6 py-3 hover:bg-opacity-90 transition absolute right-2 top-1/2 transform -translate-y-1/2 flex items-center gap-2"
+                                style="box-shadow: 0px 2px 10px rgba(249, 148, 23, 0.3);">
+                                <span class="hidden md:inline">Subscribe</span>
+                                <img src="./assets/Group 125.png" alt="Subscribe Icon" class="w-5 h-5">
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Footer Content -->
-        <div class="container mx-auto max-w-[1440px] px-6 lg:px-10 pb-8">
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 border-b border-white/20 pb-8">
+        <div class="container mx-auto max-w-[1440px] px-6 lg:px-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 border-b border-white/20 pb-8">
                 <!-- Company Info -->
                 <div>
                     <div class="flex items-center gap-3 mb-4">
@@ -620,85 +542,109 @@
                             <p class="text-sm opacity-75 font-[Urbanist]">Marketing</p>
                         </div>
                     </div>
-                    <p class="text-sm opacity-75 font-[poppins]">
-                        Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Integer <br> nec neque ut mauris
-                        suscipit.
+                    <p class="text-[16px] opacity-75 font-[poppins]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec neque ut mauris suscipit.
                     </p>
                     <div class="flex gap-3 mt-4">
-                        <button class="border p-1 rounded-full">
-                            <img src="./assets//imstagram1.png" alt="" class="w-4">
+                        <button class="border p-1 rounded-full hover:bg-white/10 transition">
+                            <img src="./assets/imstagram1.png" alt="Instagram" class="w-4">
                         </button>
-                        <button class="border p-1 rounded-full">
-                            <img src="./assets/fb.png" alt="" class="w-4">
+                        <button class="border p-1 rounded-full hover:bg-white/10 transition">
+                            <img src="./assets/fb.png" alt="Facebook" class="w-4">
                         </button>
-                        <button class="border p-1 rounded-full">
-                            <img src="./assets/yt1.png" alt="" class="w-4">
+                        <button class="border p-1 rounded-full hover:bg-white/10 transition">
+                            <img src="./assets/yt1.png" alt="YouTube" class="w-4">
                         </button>
-                        <button class="border p-1 rounded-full">
-                            <img src="./assets//twit1.png" alt="" class="w-4">
+                        <button class="border p-1 rounded-full hover:bg-white/10 transition">
+                            <img src="./assets/twit1.png" alt="Twitter" class="w-4">
                         </button>
-                        <button class="border p-1 rounded-full">
-                            <img src="./assets/tiktok1.png" alt="" class="w-4">
+                        <button class="border p-1 rounded-full hover:bg-white/10 transition">
+                            <img src="./assets/tiktok1.png" alt="TikTok" class="w-4">
                         </button>
                     </div>
-                    <!-- Social Icons -->
-
                 </div>
 
                 <!-- Quick Links -->
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-                    <ul class="grid grid-cols-2 gap-2 text-sm opacity-75">
+                    <h4 class="text-[22px] font-semibold mb-4 font-bold">Quick Links</h4>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm opacity-75">
                         <li>
-                            <a href="#" class="hover:opacity-100 flex gap-3 items-center"><img
-                                    src="./assets/Group 146.png" alt="" class="w-4 h-4"> Home</a>
+                            <a href="#" class="hover:opacity-100 flex gap-3 items-center text-[18px] font-[poppins] font-normal">
+                                <img src="./assets/Group 146.png" alt="" class="w-4 h-4"> Home
+                            </a>
                         </li>
                         <li>
-                            <a href="#" class="hover:opacity-100 flex gap-3 items-center"><img
-                                    src="./assets/Group 146.png" alt="" class="w-4 h-4"> About</a>
+                            <a href="#" class="hover:opacity-100 flex gap-3 items-center text-[18px] font-[poppins] font-normal">
+                                <img src="./assets/Group 146.png" alt="" class="w-4 h-4"> About
+                            </a>
                         </li>
                         <li>
-                            <a href="#" class="hover:opacity-100 flex gap-3 items-center"><img
-                                    src="./assets/Group 146.png" alt="" class="w-4 h-4"> Content Hub</a>
+                            <a href="#" class="hover:opacity-100 flex gap-3 items-center text-[18px] font-[poppins] font-normal">
+                                <img src="./assets/Group 146.png" alt="" class="w-4 h-4"> Content Hub
+                            </a>
                         </li>
                         <li>
-                            <a href="#" class="hover:opacity-100 flex gap-3 items-center"><img
-                                    src="./assets/Group 146.png" alt="" class="w-4 h-4"> Service</a>
+                            <a href="#" class="hover:opacity-100 flex gap-3 items-center text-[18px] font-[poppins] font-normal">
+                                <img src="./assets/Group 146.png" alt="" class="w-4 h-4"> Service
+                            </a>
                         </li>
                         <li>
-                            <a href="#" class="hover:opacity-100 flex gap-3 items-center"><img
-                                    src="./assets/Group 146.png" alt="" class="w-4 h-4"> Media</a>
+                            <a href="#" class="hover:opacity-100 flex gap-3 items-center text-[18px] font-[poppins] font-normal">
+                                <img src="./assets/Group 146.png" alt="" class="w-4 h-4"> Media
+                            </a>
                         </li>
                         <li>
-                            <a href="#" class="hover:opacity-100 flex gap-3 items-center"><img
-                                    src="./assets/Group 146.png" alt="" class="w-4 h-4"> Newsletter</a>
+                            <a href="#" class="hover:opacity-100 flex gap-3 items-center text-[18px] font-[poppins] font-normal">
+                                <img src="./assets/Group 146.png" alt="" class="w-4 h-4"> Newsletter
+                            </a>
                         </li>
                         <li>
-                            <a href="#" class="hover:opacity-100 flex gap-3 items-center"><img
-                                    src="./assets/Group 146.png" alt="" class="w-4 h-4"> Events</a>
+                            <a href="#" class="hover:opacity-100 flex gap-3 items-center text-[18px] font-[poppins] font-normal">
+                                <img src="./assets/Group 146.png" alt="" class="w-4 h-4"> Events
+                            </a>
                         </li>
                         <li>
-                            <a href="#" class="hover:opacity-100 flex gap-3 items-center"><img
-                                    src="./assets/Group 146.png" alt="" class="w-4 h-4"> Contact Us</a>
+                            <a href="#" class="hover:opacity-100 flex gap-3 items-center text-[18px] font-[poppins] font-normal">
+                                <img src="./assets/Group 146.png" alt="" class="w-4 h-4"> Contact Us
+                            </a>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Contact Info -->
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Get In Touch</h4>
+                    <h4 class="text-[22px] font-semibold mb-4">Get In Touch</h4>
                     <ul class="space-y-2 text-sm opacity-75">
-                        <li class="flex items-center gap-2">
+                        <li class="flex items-center gap-2 text-[18px] font-poppins font-normal">
                             <img src="./assets/call.png" alt="" class="border rounded-full p-1">
                             +123 456 7890
                         </li>
-                        <li class="flex items-center gap-2">
+                        <li class="flex items-center gap-2 text-[18px] font-poppins font-normal">
                             <img src="./assets/sms.png" alt="" class="border rounded-full p-1">
                             influexa@gmail.com
                         </li>
-                        <li class="flex items-center gap-2">
+                        <li class="flex items-center gap-2 text-[18px] font-poppins font-normal">
                             <img src="./assets/location.png" alt="" class="border rounded-full p-1">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Additional Links -->
+                <div>
+                    <h4 class="text-[22px] font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-sm opacity-75">
+                        <li>
+                            <a href="#" class="hover:opacity-100 text-[18px] font-[poppins] font-normal">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:opacity-100 text-[18px] font-[poppins] font-normal">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:opacity-100 text-[18px] font-[poppins] font-normal">Support</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:opacity-100 text-[18px] font-[poppins] font-normal">Careers</a>
                         </li>
                     </ul>
                 </div>
@@ -706,17 +652,49 @@
 
             <!-- Footer Bottom -->
             <div class="flex flex-col sm:flex-row justify-between items-center text-sm text-white/80 mt-8">
-                <p>© 2023 codelinesolutions. All rights reserved</p>
+                <p class="text-[16px] font-[poppins] font-normal">© 2023 codelinesolutions. All rights reserved</p>
                 <div class="flex items-center gap-4">
-                    <a href="#" class="hover:opacity-100">Privacy Policy</a>
-                    <a href="#" class="hover:opacity-100">Terms & Conditions</a>
+                    <a href="#" class="hover:opacity-100 text-[16px] font-[poppins] font-normal">Privacy Policy</a>
+                    <a href="#" class="hover:opacity-100 text-[16px] font-[poppins] font-normal">Terms & Conditions</a>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="./all.js"></script>
+    <script>
+               document.addEventListener("DOMContentLoaded", function () {
+    // Get all navigation links
+    const navLinks = document.querySelectorAll(".nav-link");
 
+    // Loop through each link
+    navLinks.forEach((link) => {
+        link.addEventListener("click", function (e) {
+            // Prevent default link behavior (optional)
+            e.preventDefault();
+
+            // Remove the 'hidden' class from the icon next to the clicked link
+            const icon = this.nextElementSibling;
+            if (icon && icon.classList.contains("icon")) {
+                icon.classList.remove("hidden");
+            }
+
+            // Optionally, hide icons for other links
+            navLinks.forEach((otherLink) => {
+                if (otherLink !== link) {
+                    const otherIcon = otherLink.nextElementSibling;
+                    if (otherIcon && otherIcon.classList.contains("icon")) {
+                        otherIcon.classList.add("hidden");
+                    }
+                }
+            });
+
+            // Navigate to the link's href (if you want to keep the default behavior)
+            window.location.href = this.href;
+        });
+    });
+});
+    </script>
 </body>
 
 </html>

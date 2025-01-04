@@ -18,130 +18,102 @@
         <div class="flex items-center justify-between max-w-[1440px] mx-auto px-4 py-5 sm:px-8">
             <!-- Logo -->
             <div class="logo">
-                <img src="./assets/Frame 21.png" alt="Logo" class="w-[160px] h-[48px]">
+                <img src="./assets/Frame 21.png" alt="Logo" class="w-[120px] h-[36px] lg:w-[140px] lg:h-[42px]">
             </div>
-
+    
             <!-- Toggle Button (Mobile) -->
             <button id="menu-toggle" class="lg:hidden p-2 text-[#333333]">
-                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
-                    </path>
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
             </button>
-
+    
             <!-- Mobile Navigation Links (Hidden by default on Desktop) -->
-            <nav id="mobile-menu"
-                class="fixed top-0 left-0 h-full w-full bg-white z-10 shadow-lg transform transition-transform duration-300 lg:hidden  -translate-x-full">
+            <nav id="mobile-menu" class="fixed top-0 left-0 h-full w-full bg-white z-10 shadow-lg transform transition-transform duration-300 lg:hidden -translate-x-full">
                 <div class="flex justify-between items-center p-4 border-b-[1px] border-gray-300">
                     <!-- Logo inside the menu -->
                     <div class="logo">
                         <img src="./assets/Frame 21.png" alt="Logo" class="w-[120px] h-[36px]">
                     </div>
-
+    
                     <!-- Close Button -->
                     <button id="menu-close" class="p-2 text-gray-700">
-                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12"></path>
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
                     </button>
                 </div>
-
-                <!-- Mobile Menu Links -->
-                <ul class="flex flex-col gap-5 items-center items-start p-6">
-                    <li><a href="/index.html" class="nav-link text-[20px] text-[#333333] font-normal font-[poppins] ">
-                            Home </a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+    
+                <!-- Mobile Menu Links (Centered) -->
+                <ul class="flex flex-col gap-6 items-center justify-center h-[calc(100vh-80px)]">
+                    <li class="group">
+                        <a href="./index.html" class="nav-link text-[18px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA]">Home</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
                     </li>
-                    <li><a href="/about.html"
-                            class=" nav-link text-[20px] text-[#333333] font-normal font-[poppins]">About </a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    <li class="group">
+                        <a href="./about.html" class="nav-link text-[18px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA]">About</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
                     </li>
-                    <li><a href="/contact-hub.html"
-                            class=" nav-link text-[20px] text-[#333333] font-normal font-[poppins]">Content Hub</a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    <li class="group">
+                        <a href="./contact-hub.html" class="nav-link text-[18px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA]">Content Hub</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
                     </li>
-                    <li><a href="/service.html"
-                            class=" nav-link text-[20px] text-[#333333] font-normal font-[poppins]">Service</a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    <li class="group">
+                        <a href="./service.html" class="nav-link text-[18px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA]">Service</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
                     </li>
-                    <li><a href="/press-kit.html"
-                            class=" nav-link text-[20px] text-[#333333] font-normal font-[poppins]">Press
-                            Kit</a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    <li class="group">
+                        <a href="./press-kit.html" class="nav-link text-[18px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA]">Press Kit</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
                     </li>
-                    <li><a href="/newsletter.html"
-                            class=" nav-link text-[20px] text-[#333333] font-normal font-[poppins]">Newsletter</a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    <li class="group">
+                        <a href="./newsletter.html" class="nav-link text-[18px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA]">Newsletter</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
                     </li>
-                    <li><a href="/Events.html"
-                            class=" nav-link text-[20px] text-[#333333] font-normal font-[poppins]">Events</a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
-                    </li>
-                </ul>
-            </nav>
-
-            <!-- Desktop Navigation (Visible only on desktop) -->
-            <nav class="hidden lg:flex flex-col lg:flex-row lg:items-center gap-5">
-                <ul class="flex gap-5 lg:mr-[30px]">
-                    <li>
-                        <a href="./index.html"
-                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
-                            Home
-                        </a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
-                    </li>
-                    <li>
-                        <a href="/about.html"
-                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
-                            About
-                        </a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
-                    </li>
-                    <li>
-                        <a href="./contact-hub.html"
-                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
-                            Content Hub
-                        </a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
-                    </li>
-                    <li>
-                        <a href="/service.html"
-                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
-                            Service
-                        </a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
-                    </li>
-                    <li>
-                        <a href="./press-kit.html"
-                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
-                            Press Kit
-                        </a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
-                    </li>
-                    <li>
-                        <a href="./newsletter.html"
-                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
-                            Newsletter
-                        </a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
-                    </li>
-                    <li>
-                        <a href="./Events.html"
-                            class="nav-link text-[17px] text-[#333333] font-normal text-center font-[poppins] leading-7">
-                            Events
-                        </a>
-                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden icon">
+                    <li class="group">
+                        <a href="./Events.html" class="nav-link text-[18px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA]">Events</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
                     </li>
                 </ul>
             </nav>
-
-            <!-- Contact Us Button -->
-            <button
-                class="bg-[linear-gradient(180deg,#3798BA_17.99%,rgba(25,69,84,0.9)_100%)] font-semibold hidden lg:block p-[12px_25px] rounded-[60px] text-[#FFFFFF]">
-                <a href="./contact.html" class=" font-[poppins] font-semibold text-center">Contact Us >></a>
+    
+            <!-- Desktop Navigation (Centered) -->
+            <nav class="hidden lg:flex items-center absolute left-1/2 transform -translate-x-1/2">
+                <ul class="flex gap-4">
+                    <li class="group">
+                        <a href="./index.html" class="nav-link text-[14px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA] transition-colors duration-300">Home</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
+                    </li>
+                    <li class="group">
+                        <a href="./about.html" class="nav-link text-[14px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA] transition-colors duration-300">About</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
+                    </li>
+                    <li class="group">
+                        <a href="./contact-hub.html" class="nav-link text-[14px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA] transition-colors duration-300">Content Hub</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
+                    </li>
+                    <li class="group">
+                        <a href="./service.html" class="nav-link text-[14px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA] transition-colors duration-300">Service</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
+                    </li>
+                    <li class="group">
+                        <a href="./press-kit.html" class="nav-link text-[14px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA] transition-colors duration-300">Press Kit</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
+                    </li>
+                    <li class="group">
+                        <a href="./newsletter.html" class="nav-link text-[14px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA] transition-colors duration-300">Newsletter</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
+                    </li>
+                    <li class="group">
+                        <a href="./Events.html" class="nav-link text-[14px] text-[#333333] font-normal font-[poppins] hover:text-[#3798BA] transition-colors duration-300">Events</a>
+                        <img src="./assets/Vector.png" alt="Vector icon" class="w-[45px] m-auto hidden group-hover:block icon">
+                    </li>
+                </ul>
+            </nav>
+    
+            <!-- Contact Us Button (Right Aligned) -->
+            <button class="bg-[linear-gradient(180deg,#3798BA_17.99%,rgba(25,69,84,0.9)_100%)] font-semibold hidden lg:block p-[10px_20px] rounded-[60px] text-[#FFFFFF] hover:bg-[linear-gradient(180deg,#2c7a9a_17.99%,rgba(20,55,67,0.9)_100%)] transition-colors duration-300">
+                <a href="./contact.html" class="font-[poppins] font-semibold text-center">Contact Us >></a>
             </button>
         </div>
     </header>
@@ -231,30 +203,25 @@
             </div>
         </div>
     </section>
-
+    
     <section>
-        <div class="mx-auto max-w-[1440px] px-4 sm:px-8  py-[10%] relative z-0">
-            <div class="flex flex-col   lg:flex-row items-center lg:items-start gap-12 bg-white">
-                <!-- Image Section -->
-
-                <div class="relative flex-shrink-0 w-[90%] h-full lg:w-3/6">
-                    <div
-                        class="md:w-[90%] w-[97%] h-[100%] border-[#3798BA] border absolute rounded-3xl top-[-20px] sm:right-[13%] right-6 z-0 ">
-                    </div>
+        <div class="mx-auto max-w-[1440px] px-4 sm:px-8 py-[10%] relative z-0">
+            <div class="flex flex-col lg:flex-row items-center lg:items-start gap-12 bg-white">
+                <!-- Image Section for Larger Screens -->
+                <div class="relative flex-shrink-0 w-[90%] h-full lg:w-3/6 hidden lg:block">
+                    <div class="md:w-[90%] w-[97%] h-[100%] border-[#3798BA] border absolute rounded-3xl top-[-20px] sm:right-[13%] right-6 z-0"></div>
                     <img src="./assets/img10.jpeg" alt="Main Influencer"
-                        class="rounded-lg shadow-md md:w-[90%] md:h-[366px] w-[120%] object-cover relative z-10 " />
-                    <div
-                        class="absolute bottom-[-50px]  right-[0] sm:right-6 border-[10px] border-[#FFFFFF] rounded-lg z-10">
-                        <img src="./assets//img12.jpeg" alt="Secondary Influencer"
+                        class="rounded-lg shadow-md md:w-[90%] md:h-[366px] w-[120%] object-cover relative z-10" />
+                    <div class="absolute bottom-[-50px] right-[0] sm:right-6 border-[10px] border-[#FFFFFF] rounded-lg z-10">
+                        <img src="./assets/img12.jpeg" alt="Secondary Influencer"
                             class="shadow-lg w-36 sm:w-[285px] z-10 relative" />
                     </div>
                 </div>
 
                 <!-- Content Section -->
-                <div class="lg:w-3/6  lg:text-left ">
+                <div class="lg:w-3/6 lg:text-left">
                     <div class="">
-                        <h3
-                            class="font-extrabold text-[14px] md:text-[20px]  font-[Urbanist] uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)]">
+                        <h3 class="font-extrabold text-[14px] md:text-[20px] font-[Urbanist] uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)]">
                             ABOUT INFLUEXA</h3>
                         <h1 class="text-[#333333] font-bold md:text-[38px] text-[24px] mt-2 font-[Urbanist]">
                             We Are The Best Influencer Marketing Since 2020
@@ -265,8 +232,20 @@
                         </p>
                     </div>
 
+                    <!-- Image Section for Small Screens -->
+                    <div class="lg:hidden mt-8 w-full">
+                        <div class="relative w-full">
+                            <div class="w-full h-full border-[#3798BA] border absolute rounded-3xl top-[-20px] right-0 z-0"></div>
+                            <img src="./assets/img10.jpeg" alt="Main Influencer"
+                                class="rounded-lg shadow-md w-full h-auto object-cover relative z-10" />
+                            <div class="absolute bottom-[-50px] right-[0] border-[10px] border-[#FFFFFF] rounded-lg z-10">
+                                <img src="./assets/img12.jpeg" alt="Secondary Influencer"
+                                    class="shadow-lg w-36 sm:w-[285px] z-10 relative" />
+                            </div>
+                        </div>
+                    </div>
 
-                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-1 mt-6 text-gray-700 order-last md:order-none">
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 text-gray-700">
                         <li class="flex text-[#333333] font-poppins text-[13px] md:text-[18px] md:leading-[27px] leading-[19px] gap-2 items-center"
                             style="font-family: 'poppins'">
                             <img src="./assets/Group 145.png" alt="" class="w-[24px] h-[18px]" />
@@ -299,86 +278,81 @@
                         </li>
                     </ul>
 
-                    <button
-                        class="mt-6 hover:bg-teal-600 text-[#FFFFFF] font-[poppins] px-6 py-2 rounded-full bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)]">
+                    <button class="mt-8 hover:bg-teal-600 text-[#FFFFFF] font-[poppins] px-6 py-2 rounded-full bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)]">
                         <a href="./about.html"> About Us >></a>
-
                     </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-[#eff7f9] py-10 relative overflow-hidden">
-        <div class="mx-auto max-w-[1440px] px-4 sm:px-8">
-            <!-- Background Images -->
-            <img src="./assets/78248-ai (1) 1.png" alt="" class="absolute bottom-0 left-0 w-[150px] md:w-[250px]">
-            <img src="./assets/78248-ai (1) 1 (1).png" alt="" class="absolute top-0 right-0 w-[120px] md:w-[250px]">
-
-            <!-- Section Header -->
-            <div class="text-center mb-10">
-                <h3 class="font-extrabold md:text-[20px] text-[14px] leading-[22px] text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)]"
-                    style="font-family: 'Urbanist', sans-serif;">
-                    BEST FEATURE
-                </h3>
-                <h4 class="font-bold md:text-[28px] text-[24px] sm:text-[36px] md:text-[40px] leading-[36px] sm:leading-[44px] md:leading-[48px]"
-                    style="font-family: 'Urbanist', sans-serif;">
-                    Our Latest Features
-                </h4>
-            </div>
-
+    <!-- best-feature -->
+    <section class="py-12 bg-cover bg-center" style="background-image: url('assets/Frame 37.png');">
+        <div class="container mx-auto px-4">
+            <!-- Section Title -->
+            <h2 class="text-center text-2xl font-extrabold text-[#3798BA] mb-4">BEST FEATURE</h2>
+            
+            <!-- Subtitle: Our Latest Features -->
+            <h3 class="text-center font-urbanist font-bold text-[40px] leading-[48px] mb-12">
+                Our Latest Features
+            </h3>
+            
             <!-- Features Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Feature Card 1 -->
-                <div class="w-full md:p-6 p-4 border rounded-[20px] shadow-sm bg-[#FFFFFF]"
-                    style="border-left: 4px solid #3D96E8;">
-                    <div class="flex justify-between items-center mb-4">
-                        <img src="./assets/Group 32.png" alt="Icon" class="w-10 h-10">
-                        <img src="./assets/01.png" alt="Number" class="w-auto h-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white bg-opacity-90 p-8 rounded-lg shadow-lg border-l-4 border-[rgba(61,150,232,1)]">
+                    <!-- Logo and Number Row -->
+                    <div class="flex justify-between items-center mb-6">
+                        <!-- Logo -->
+                        <img src="assets/Group 31 (1).png" alt="Logo 1" class="w-16 h-16">
+                        <!-- Number -->
+                        <span class="text-4xl font-bold text-[rgb(235,235,235)]">01</span>
                     </div>
-                    <h3 class="font-bold text-[18px] md:text-[25px] mb-2" style="font-family: 'Urbanist', sans-serif;">
-                        Verified
-                        Creators</h3>
-                    <p class="md:text-[17px] text-[14px] text-[#717171] font-[poppins]">
-                        It requires consistent effort, a strong online presence, and a clear understanding of the
-                        verification process on your chosen platform.
+                    <!-- Heading -->
+                    <h3 class="text-2xl font-semibold text-gray-800">Verified Creators</h3>
+                    <!-- Content -->
+                    <p class="text-gray-600 mt-4 text-lg leading-relaxed text-left">
+                        It requires consistent effort, a strong online presence, and a clear understanding of the verification process on your chosen platform.
                     </p>
                 </div>
-
-                <!-- Feature Card 2 -->
-                <div class="w-full md:p-6 p-4 border rounded-[20px] shadow-sm bg-[#FFFFFF]"
-                    style="border-left: 4px solid #F99417;">
-                    <div class="flex justify-between items-center mb-4">
-                        <img src="./assets/Group 31.png" alt="Icon" class="w-10 h-10">
-                        <img src="./assets/02.png" alt="Number" class="w-auto h-8">
+    
+                <!-- Feature 2 -->
+                <div class="bg-white bg-opacity-90 p-8 rounded-lg shadow-lg border-l-4 border-[rgba(249,148,23,1)]">
+                    <!-- Logo and Number Row -->
+                    <div class="flex justify-between items-center mb-6">
+                        <!-- Logo -->
+                        <img src="assets/Group 31.png" alt="Logo 2" class="w-16 h-16">
+                        <!-- Number -->
+                        <span class="text-4xl font-bold text-[rgb(235,235,235)]">02</span>
                     </div>
-                    <h3 class="font-bold text-[18px] md:text-[25px] mb-2" style="font-family: 'Urbanist', sans-serif;">
-                        Live Chat</h3>
-                    <p class="md:text-[17px] text-[14px] text-[#717171] font-[poppins]">
-                        Live chat has become a critical tool for businesses seeking to enhance customer service, boost
-                        engagement, and drive sales.
+                    <!-- Heading -->
+                    <h3 class="text-2xl font-semibold text-gray-800">Live Chat</h3>
+                    <!-- Content -->
+                    <p class="text-gray-600 mt-4 text-lg leading-relaxed text-left">
+                        Live chat has become a critical tool for businesses seeking to enhance customer service, boost engagement, and drive sales.
                     </p>
                 </div>
-
-                <!-- Feature Card 3 -->
-                <div class="w-full md:p-6 p-4 border rounded-[20px] shadow-sm bg-[#FFFFFF]"
-                    style="border-left: 4px solid #1BB892;">
-                    <div class="flex justify-between items-center mb-4">
-                        <img src="./assets/Group 31 (1).png" alt="Icon" class="w-10 h-10">
-                        <img src="./assets/03.png" alt="Number" class="w-auto h-8">
+    
+                <!-- Feature 3 -->
+                <div class="bg-white bg-opacity-90 p-8 rounded-lg shadow-lg border-l-4 border-[rgba(27,184,146,1)]">
+                    <!-- Logo and Number Row -->
+                    <div class="flex justify-between items-center mb-6">
+                        <!-- Logo -->
+                        <img src="assets/Group 32.png" alt="Logo 3" class="w-16 h-16">
+                        <!-- Number -->
+                        <span class="text-4xl font-bold text-[rgb(235,235,235)]">03</span>
                     </div>
-                    <h3 class="font-bold text-[18px] md:text-[25px] mb-2" style="font-family: 'Urbanist', sans-serif;">
-                        24/7
-                        Availability</h3>
-                    <p class="md:text-[18px] text-[14px] text-[#717171] font-[poppins]">
-                        If possible, offer 24/7 live chat support to cater to customers in different time zones and with
-                        varying schedules.
+                    <!-- Heading -->
+                    <h3 class="text-2xl font-semibold text-gray-800">24/7 Availability</h3>
+                    <!-- Content -->
+                    <p class="text-gray-600 mt-4 text-lg leading-relaxed text-left">
+                        If possible, offer 24/7 live chat support to cater to customers in different time zones and with varying schedules.
                     </p>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <section class="py-20 bg-gray-50 relative">
         <img src="./assets/img123.png" alt="" class="absolute right-0 bottom-[-12%] md:w-[110px]">
         <div class="mx-auto max-w-[1440px] px-4 sm:px-8">
@@ -1459,41 +1433,48 @@
             </div>
         </div>
     </section>
-
-    <footer class="bg-[#3798BA] text-white pt-10 relative">
+<br>
+<br>
+    <footer class="bg-[#3798BA] text-white pt-40 pb-8 relative ">
         <!-- Newsletter Section -->
-        <div class="bg-[#FFFFFF] shadow-lg rounded-lg mx-auto md:w-[1440px] w-[300px] md:px-8 px-4 py-6 relative md:-top-16 bottom-[100px]"
-            style="box-shadow: 0px -3px 40px 0px #0000000F;">
-            <div class="flex flex-col lg:flex-row items-center lg:justify-between gap-4">
-                <!-- Text Content -->
-                <div>
-                    <h3 class="md:text-[25px] text-[18px] font-semibold text-[#333] font-[Urbanist]">Subscribe
-                        Newsletter</h3>
-                    <p class="text-[18px] text-[#666] leading-6 font-[poppins] md:block hidden">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec neque ut mauris <br>
-                        suscipit
-                        porttitor nec in lectus.
-                        Donec purus erat, rutrum eu eros vel Integer.
-                    </p>
-                    <p class="text-[14px] text-[#666] leading-6 font-[poppins] md:hidden block">Lorem ipsum dolor sit
-                        amet, consectetur adipiscing elit. Integer nec neque.</p>
+        <div class="absolute left-1/2 transform -translate-x-1/2 -top-20 w-[90%] max-w-[300px] sm:max-w-[500px] md:max-w-[800px] lg:max-w-[1400px] ">
+            <div class="bg-white rounded-[20px] rounded-lg px-4 sm:px-8 py-6"
+                 style="box-shadow: 0px -3px 40px 0px #0000000F;">
+                <div class="flex flex-col lg:flex-row items-center lg:justify-between gap-6">
+                    <!-- Text Content -->
+                    <div class="text-center lg:text-left">
+                        <h3 class="text-[18px] sm:text-[22px] md:text-[25px] font-semibold text-[#333] font-[Urbanist]">Subscribe to Our Newsletter</h3>
+                        <p class="text-[14px] sm:text-[16px] md:text-[18px] text-[#666] leading-6 font-[poppins] mt-2">
+                            <span class="hidden md:inline text-[18px]">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec neque ut mauris suscipit porttitor nec in lectus. Donec purus erat, rutrum eu eros vel Integer.
+                            </span>
+                            <span class="md:hidden">
+                                Stay updated with the latest news and offers.
+                            </span>
+                        </p>
+                    </div>
 
-                </div>
-                <!-- Input Section -->
-                <div class="flex items-center w-full lg:w-auto relative">
-                    <input type="email" placeholder="Enter Your Email Address"
-                        class="rounded-full py-4 px-4 w-full lg:w-[300px] bg-[#F7F7F7] text-sm outline-none font-[poppins] focus:ring-2 focus:ring-[#3798BA]" />
-                    <button
-                        class="bg-[#F99417] text-white rounded-full px-3 py-3 ml-2 hover:bg-opacity-90 transition absolute right-3">
-                        <img src="./assets/Group 125.png" alt="">
-                    </button>
+                    <!-- Input Section -->
+                    <div class="w-full lg:w-auto flex items-center justify-center lg:justify-start">
+                        <div class="relative w-full max-w-[300px] lg:w-[400px]">
+                            <input type="email" placeholder="Enter Your Email Address"
+                                   class="rounded-full py-3 px-6 w-full bg-[#F7F7F7] text-sm outline-none font-[poppins] focus:ring-2 focus:ring-[#3798BA] placeholder-[#999]"
+                                   style="box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);" />
+                            <button
+                                class="bg-[#F99417] text-white rounded-full px-6 py-3 hover:bg-opacity-90 transition absolute right-2 top-1/2 transform -translate-y-1/2 flex items-center gap-2"
+                                style="box-shadow: 0px 2px 10px rgba(249, 148, 23, 0.3);">
+                                <span class="hidden md:inline">Subscribe</span>
+                                <img src="./assets/Group 125.png" alt="Subscribe Icon" class="w-5 h-5">
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Footer Content -->
-        <div class="container mx-auto max-w-[1440px]  px-6 lg:px-10 pb-8">
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 border-b border-white/20 pb-8">
+        <div class="container mx-auto max-w-[1440px] px-6 lg:px-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 border-b border-white/20 pb-8">
                 <!-- Company Info -->
                 <div>
                     <div class="flex items-center gap-3 mb-4">
@@ -1504,73 +1485,70 @@
                         </div>
                     </div>
                     <p class="text-[16px] opacity-75 font-[poppins]">
-                        Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Integer <br> nec neque ut mauris
-                        suscipit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec neque ut mauris suscipit.
                     </p>
                     <div class="flex gap-3 mt-4">
-                        <button class="border p-1 rounded-full">
-                            <img src="./assets//imstagram1.png" alt="" class="w-4">
+                        <button class="border p-1 rounded-full hover:bg-white/10 transition">
+                            <img src="./assets/imstagram1.png" alt="Instagram" class="w-4">
                         </button>
-                        <button class="border p-1 rounded-full">
-                            <img src="./assets/fb.png" alt="" class="w-4">
+                        <button class="border p-1 rounded-full hover:bg-white/10 transition">
+                            <img src="./assets/fb.png" alt="Facebook" class="w-4">
                         </button>
-                        <button class="border p-1 rounded-full">
-                            <img src="./assets/yt1.png" alt="" class="w-4">
+                        <button class="border p-1 rounded-full hover:bg-white/10 transition">
+                            <img src="./assets/yt1.png" alt="YouTube" class="w-4">
                         </button>
-                        <button class="border p-1 rounded-full">
-                            <img src="./assets//twit1.png" alt="" class="w-4">
+                        <button class="border p-1 rounded-full hover:bg-white/10 transition">
+                            <img src="./assets/twit1.png" alt="Twitter" class="w-4">
                         </button>
-                        <button class="border p-1 rounded-full">
-                            <img src="./assets/tiktok1.png" alt="" class="w-4">
+                        <button class="border p-1 rounded-full hover:bg-white/10 transition">
+                            <img src="./assets/tiktok1.png" alt="TikTok" class="w-4">
                         </button>
                     </div>
-                    <!-- Social Icons -->
-
                 </div>
 
                 <!-- Quick Links -->
                 <div>
                     <h4 class="text-[22px] font-semibold mb-4 font-bold">Quick Links</h4>
-                    <ul class="grid grid-cols-2 gap-2 text-sm opacity-75">
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm opacity-75">
                         <li>
-                            <a href="#"
-                                class="hover:opacity-100 flex gap-3 items-center text-[18px] font-[poppins] font-normal"><img
-                                    src="./assets/Group 146.png" alt="" class="w-4 h-4"> Home</a>
+                            <a href="#" class="hover:opacity-100 flex gap-3 items-center text-[18px] font-[poppins] font-normal">
+                                <img src="./assets/Group 146.png" alt="" class="w-4 h-4"> Home
+                            </a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="hover:opacity-100 flex gap-3 items-center text-[18px] font-[poppins] font-normal"><img
-                                    src="./assets/Group 146.png" alt="" class="w-4 h-4"> About</a>
+                            <a href="#" class="hover:opacity-100 flex gap-3 items-center text-[18px] font-[poppins] font-normal">
+                                <img src="./assets/Group 146.png" alt="" class="w-4 h-4"> About
+                            </a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="hover:opacity-100 flex gap-3 items-center text-[18px] font-[poppins] font-normal"><img
-                                    src="./assets/Group 146.png" alt="" class="w-4 h-4"> Content Hub</a>
+                            <a href="#" class="hover:opacity-100 flex gap-3 items-center text-[18px] font-[poppins] font-normal">
+                                <img src="./assets/Group 146.png" alt="" class="w-4 h-4"> Content Hub
+                            </a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="hover:opacity-100 flex gap-3 items-center text-[18px] font-[poppins] font-normal"><img
-                                    src="./assets/Group 146.png" alt="" class="w-4 h-4"> Service</a>
+                            <a href="#" class="hover:opacity-100 flex gap-3 items-center text-[18px] font-[poppins] font-normal">
+                                <img src="./assets/Group 146.png" alt="" class="w-4 h-4"> Service
+                            </a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="hover:opacity-100 flex gap-3 items-center text-[18px] font-[poppins] font-normal"><img
-                                    src="./assets/Group 146.png" alt="" class="w-4 h-4"> Media</a>
+                            <a href="#" class="hover:opacity-100 flex gap-3 items-center text-[18px] font-[poppins] font-normal">
+                                <img src="./assets/Group 146.png" alt="" class="w-4 h-4"> Media
+                            </a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="hover:opacity-100 flex gap-3 items-center text-[18px] font-[poppins] font-normal"><img
-                                    src="./assets/Group 146.png" alt="" class="w-4 h-4"> Newsletter</a>
+                            <a href="#" class="hover:opacity-100 flex gap-3 items-center text-[18px] font-[poppins] font-normal">
+                                <img src="./assets/Group 146.png" alt="" class="w-4 h-4"> Newsletter
+                            </a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="hover:opacity-100 flex gap-3 items-center text-[18px] font-[poppins] font-normal"><img
-                                    src="./assets/Group 146.png" alt="" class="w-4 h-4"> Events</a>
+                            <a href="#" class="hover:opacity-100 flex gap-3 items-center text-[18px] font-[poppins] font-normal">
+                                <img src="./assets/Group 146.png" alt="" class="w-4 h-4"> Events
+                            </a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="hover:opacity-100 flex gap-3 items-center text-[18px] font-[poppins] font-normal"><img
-                                    src="./assets/Group 146.png" alt="" class="w-4 h-4"> Contact Us</a>
+                            <a href="#" class="hover:opacity-100 flex gap-3 items-center text-[18px] font-[poppins] font-normal">
+                                <img src="./assets/Group 146.png" alt="" class="w-4 h-4"> Contact Us
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -1590,6 +1568,25 @@
                         <li class="flex items-center gap-2 text-[18px] font-poppins font-normal">
                             <img src="./assets/location.png" alt="" class="border rounded-full p-1">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Additional Links -->
+                <div>
+                    <h4 class="text-[22px] font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-sm opacity-75">
+                        <li>
+                            <a href="#" class="hover:opacity-100 text-[18px] font-[poppins] font-normal">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:opacity-100 text-[18px] font-[poppins] font-normal">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:opacity-100 text-[18px] font-[poppins] font-normal">Support</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:opacity-100 text-[18px] font-[poppins] font-normal">Careers</a>
                         </li>
                     </ul>
                 </div>
@@ -1676,6 +1673,9 @@
                 },
             });
         });
+
+
+        
 
     </script>
 
