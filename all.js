@@ -14,21 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
-// toggle pop-up
-function toggleFAQ(index) {
-    const content = document.getElementById(`content-${index}`);
-    const icon = document.getElementById(`icon-${index}`);
-    if (content.classList.contains('hidden')) {
-        content.classList.remove('hidden');
-        icon.textContent = '–';
-    } else {
-        content.classList.add('hidden');
-        icon.textContent = '+';
-    }
-}
-
-
 // header color and bold
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll(".nav-link");

@@ -162,7 +162,7 @@
       
 
     <section class="py-12 sm:py-16 lg:py-20">
-        <div class="mx-auto max-w-[1440px] px-4 sm:px-8 lg:px-8 h-full flex items-center rounded-lg">
+        <div class="mx-auto max-w-[1440px] px-4 sm:px-8 lg:px-8 h-full sm:p-[20px] flex items-center rounded-lg">
             <!-- Responsive Grid Layout -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <!-- Left Section (Image) -->
@@ -200,11 +200,11 @@
         </div>
     </section>
     
-    <section class="pt-4 pb-10 relative"> <!-- Adjusted padding-top -->
+    <section class="pt-4 pb-10 relative">
         <!-- Decorative Image -->
         <img src="./assets/img167.png" alt="Decorative" class="absolute left-5 -top-2 object-cover">
         <!-- Main Container -->
-        <div class="mx-auto max-w-[1440px] h-[190px] flex items-center bg-[#EFF7F9] rounded-2xl shadow-md px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-[1440px] h-[190px] flex items-center bg-[#EFF7F9] rounded-2xl shadow-md px-4 sm:p-[20px] lg:px-8">
             <!-- Grid Layout -->
             <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                 <!-- Left Section (Text) -->
@@ -221,20 +221,25 @@
     
                 <!-- Right Section (Logos) -->
                 <div class="w-full flex items-center">
-                    <ul class="flex gap-4 sm:gap-6 md:gap-8 overflow-x-auto sm:overflow-visible scrollbar-hide">
-                        <li>
-                            <img src="./assets/image 1.png" alt="Brand 1" class="w-14 sm:w-16 md:w-20 h-auto">
-                        </li>
-                        <li>
-                            <img src="./assets/image 2.png" alt="Brand 2" class="w-14 sm:w-16 md:w-20 h-auto">
-                        </li>
-                        <li>
-                            <img src="./assets/image 3.png" alt="Brand 3" class="w-14 sm:w-16 md:w-20 h-auto">
-                        </li>
-                        <li>
-                            <img src="./assets/image 4.png" alt="Brand 4" class="w-14 sm:w-16 md:w-20 h-auto">
-                        </li>
-                    </ul>
+                    <!-- Swiper Container -->
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Swiper Slides -->
+                            <div class="swiper-slide flex items-center justify-center">
+                                <img src="./assets/image 1.png" alt="Brand 1" class="w-full max-w-[100px] sm:max-w-[120px] md:max-w-[140px] h-auto">
+                            </div>
+                            <div class="swiper-slide flex items-center justify-center">
+                                <img src="./assets/image 2.png" alt="Brand 2" class="w-full max-w-[100px] sm:max-w-[120px] md:max-w-[140px] h-auto">
+                            </div>
+                            <div class="swiper-slide flex items-center justify-center">
+                                <img src="./assets/image 3.png" alt="Brand 3" class="w-full max-w-[100px] sm:max-w-[120px] md:max-w-[140px] h-auto">
+                            </div>
+                            <div class="swiper-slide flex items-center justify-center">
+                                <img src="./assets/image 4.png" alt="Brand 4" class="w-full max-w-[100px] sm:max-w-[120px] md:max-w-[140px] h-auto">
+                            </div>
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -244,25 +249,25 @@
     <section class="pt-6 md:pt-10 pb-6 md:pb-[110px] mt-6 md:mt-12">
         <div class="bg-[#EFF7F9] relative">
             <div class="mx-auto max-w-[1440px] px-4 sm:px-8 lg:px-10 md:h-auto h-auto flex items-center">
-                <!-- Decorative Image (Hidden on smaller screens) -->
-                <img src="./assets/Our Vision.png" alt="" class="absolute md:h-[275px] left-5 top-0 hidden md:block">
+                <!-- Decorative Image (Visible on all screens) -->
+                <img src="./assets/Our Vision.png" alt="" class="absolute h-[150px] md:h-[275px] left-5 top-[-50px] md:top-[-70px]">
     
                 <!-- Grid Container for Content and Image -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center relative w-full">
                     <!-- Right Image Section (Moved to top on mobile screens) -->
                     <div class="order-1 md:order-2 relative flex justify-center md:justify-end md:bottom-[70px] bottom-0">
-                        <img src="./assets/img101.jpeg" alt="Vision Image" class="w-full max-w-[320px] md:max-w-[500px] h-[200px] md:h-[340px] rounded-lg shadow-lg object-cover">
+                        <img src="./assets/img101.jpeg" alt="Vision Image" class="w-full max-w-[320px] md:max-w-[400px] lg:max-w-[500px] h-[200px] md:h-[300px] lg:h-[340px] rounded-lg shadow-lg object-cover">
                     </div>
     
                     <!-- Left Content Section -->
-                    <div class="order-2 md:order-1 relative md:static top-0 md:top-auto">
-                        <h3 class="font-semibold text-[14px] md:text-[20px] font-[Urbanist] text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)] mb-2">
+                    <div class="order-2 md:order-1 relative md:static top-0 md:top-auto p-4 md:p-6 lg:p-8"> <!-- Adjusted padding for 768px -->
+                        <h3 class="font-semibold text-[14px] md:text-[18px] lg:text-[20px] font-[Urbanist] text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)] mb-2">
                             VISION
                         </h3>
-                        <h4 class="font-[Urbanist] font-bold text-[24px] md:text-[40px] text-[#333333] leading-tight mb-4">
+                        <h4 class="font-[Urbanist] font-bold text-[24px] md:text-[32px] lg:text-[40px] text-[#333333] leading-tight mb-4">
                             Our Vision To Make A Difference
                         </h4>
-                        <p class="font-[Poppins] text-[#717171] text-[14px] md:text-[18px] leading-relaxed">
+                        <p class="font-[Poppins] text-[#717171] text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a quam sed tellus luctus lacinia vitae et magna. Morbi lobortis orci risus, dictum blandit est consectetur sit amet. Sed nec imperdiet nisl. Morbi commodo mi vel purus maximus, eget lobortis sem malesuada. Vivamus ut pharetra diam. Sed justo justo, fermentum nec metus ut, egestas pellentesque tellus.
                         </p>
                     </div>
@@ -270,36 +275,36 @@
             </div>
         </div>
     </section>
+    
+  <section class="pt-6 md:pt-10 mt-6 md:mt-12 relative">
+    <div class="bg-[#EFF7F9]">
+        <div class="mx-auto max-w-[1440px] px-4 sm:px-8 lg:px-10 h-auto flex items-center">
+            <!-- Decorative Image (Hidden on smaller screens) -->
+            <img src="./assets/Our Mission.png" alt="" class="absolute md:h-[275px] right-5 top-[-20px] md:top-[-40px] hidden md:block">
 
-    <section class="pt-6 md:pt-10 mt-6 md:mt-12 relative">
-        <div class="bg-[#EFF7F9]">
-            <div class="mx-auto max-w-[1440px] px-4 sm:px-8 lg:px-10 h-auto flex items-center">
-                <!-- Decorative Image (Hidden on smaller screens) -->
-                <img src="./assets/Our Mission.png" alt="" class="absolute md:h-[275px] right-5 top-0 hidden md:block">
-    
-                <!-- Grid Container for Content and Image -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center w-full">
-                    <!-- Left Image Section -->
-                    <div class="order-1 md:order-1 flex justify-center md:justify-start relative">
-                        <img src="./assets/img123.jpeg" alt="Vision Image" class="w-full max-w-[320px] md:max-w-[500px] h-[200px] md:h-[340px] rounded-lg shadow-lg object-cover">
-                    </div>
-    
-                    <!-- Right Content Section -->
-                    <div class="order-2 md:order-2 relative">
-                        <h3 class="font-semibold font-[Urbanist] text-[14px] md:text-[20px] uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)] mb-2">
-                            mission
-                        </h3>
-                        <h4 class="font-[Urbanist] font-bold text-[24px] md:text-[40px] text-[#333333] leading-tight mb-4">
-                            Our Mission To Make A Difference
-                        </h4>
-                        <p class="font-[Poppins] text-[#717171] text-[14px] md:text-[18px] leading-relaxed">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a quam sed tellus luctus lacinia vitae et magna. Morbi lobortis orci risus, dictum blandit est consectetur sit amet. Sed nec imperdiet nisl. Morbi commodo mi vel purus maximus, eget lobortis sem malesuada. Vivamus ut pharetra diam. Sed justo justo, fermentum nec metus ut, egestas pellentesque tellus.
-                        </p>
-                    </div>
+            <!-- Grid Container for Content and Image -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center w-full">
+                <!-- Left Image Section -->
+                <div class="order-1 md:order-1 flex justify-center md:justify-start relative md:bottom-[70px] bottom-0">
+                    <img src="./assets/img123.jpeg" alt="Vision Image" class="w-full max-w-[320px] md:max-w-[500px] h-[200px] md:h-[340px]  rounded-lg shadow-lg object-cover">
+                </div>
+
+                <!-- Right Content Section -->
+                <div class="order-2 md:order-2 relative lg:p-8 ">
+                    <h3 class="font-semibold font-[Urbanist] text-[14px] md:text-[20px] uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#3798BA] to-[rgba(25,69,84,0.9)] mb-2">
+                        mission
+                    </h3>
+                    <h4 class="font-[Urbanist] font-bold text-[24px] md:text-[40px] text-[#333333] leading-tight mb-4">
+                        Our Mission To Make A Difference
+                    </h4>
+                    <p class="font-[Poppins] text-[#717171] text-[14px] md:text-[18px] leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a quam sed tellus luctus lacinia vitae et magna. Morbi lobortis orci risus, dictum blandit est consectetur sit amet. Sed nec imperdiet nisl. Morbi commodo mi vel purus maximus, eget lobortis sem malesuada. Vivamus ut pharetra diam. Sed justo justo, fermentum nec metus ut, egestas pellentesque tellus.
+                    </p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <section class="md:py-10 relative mt-[100px]">
         <div class="mx-auto max-w-[1440px] px-6 sm:px-8 lg:px-10">
@@ -741,6 +746,60 @@
                 },
             });
         });
+     
+        document.addEventListener('DOMContentLoaded', () => {
+    // Initialize Swiper for the brand logos slider
+    const swiper = new Swiper('.swiper', {
+        slidesPerView: 2, // Show 2 slides on small screens (320px and above)
+        spaceBetween: 16, // Space between slides
+        loop: true, // Enable infinite loop
+        loopAdditionalSlides: 4, // Add extra slides for smoother looping
+        grabCursor: true, // Show grab cursor on hover
+        touchEventsTarget: 'container', // Enable touch swiping
+        mousewheel: {
+            enabled: true, // Enable mousewheel scrolling
+            forceToAxis: true, // Only scroll horizontally
+        },
+        breakpoints: {
+            // Adjust slidesPerView for larger screens
+            480: {
+                slidesPerView: 3, // Show 3 slides on screens >= 480px
+                spaceBetween: 16,
+            },
+            640: {
+                slidesPerView: 4, // Show 4 slides on screens >= 640px
+                spaceBetween: 16,
+            },
+            1024: {
+                slidesPerView: 5, // Show 5 slides on screens >= 1024px
+                spaceBetween: 24,
+            },
+            1280: {
+                slidesPerView: 3, // Show 6 slides on screens >= 1280px
+                spaceBetween: 24,
+            },
+        },
+        on: {
+            // Dynamically add more slides when reaching the end
+            reachEnd: function () {
+                const slides = [
+                    './assets/image 1.png',
+                    './assets/image 2.png',
+                    './assets/image 3.png',
+                    './assets/image 4.png',
+                
+                ];
+                slides.forEach((slide) => {
+                    swiper.appendSlide(
+                        `<div class="swiper-slide flex items-center justify-center">
+                            <img src="${slide}" alt="Brand" class="w-full max-w-[100px] sm:max-w-[120px] md:max-w-[140px] h-auto">
+                        </div>`
+                    );
+                });
+            },
+        },
+    });
+});
 
         document.addEventListener("DOMContentLoaded", function () {
     // Get all navigation links
